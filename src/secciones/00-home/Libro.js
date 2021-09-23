@@ -1,6 +1,7 @@
 import React, {useRef} from 'react';
 import HTMLFlipBook from 'react-pageflip';
 import { Pag3 } from '../01-colores/Pag3';
+import { Pag7 } from '../01-colores/Pag7';
 
 
 
@@ -16,7 +17,7 @@ export const Libro = () => {
                 <img className="demoPage" src="static/Diapositivas PNG/2.png" alt="page-2"/>
                 <img className="demoPage" src="static/Diapositivas PNG/3.png" alt="page-3"/>
                 <div className="demoPage  bg-rosa "><Pag3/></div>
-
+                <div className="demoPage bg-rosa"><Pag7/></div>
 
                 <div className="demoPage  bg-blanco"></div>
                 <div className="demoPage  bg-violeta">Page 3</div>
