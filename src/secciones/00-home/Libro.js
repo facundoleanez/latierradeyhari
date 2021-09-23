@@ -1,16 +1,42 @@
 import React, {useRef} from 'react';
 import HTMLFlipBook from 'react-pageflip';
+import useWindowDimensions from '../../hooks/useWindowDimensions';
 import { Pag3 } from '../01-colores/Pag3';
 import { Pag7 } from '../01-colores/Pag7';
 
 
 
 export const Libro = () => {
-
+    
+    const {height, width} = useWindowDimensions();
+    console.log(height, width)
     const book = useRef();
+
+    const responsiveWidth = () => {
+        if ( width <= 360) {
+            return 320
+        } else if (640 > width > 360) {
+            return 480
+        } else {
+            return 960   
+        }
+    };
+
+    const responsiveHeight = () => {
+        if ( width <= 360) {
+            return 180
+        } else if (640 > width > 360) {
+            return 270
+        } else {
+            return 540
+        }
+    };
+
+
     return (
         <div className="position-absolute top-50 start-50 translate-middle">
-            <HTMLFlipBook width={960} height={540} autoSize={false} useMouseEvents={false} ref={book} >
+            <h3 className="d-sm-none text-center mb-5">Para una mejor experiencia gire la pantalla</h3>
+            <HTMLFlipBook width={responsiveWidth()} height={responsiveHeight()}  useMouseEvents={false} ref={book}  autoSize={false}>
                 
                 <video className="demoPage" src="static/Diapositivas PNG/0 - Portada.mp4" width="960" height="540" loop={true} autoPlay={true} ></video>
                 <img className="demoPage" src="static/Diapositivas PNG/1.png" alt="page-1"/>
