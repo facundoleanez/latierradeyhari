@@ -5,11 +5,12 @@ import { TopBar } from "./secciones/00-home/TopBar";
 
 
 function App() {
+  
   return (
     <div className="App" >
 
       <TopBar/>
-      <div style={{height: "85vh"}} className="border position-relative">
+      <div style={{height: "85vh"}} className="border position-relative overflo-hidden">
         <Libro/>
       </div>
 

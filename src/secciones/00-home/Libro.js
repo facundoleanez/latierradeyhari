@@ -13,9 +13,9 @@ export const Libro = () => {
     const book = useRef();
 
     const responsiveWidth = () => {
-        if ( width <= 450) {
+        if ( width <= 576) {
             return 320
-        } else if (width <= 750) {
+        } else if (width <= 992) {
             return 480
         } else if (width <= 1600) {
             return 960   
@@ -25,9 +25,9 @@ export const Libro = () => {
     };
 
     const responsiveHeight = () => {
-        if ( width <= 450) {
+        if ( width <= 576) {
             return 180
-        } else if (width <= 750) {
+        } else if (width <= 992) {
             return 270
         } else if (width <= 1600) {
             return 540
@@ -42,7 +42,7 @@ export const Libro = () => {
         <div className="position-absolute top-50 start-50 translate-middle">
             <h3 className="d-sm-none text-center mb-5">Para una mejor experiencia gire la pantalla</h3>
             <div>
-                <button className="carousel-control-prev d-none d-sm-block d-md-none" type="button" onClick={() => book.current.pageFlip().flipPrev()}><span className="carousel-control-prev-icon" aria-hidden="true"></span></button>
+                <button className="carousel-control-prev d-none d-sm-block d-lg-none" type="button" onClick={() => book.current.pageFlip().flipPrev()}><span className="carousel-control-prev-icon" aria-hidden="true"></span></button>
                 <HTMLFlipBook width={responsiveWidth()} height={responsiveHeight()}  useMouseEvents={false} ref={book}  autoSize={false}>
                     
                     <video className="demoPage" src="static/Diapositivas PNG/0 - Portada.mp4" width="960" height="540" loop={true} autoPlay={true} ></video>
@@ -60,12 +60,12 @@ export const Libro = () => {
                     <div className="demoPage">Page 7</div>
 
                 </HTMLFlipBook>
-                <button className="carousel-control-next d-none d-sm-block d-md-none" type="button" onClick={() => book.current.pageFlip().flipNext()}><span className="carousel-control-next-icon" aria-hidden="true"></span></button>
+                <button className="carousel-control-next d-none d-sm-block d-lg-none" type="button" onClick={() => book.current.pageFlip().flipNext()}><span className="carousel-control-next-icon" aria-hidden="true"></span></button>
             </div>
 
             <div className="mt-3 text-center d-flex justify-content-center">
-                <button className="btn btn-primary mx-3 d-sm-none d-md-block" onClick={() => book.current.pageFlip().flipPrev()}>Atras</button>
-                <button className="btn btn-primary mx-3 d-sm-none d-md-block" onClick={() => book.current.pageFlip().flipNext()}>Siguiente</button>
+                <button className="btn btn-primary mx-3 d-sm-none d-lg-block" onClick={() => book.current.pageFlip().flipPrev()}>Atras</button>
+                <button className="btn btn-primary mx-3 d-sm-none d-lg-block" onClick={() => book.current.pageFlip().flipNext()}>Siguiente</button>
             </div>
         </div>
     )
