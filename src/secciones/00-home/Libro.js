@@ -13,9 +13,9 @@ export const Libro = () => {
     const book = useRef();
 
     const responsiveWidth = () => {
-        if ( width <= 360) {
+        if ( width <= 450) {
             return 320
-        } else if (width <= 640) {
+        } else if (width <= 750) {
             return 480
         } else if (width <= 1600) {
             return 960   
@@ -25,9 +25,9 @@ export const Libro = () => {
     };
 
     const responsiveHeight = () => {
-        if ( width <= 360) {
+        if ( width <= 450) {
             return 180
-        } else if (width <= 640) {
+        } else if (width <= 750) {
             return 270
         } else if (width <= 1600) {
             return 540
