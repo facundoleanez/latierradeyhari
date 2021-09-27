@@ -21,7 +21,7 @@ export const Libro = () => {
             <div>
                 <button className="carousel-control-prev d-none d-sm-block d-lg-none" type="button" onClick={() => book.current.pageFlip().flipPrev()}><span className="carousel-control-prev-icon" aria-hidden="true"></span></button>
                 <HTMLFlipBook width={responsiveWidth(width)} height={responsiveHeight(width)}  useMouseEvents={false} ref={book}  autoSize={false}>
-                    <div className="demoPage"><video  src="static/Diapositivas PNG/0 - Portada.mp4" width="960" height="540" loop={true} autoPlay={true} /></div>
+                    <div className="demoPage"><video  src="static/Diapositivas PNG/0 - Portada.mp4" width={responsiveWidth(width)} height={responsiveHeight(width)} loop={true} autoPlay={true} /></div>
                     <img className="demoPage" src="static/Diapositivas PNG/1.png" alt="page-1"/>
                     <img className="demoPage" src="static/Diapositivas PNG/2.png" alt="page-2"/>
                     <img className="demoPage" src="static/Diapositivas PNG/3.png" alt="page-3"/>
