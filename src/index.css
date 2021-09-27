@@ -20,6 +20,9 @@
   color: #FF7A02;
   text-shadow: 0px 5px 10px  #111
 }
+h3 {
+  font-family: 'down-hill', sans-serif;
+}
 
 .bg-rosa {
   background-color: #FEC2C2;

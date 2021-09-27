@@ -28,7 +28,7 @@ export const Pag3 = () => {
             
             <>
                 <h3 className="m-3 m-md-5">MIRA Y HAZ CLICK EN LOS OBJETOS DE COLOR ROJO</h3>
-                <div className="row pt-md-5">
+                <div className="row pt-lg-5">
                     <div className="col-1"></div>
                     <div onClick={()=>{handleSelect(0)}} className={`col-2 border border-3 ${isSelected[0] ? "selected" : "border-dark"} bg-amarillo img-hover`} >
                         <img style={{width: "5vw"}} src='static/Elementosporseparado/2Coloresprimarios/Rojo/Helado.png' alt="img" />
