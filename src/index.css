@@ -70,7 +70,7 @@
 
 .selected {
   filter: drop-shadow(0 0 15px rgb(0, 0, 0));
-  border-color: green;
+  border-color: rgb(36, 255, 36) !important;
   
 }
 

@@ -8,7 +8,7 @@ import { Pag5 } from '../01-colores/Pag5';
 
 export const Libro = () => {
     
-    const {height, width} = useWindowDimensions();
+    const { width} = useWindowDimensions();
 
 
 
