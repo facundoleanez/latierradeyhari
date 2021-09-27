@@ -1,3 +1,26 @@
+@font-face {
+  font-family: down-hill;
+  src: url(fonts/DownHill.ttf);
+}
+@font-face {
+  font-family: DKLemonYellowSunl;
+  src: url(fonts/DKLemonYellowSun.otf);
+}
+@font-face {
+  font-family: KidsMonday;
+  src: url(fonts/KidsMonday.ttf);
+}
+@font-face {
+  font-family: Nathaniel-19;
+  src: url(fonts/Nathaniel-19.otf);
+}
+
+.main-brand {
+  font-family: 'Nathaniel-19', sans-serif;
+  color: #FF7A02;
+  text-shadow: 0px 5px 10px  #111
+}
+
 .bg-rosa {
   background-color: #FEC2C2;
 
@@ -50,5 +73,6 @@
   border-color: green;
   
 }
+
 
 
