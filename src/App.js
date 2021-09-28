@@ -10,7 +10,7 @@ function App() {
     <div className="App" >
 
       <TopBar/>
-      <div style={{height: "85vh"}} className="border position-relative overflo-hidden">
+      <div style={{height: "85vh"}} className="position-relative overflow-hidden">
         <Libro/>
       </div>
 
