@@ -22,7 +22,7 @@ export const Pag5 = ({height}) => {
             setIsSelected([false, false, false, false, false, false, false])
         }
     }, [isSelected])
-     console.log(height)
+
 
 
     return (

@@ -13,10 +13,10 @@ export const Libro = () => {
 
     return (
         <div className="position-absolute top-50 start-50 translate-middle">
-            <h3 className="d-sm-none text-center mb-5">Para una mejor experiencia gire la pantalla</h3>
+            <h3 className="d-sm-none text-center mb-5">Para una mejor experiencia gire la pantalla y recargue la pagina</h3>
             <div>
                 <button className="carousel-control-prev d-none d-sm-block d-lg-none" type="button" onClick={() => book.current.pageFlip().flipPrev()}><span className="carousel-control-prev-icon" aria-hidden="true"></span></button>
-                <HTMLFlipBook width={responsiveWidth(width)} height={responsiveHeight(width)}  useMouseEvents={false} ref={book}  autoSize={false}>
+                <HTMLFlipBook width={responsiveWidth(width)} height={responsiveHeight(width)}  useMouseEvents={false} ref={book}  autoSize={false} className="libro">
                     <div className="demoPage"><video  src="static/Diapositivas PNG/0 - Portada.mp4" width={responsiveWidth(width)} height={responsiveHeight(width)} loop={true} autoPlay={true} /></div>
                     <img className="demoPage" src="static/Diapositivas PNG/1.png" alt="page-1"/>
                     <img className="demoPage" src="static/Diapositivas PNG/2.png" alt="page-2"/>
@@ -24,7 +24,7 @@ export const Libro = () => {
                     <div className="demoPage  bg-rosa "><Pag3 /></div>
                     <div className="demoPage"><Pag5 height={responsiveHeight(width)}/></div>
 
-                    <div className="demoPage  bg-blanco"></div>
+                    <div className="demoPage  bg-blanco">fin</div>
                     <div className="demoPage  bg-violeta">Page 3</div>
                     <div className="demoPage bg-amarillo">Page 4</div>
 

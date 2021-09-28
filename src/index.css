@@ -24,6 +24,10 @@ h3 {
   font-family: 'KidsMonday', sans-serif;
 }
 
+.libro {
+  box-shadow: 10px 10px 20px  #111;
+}
+
 .bg-rosa {
   background-color: #FEC2C2;
 
