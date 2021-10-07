@@ -1,8 +1,13 @@
 import React, {useRef} from 'react';
 import HTMLFlipBook from 'react-pageflip';
 import useWindowDimensions, {responsiveWidth, responsiveHeight} from '../../hooks/useWindowDimensions';
+import { Pag10 } from '../01-colores/pag10';
 import { Pag4 } from '../01-colores/Pag4';
 import { Pag5 } from '../01-colores/Pag5';
+import { Pag7 } from '../01-colores/pag7';
+import { Pag8 } from '../01-colores/pag8';
+import { Pag11 } from '../01-colores/pag11';
+
 
 
 
@@ -17,16 +22,21 @@ export const Libro = () => {
             <div>
                 <button className="carousel-control-prev d-none d-sm-block d-lg-none" type="button" onClick={() => book.current.pageFlip().flipPrev()}><span className="carousel-control-prev-icon" aria-hidden="true"></span></button>
                 <HTMLFlipBook width={responsiveWidth(width)} height={responsiveHeight(width)}  useMouseEvents={false} ref={book}  autoSize={false} className="libro">
-                    
                     <div className="demoPage"><video  src="static/Diapositivas PNG/0 - Portada.mp4" width={responsiveWidth(width)} height={responsiveHeight(width)} loop={true} autoPlay={true} /></div>
                     <img className="demoPage" src="static/Diapositivas PNG/1.png" alt="page-1"/>
                     <img className="demoPage" src="static/Diapositivas PNG/2.png" alt="page-2"/>
                     <img className="demoPage" src="static/Diapositivas PNG/3.png" alt="page-3"/>
                     <div className="demoPage"><Pag4 /></div>
-                    <div className="demoPage"><Pag5 height={responsiveHeight(width)}/></div>
-
-                    <img className="demoPage" src="static/Diapositivas PNG/6.png" alt="page-3"/>
+                    <div className="demoPage"><Pag5 /></div>
+                    <img className="demoPage" src="static/Diapositivas PNG/6.png" alt="page-6"/>
+                    <div className="demoPage"><Pag7/></div>
+                    <div className="demoPage"><Pag8/></div>
                     <img className="demoPage" src="static/Diapositivas PNG/9.png" alt="page-3"/>
+                    <div className="demoPage"><Pag10/></div>
+                    <div className="demoPage"><Pag11/></div>
+
+
+
                     <div className="demoPage"><video  src="static/Diapositivas PNG/13 ANIMADA.mp4" width={responsiveWidth(width)} height={responsiveHeight(width)} loop={true} autoPlay={true} /></div>
                     <img className="demoPage" src="static/Diapositivas PNG/14.png" alt="page-3"/>
                     <img className="demoPage" src="static/Diapositivas PNG/20.png" alt="page-3"/>
