@@ -3,7 +3,7 @@ import HTMLFlipBook from 'react-pageflip';
 import useWindowDimensions, {responsiveWidth, responsiveHeight} from '../../hooks/useWindowDimensions';
 import { Pag4 } from '../01-colores/Pag4';
 import { Pag5 } from '../01-colores/Pag5';
-import { Pag7 } from '../01-colores/Pag7.js';
+import { Pag7 } from '../01-colores/Pag7';
 import { Pag8 } from '../01-colores/Pag8';
 import { Pag10 } from '../01-colores/Pag10';
 import { Pag11 } from '../01-colores/Pag11';
@@ -18,17 +18,12 @@ export const Libro = () => {
     
     const { width} = useWindowDimensions();
     const book = useRef();
-    const [bookDimension, setBookDimension] = useState({w:responsiveWidth(width), h:responsiveHeight(width)})
-    useEffect(() => {
-        setBookDimension({w:responsiveWidth(width), h:responsiveHeight(width)})
-    }, [width])
-    
     return (
         <div className="position-absolute top-50 start-50 translate-middle">
             <h3 className="d-sm-none text-center mb-5">Para una mejor experiencia gire la pantalla y recargue la pagina</h3>
             <div>
                 <button className="carousel-control-prev d-none d-sm-block d-lg-none" type="button" onClick={() => book.current.pageFlip().flipPrev()}><span className="carousel-control-prev-icon" aria-hidden="true"></span></button>
-                <HTMLFlipBook width={bookDimension.w} height={bookDimension.h}  useMouseEvents={false} ref={book}  autoSize={true} className="libro">
+                <HTMLFlipBook width={responsiveWidth(width)} height={responsiveHeight(width)}  useMouseEvents={false} ref={book}  autoSize={true} className="libro">
                     
                     
                     <div className="demoPage"><video  src="static/Diapositivas PNG/0 - Portada.mp4" width={responsiveWidth(width)} height={responsiveHeight(width)} loop={true} autoPlay={true} /></div>
