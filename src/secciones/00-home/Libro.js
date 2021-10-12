@@ -2,8 +2,6 @@ import React, {useRef} from 'react';
 import HTMLFlipBook from 'react-pageflip';
 import useWindowDimensions, {responsiveWidth, responsiveHeight} from '../../hooks/useWindowDimensions';
 import { Pag4, Pag5, Pag7, Pag8, Pag10, Pag11 } from '../01-colores';
-import { Pag10 } from '../01-colores/Pag10';
-import { Pag11 } from '../01-colores/Pag11';
 import { Pag14 } from '../02-espacio/Pag14';
 import { Pag15 } from '../02-espacio/Pag15';
 import { Pag16 } from '../02-espacio/Pag16';
