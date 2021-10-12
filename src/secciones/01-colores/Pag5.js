@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { BienHecho } from '../../../components/BienHecho';
+import { BienHecho } from '../../components/BienHecho';
 
 export const Pag5 = () => {
 
