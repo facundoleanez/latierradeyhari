@@ -1,11 +1,11 @@
 import React, {useRef, useState} from 'react';
 import HTMLFlipBook from 'react-pageflip';
 import useWindowDimensions, {responsiveWidth, responsiveHeight} from '../../hooks/useWindowDimensions';
-import { Pag10 } from '../01-colores/Pag10';
 import { Pag4 } from '../01-colores/Pag4';
 import { Pag5 } from '../01-colores/Pag5';
 import { Pag7 } from '../01-colores/Pag7';
 import { Pag8 } from '../01-colores/Pag8';
+import { Pag10 } from '../01-colores/Pag10';
 import { Pag11 } from '../01-colores/Pag11';
 import { Pag14 } from '../02-espacio/Pag14';
 import { Pag15 } from '../02-espacio/Pag15';
@@ -16,10 +16,6 @@ import { Pag19 } from '../02-espacio/Pag19';
 
 import { useEffect } from 'react';
 
-
-
-
-
 export const Libro = () => {
     
     const { width} = useWindowDimensions();
@@ -28,6 +24,7 @@ export const Libro = () => {
     useEffect(() => {
         setBookDimension({w:responsiveWidth(width), h:responsiveHeight(width)})
     }, [width])
+    
     return (
         <div className="position-absolute top-50 start-50 translate-middle">
             <h3 className="d-sm-none text-center mb-5">Para una mejor experiencia gire la pantalla y recargue la pagina</h3>
@@ -58,7 +55,7 @@ export const Libro = () => {
                     <div className="demoPage"><Pag19/></div>
                     <img className="demoPage" src="static/Diapositivas PNG/20.png" alt="page-3"/>
                     <img className="demoPage" src="static/Diapositivas PNG/21.png" alt="page-3"/>
-                    
+
 
 
                    
@@ -110,13 +107,6 @@ export const Libro = () => {
                     <img className="demoPage" src="static/Diapositivas PNG/167.png" alt="page-3"/>
                     <img className="demoPage" src="static/Diapositivas PNG/168.png" alt="page-3"/>
                     <img className="demoPage" src="static/Diapositivas PNG/169.png" alt="page-3"/>
-
-
-
-
-
-
-
                 </HTMLFlipBook>
                 <button className="carousel-control-next d-none d-sm-block d-lg-none" type="button" onClick={() => book.current.pageFlip().flipNext()}><span className="carousel-control-next-icon" aria-hidden="true"></span></button>
             </div>
