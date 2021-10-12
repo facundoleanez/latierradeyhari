@@ -3,7 +3,7 @@ import HTMLFlipBook from 'react-pageflip';
 import useWindowDimensions, {responsiveWidth, responsiveHeight} from '../../hooks/useWindowDimensions';
 import { Pag4 } from '../01-colores/Pag4';
 import { Pag5 } from '../01-colores/Pag5';
-import { Pag7 } from '../01-colores/Pag7';
+import { Pag7 } from '../01-colores/Pag7.js';
 import { Pag8 } from '../01-colores/Pag8';
 import { Pag10 } from '../01-colores/Pag10';
 import { Pag11 } from '../01-colores/Pag11';
