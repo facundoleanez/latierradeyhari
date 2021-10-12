@@ -1,4 +1,4 @@
-import React, {useRef, useState} from 'react';
+import React, {useRef, useState, useEffect} from 'react';
 import HTMLFlipBook from 'react-pageflip';
 import useWindowDimensions, {responsiveWidth, responsiveHeight} from '../../hooks/useWindowDimensions';
 import { Pag4 } from '../01-colores/Pag4';
@@ -13,8 +13,6 @@ import { Pag16 } from '../02-espacio/Pag16';
 import { Pag17 } from '../02-espacio/Pag17';
 import { Pag18 } from '../02-espacio/Pag18';
 import { Pag19 } from '../02-espacio/Pag19';
-
-import { useEffect } from 'react';
 
 export const Libro = () => {
     
