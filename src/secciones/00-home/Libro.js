@@ -1,12 +1,21 @@
-import React, {useRef} from 'react';
+import React, {useRef, useState} from 'react';
 import HTMLFlipBook from 'react-pageflip';
 import useWindowDimensions, {responsiveWidth, responsiveHeight} from '../../hooks/useWindowDimensions';
-import { Pag10 } from '../01-colores/pag10';
+import { Pag10 } from '../01-colores/Pag10';
 import { Pag4 } from '../01-colores/Pag4';
 import { Pag5 } from '../01-colores/Pag5';
-import { Pag7 } from '../01-colores/pag7';
-import { Pag8 } from '../01-colores/pag8';
-import { Pag11 } from '../01-colores/pag11';
+import { Pag7 } from '../01-colores/Pag7';
+import { Pag8 } from '../01-colores/Pag8';
+import { Pag11 } from '../01-colores/Pag11';
+import { Pag14 } from '../02-espacio/Pag14';
+import { Pag15 } from '../02-espacio/Pag15';
+import { Pag16 } from '../02-espacio/Pag16';
+import { Pag17 } from '../02-espacio/Pag17';
+import { Pag18 } from '../02-espacio/Pag18';
+import { Pag19 } from '../02-espacio/Pag19';
+
+import { useEffect } from 'react';
+
 
 
 
@@ -15,13 +24,18 @@ export const Libro = () => {
     
     const { width} = useWindowDimensions();
     const book = useRef();
-
+    const [bookDimension, setBookDimension] = useState({w:responsiveWidth(width), h:responsiveHeight(width)})
+    useEffect(() => {
+        setBookDimension({w:responsiveWidth(width), h:responsiveHeight(width)})
+    }, [width])
     return (
         <div className="position-absolute top-50 start-50 translate-middle">
             <h3 className="d-sm-none text-center mb-5">Para una mejor experiencia gire la pantalla y recargue la pagina</h3>
             <div>
                 <button className="carousel-control-prev d-none d-sm-block d-lg-none" type="button" onClick={() => book.current.pageFlip().flipPrev()}><span className="carousel-control-prev-icon" aria-hidden="true"></span></button>
-                <HTMLFlipBook width={responsiveWidth(width)} height={responsiveHeight(width)}  useMouseEvents={false} ref={book}  autoSize={false} className="libro">
+                <HTMLFlipBook width={bookDimension.w} height={bookDimension.h}  useMouseEvents={false} ref={book}  autoSize={true} className="libro">
+                    
+                    
                     <div className="demoPage"><video  src="static/Diapositivas PNG/0 - Portada.mp4" width={responsiveWidth(width)} height={responsiveHeight(width)} loop={true} autoPlay={true} /></div>
                     <img className="demoPage" src="static/Diapositivas PNG/1.png" alt="page-1"/>
                     <img className="demoPage" src="static/Diapositivas PNG/2.png" alt="page-2"/>
@@ -31,16 +45,23 @@ export const Libro = () => {
                     <img className="demoPage" src="static/Diapositivas PNG/6.png" alt="page-6"/>
                     <div className="demoPage"><Pag7/></div>
                     <div className="demoPage"><Pag8/></div>
-                    <img className="demoPage" src="static/Diapositivas PNG/9.png" alt="page-3"/>
+                    <img className="demoPage" src="static/Diapositivas PNG/9.png" alt="page-9"/>
                     <div className="demoPage"><Pag10/></div>
                     <div className="demoPage"><Pag11/></div>
-
-
-
+                    <img className="demoPage" src="static/Diapositivas PNG/12.png" alt="page-12"/>
                     <div className="demoPage"><video  src="static/Diapositivas PNG/13 ANIMADA.mp4" width={responsiveWidth(width)} height={responsiveHeight(width)} loop={true} autoPlay={true} /></div>
-                    <img className="demoPage" src="static/Diapositivas PNG/14.png" alt="page-3"/>
+                    <div className="demoPage"><Pag14/></div>
+                    <div className="demoPage"><Pag15/></div>
+                    <div className="demoPage"><Pag16/></div>
+                    <div className="demoPage"><Pag17/></div>
+                    <div className="demoPage"><Pag18/></div>
+                    <div className="demoPage"><Pag19/></div>
                     <img className="demoPage" src="static/Diapositivas PNG/20.png" alt="page-3"/>
                     <img className="demoPage" src="static/Diapositivas PNG/21.png" alt="page-3"/>
+                    
+
+
+                   
                     <img className="demoPage" src="static/Diapositivas PNG/24.png" alt="page-3"/>
                     <img className="demoPage" src="static/Diapositivas PNG/26.png" alt="page-3"/>
                     <img className="demoPage" src="static/Diapositivas PNG/32.png" alt="page-3"/>
