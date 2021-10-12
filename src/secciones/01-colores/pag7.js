@@ -25,8 +25,6 @@ export const Pag7 = () => {
     return (
         <div className="container text-center">
             { completed ? ( <BienHecho setCompleted={setCompleted}/> ) :
-            
-            <>
                 <div className="row">
                     <img className="position-absolute p-0" src="static/Diapositivas PNG/7.png" alt="pag-4" />
                     <div className="position-absolute top-50 start-50 translate-middle" style={{zIndex:2}}>
@@ -71,7 +69,6 @@ export const Pag7 = () => {
                         </div>
                     </div>
                 </div>
-            </>
             }
         </div>
     )
