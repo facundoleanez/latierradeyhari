@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { BienHecho } from '../../components/BienHecho';
 
-export const Pag10 = () => {
+export const Pag10 = ({playBad, playGood}) => {
 
     const [isSelected, setIsSelected] = useState([false, false, false, false, false])
     const [completed, setCompleted] = useState(false);
@@ -12,11 +12,13 @@ export const Pag10 = () => {
     const handleClickWrong = () => {
         setGood(false);
         setWrong(true);
+        playBad();
     }
 
     const handleSelect = (i) => {
       setIsSelected((prevState) => prevState.map((item,index) => {
           setGood(true);
+          playGood();
           if (index === i) {
               return true
           }
