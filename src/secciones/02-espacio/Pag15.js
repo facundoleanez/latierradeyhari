@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { useState } from 'react'
 import { BienHecho } from '../../components/BienHecho'
 
-export const Pag15 = () => {
+export const Pag15 = ({playBad, playGood}) => {
 
     const [completed, setCompleted] = useState(false);
     const [good, setGood] = useState(false);
@@ -12,11 +12,13 @@ export const Pag15 = () => {
     const handleClickTrue = () => {
         setCompleted(true);
         setGood(true);
-        setWrong(false)
+        setWrong(false);
+        playGood()
     }
     const handleClickWrong = () => {
         setGood(false);
         setWrong(true);
+        playBad()
     }
     useEffect(() => {
         if (wrong) {
