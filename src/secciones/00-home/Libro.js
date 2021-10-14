@@ -17,13 +17,22 @@ import { Pag17 } from '../02-espacio/Pag17';
 import { Pag18 } from '../02-espacio/Pag18';
 import { Pag19 } from '../02-espacio/Pag19';
 import { Pag22 } from '../03-formas/Pag22';
+import { Pag23 } from '../03-formas/Pag23';
+import { Pag24 } from '../03-formas/Pag24b';
+import { Pag27 } from '../03-formas/Pag27';
 
 import badSound from '../../sounds/bad.mp3';
 import goodSound from '../../sounds/good.mp3';
+import { Pag25 } from '../03-formas/Pag25';
+import { Pag28 } from '../03-formas/Pag28';
+import { Pag29 } from '../03-formas/Pag29';
+import { Pag30 } from '../03-formas/Pag30';
+import { Pag31 } from '../03-formas/Pag31';
+
 
 export const Libro = () => {
     
-    const { width} = useWindowDimensions();
+    const { width } = useWindowDimensions();
     const book = useRef();
     const [playBad] = useSound(badSound);
     const [playGood] = useSound(goodSound);
@@ -32,9 +41,12 @@ export const Libro = () => {
         <div className="position-absolute top-50 start-50 translate-middle">
             <h3 className="d-sm-none text-center mb-5">Para una mejor experiencia gire la pantalla y recargue la pagina</h3>
             <div>
-                <button className="carousel-control-prev d-none d-sm-block d-lg-none" type="button" onClick={() => book.current.pageFlip().flipPrev()}><span className="carousel-control-prev-icon" aria-hidden="true"></span></button>
+                <button className="carousel-control-prev position-absolute top-50 start-0 translate-middle" type="button" onClick={() => book.current.pageFlip().flipPrev()}>
+                    <span className="carousel-control-prev-icon position-absolute top-50 start-0 translate-middle-y border border-dark ml-5 btn-secondary" aria-hidden="true"></span>
+                </button>
                 <HTMLFlipBook width={responsiveWidth(width)} height={responsiveHeight(width)}  useMouseEvents={false} ref={book}  autoSize={true} className="libro">
-                    
+
+                
 
                     <div className="demoPage"><video  src="static/Diapositivas PNG/0 - Portada.mp4" width={responsiveWidth(width)} height={responsiveHeight(width)} loop={true} autoPlay={true} /></div>
                     <img className="demoPage" src="static/Diapositivas PNG/1.png" alt="page-1"/>
@@ -49,7 +61,7 @@ export const Libro = () => {
                     <div className="demoPage"><Pag10 playBad={playBad} playGood={playGood}/></div>
                     <div className="demoPage"><Pag11 playBad={playBad} playGood={playGood}/></div>
                     <img className="demoPage" src="static/Diapositivas PNG/12.png" alt="page-12"/>
-                    <div className="demoPage"><video  src="static/Diapositivas PNG/13 ANIMADA.mp4" width={responsiveWidth(width)} height={responsiveHeight(width)} loop={true} autoPlay={true} /></div>
+                    {/* <div className="demoPage"><video  src="static/Diapositivas PNG/13 ANIMADA.mp4" width={responsiveWidth(width)} height={responsiveHeight(width)} loop={true} autoPlay={true} /></div> */}
                     <div className="demoPage"><Pag14 playBad={playBad} playGood={playGood}/></div>
                     <div className="demoPage"><Pag15 playBad={playBad} playGood={playGood}/></div>
                     <div className="demoPage"><Pag16 playBad={playBad} playGood={playGood}/></div>
@@ -59,20 +71,26 @@ export const Libro = () => {
                     <img className="demoPage" src="static/Diapositivas PNG/20.png" alt="page-3"/>
                     <img className="demoPage" src="static/Diapositivas PNG/21.png" alt="page-3"/>
                     <div className="demoPage"><Pag22 playBad={playBad} playGood={playGood}/></div>
-
-
-
-{/*                    
+                    <div className="demoPage"><Pag23 playBad={playBad} playGood={playGood}/></div> 
                     <img className="demoPage" src="static/Diapositivas PNG/24.png" alt="page-3"/>
+                    <div className="demoPage"><Pag24 playBad={playBad} playGood={playGood}/></div>
+                    <div className="demoPage"><Pag25 playBad={playBad} playGood={playGood}/></div> 
                     <img className="demoPage" src="static/Diapositivas PNG/26.png" alt="page-3"/>
+                    <div className="demoPage"><Pag27 playBad={playBad} playGood={playGood}/></div> 
+                    <div className="demoPage"><Pag28 playBad={playBad} playGood={playGood}/></div> 
+                    <div className="demoPage"><Pag29 playBad={playBad} playGood={playGood}/></div> 
+                    <div className="demoPage"><Pag30 playBad={playBad} playGood={playGood}/></div>
+                    <div className="demoPage"><Pag31 playBad={playBad} playGood={playGood}/></div>
                     <img className="demoPage" src="static/Diapositivas PNG/32.png" alt="page-3"/>
                     <img className="demoPage" src="static/Diapositivas PNG/33.png" alt="page-3"/>
+
                     <img className="demoPage" src="static/Diapositivas PNG/36.png" alt="page-3"/>
                     <img className="demoPage" src="static/Diapositivas PNG/38.png" alt="page-3"/>
                     <img className="demoPage" src="static/Diapositivas PNG/43.png" alt="page-3"/>
                     <img className="demoPage" src="static/Diapositivas PNG/48.png" alt="page-3"/>
                     <img className="demoPage" src="static/Diapositivas PNG/53.png" alt="page-3"/>
                     <img className="demoPage" src="static/Diapositivas PNG/58.png" alt="page-3"/>
+{/*                    
                     <div className="demoPage"><video  src="static/Diapositivas PNG/63 ANIMADA.mp4" width={responsiveWidth(width)} height={responsiveHeight(width)} loop={true} autoPlay={true} /></div>
                     <img className="demoPage" src="static/Diapositivas PNG/69.png" alt="page-3"/>
                     <img className="demoPage" src="static/Diapositivas PNG/70.png" alt="page-3"/>
@@ -112,11 +130,13 @@ export const Libro = () => {
                     <img className="demoPage" src="static/Diapositivas PNG/168.png" alt="page-3"/>
                     <img className="demoPage" src="static/Diapositivas PNG/169.png" alt="page-3"/> */}
                 </HTMLFlipBook>
-                <button className="carousel-control-next d-none d-sm-block d-lg-none" type="button" onClick={() => book.current.pageFlip().flipNext()}><span className="carousel-control-next-icon" aria-hidden="true"></span></button>
+                <button className="carousel-control-next position-absolute top-50 start-100 translate-middle" type="button" onClick={() => book.current.pageFlip().flipNext()}>
+                    <span className="carousel-control-next-icon position-absolute top-50 end-0 translate-middle-y border border-dark btn-secondary" aria-hidden="true" ></span>
+                </button>
             </div>
             <div className="mt-3 text-center d-flex justify-content-center">
-                <button className="btn btn-primary mx-3 d-sm-none d-lg-block" onClick={() => book.current.pageFlip().flipPrev()}>Atras</button>
-                <button className="btn btn-primary mx-3 d-sm-none d-lg-block" onClick={() => book.current.pageFlip().flipNext()}>Siguiente</button>
+                {/* <button className="btn btn-primary mx-3 d-sm-none d-lg-block" onClick={() => book.current.pageFlip().flipPrev()}>Atras</button>
+                <button className="btn btn-primary mx-3 d-sm-none d-lg-block" onClick={() => book.current.pageFlip().flipNext()}>Siguiente</button> */}
             </div>
         </div>
     )

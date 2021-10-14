@@ -39,36 +39,12 @@ h3 {
   );
 
 }
-.bg-violeta {
-  background-color: #CFCDFE;
 
-  background-image: repeating-linear-gradient(
-    #bebebe 0,
-    #bebebe 1px,
-    transparent 1px,
-    transparent 40px
-  );
-}
 .bg-amarillo {
   background-color: #FFF6AD;
 
-  background-image: repeating-linear-gradient(
-    #bebebe 0,
-    #bebebe 1px,
-    transparent 1px,
-    transparent 40px
-  );
 }
-.bg-blanco {
-  background-color: #f5f5f1;
 
-  background-image: repeating-linear-gradient(
-    #bebebe 0,
-    #bebebe 1px,
-    transparent 1px,
-    transparent 40px
-  );
-}
 
 .img-hover:hover {
   cursor: pointer;

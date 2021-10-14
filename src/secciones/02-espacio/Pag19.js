@@ -37,10 +37,10 @@ export const Pag19 = () => {
                     
                     
                     <div className="d-flex flex-column position-absolute top-50 end-0 translate-middle-y mx-3 " style={{zIndex:1}}>
-                        <p className="btn btn-primary" style={{fontSize:"1vw"}} onClick={()=>{handleClickWrong()}}>ARRIBA DE LOS ARBOLES</p>
-                        <p className="btn btn-warning" style={{fontSize:"1vw"}} onClick={()=>{handleClickWrong()}}>DENTRO DE LOS ARBOLES</p>
-                        <p className="btn btn-success" style={{fontSize:"1vw"}} onClick={()=>{handleClickTrue()}}>EN EL MEDIO <br/>DE LOS ARBOLES</p>
-                        <p className="btn btn-danger" style={{fontSize:"1vw"}} onClick={()=>{handleClickWrong()}}>AL LADO IZQUIERDO <br/> DE LOS ARBOLES</p>                     
+                        <p className="btn btn-primary" style={{fontSize:"1.3vw"}} onClick={()=>{handleClickWrong()}}>ARRIBA DE LOS ARBOLES</p>
+                        <p className="btn btn-warning" style={{fontSize:"1.3vw"}} onClick={()=>{handleClickWrong()}}>DENTRO DE LOS ARBOLES</p>
+                        <p className="btn btn-success" style={{fontSize:"1.3vw"}} onClick={()=>{handleClickTrue()}}>EN EL MEDIO <br/>DE LOS ARBOLES</p>
+                        <p className="btn btn-danger" style={{fontSize:"1.3vw"}} onClick={()=>{handleClickWrong()}}>AL LADO IZQUIERDO <br/> DE LOS ARBOLES</p>                     
                     </div>
                 </div>
             </div> 

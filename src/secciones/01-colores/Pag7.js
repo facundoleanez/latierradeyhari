@@ -56,14 +56,14 @@ export const Pag7 = ({playBad, playGood}) => {
                             <div  onClick={()=>{handleSelect(0)}} className={`col-2 border  p-2 ${isSelected[0] ? "selected" : "border-dark"} bg-amarillo img-hover`} >
                                 <img style={{width: "4vw"}} src='static/Elementosporseparado/2Coloresprimarios/Azul/libro.png' alt="img" />
                             </div>
-                            <div  className="col-2 border   border-dark bg-amarillo p-2" onClick={()=>{handleClickWrong()}}>
+                            <div  className="col-2 border border-dark bg-amarillo p-2 img-hover" onClick={()=>{handleClickWrong()}}>
                                 <img style={{width: "4vw"}} src='/static/Elementosporseparado/2Coloresprimarios/Azul/oso.png' alt="img" />
 
                             </div>
-                            <div onClick={()=>{handleSelect(1)}} className={`col-2 border   p-2 ${isSelected[1] ? "selected" : "border-dark"} bg-amarillo img-hover`}>
+                            <div onClick={()=>{handleSelect(1)}} className={`col-2 border p-2 ${isSelected[1] ? "selected" : "border-dark"} bg-amarillo img-hover`}>
                                 <img style={{width: "4vw"}} src='/static/Elementosporseparado/2Coloresprimarios/Azul/sonajero.png' alt="img" />
                             </div>
-                            <div className="col-2 border   border-dark bg-amarillo p-2" onClick={()=>{handleClickWrong()}}>
+                            <div className="col-2 border border-dark bg-amarillo p-2 img-hover" onClick={()=>{handleClickWrong()}}>
                                 <img style={{width: "4vw"}} src='/static/Elementosporseparado/2Coloresprimarios/Azul/frasco.png' alt="img" />
                             </div>
                             <div onClick={()=>{handleSelect(2)}} className={`col-2 border   p-2 ${isSelected[2] ? "selected" : "border-dark"} bg-amarillo img-hover`}>
@@ -72,21 +72,21 @@ export const Pag7 = ({playBad, playGood}) => {
                         </div>
                         <div className="row">
                             <div className="col-1"></div>
-                            <div className="col-2 border   border-dark bg-amarillo p-2" onClick={()=>{handleClickWrong()}}>
+                            <div className="col-2 border   border-dark bg-amarillo p-2 img-hover" onClick={()=>{handleClickWrong()}}>
                                 <img style={{width: "4vw"}} src='/static/Elementosporseparado/2Coloresprimarios/Azul/reloj.png' alt="img" />
                             </div>
                             <div onClick={()=>{handleSelect(3)}} className={`col-2 border   p-2 ${isSelected[3] ? "selected" : "border-dark"} bg-amarillo img-hover`}>
                                 <img style={{width: "4vw"}} src='/static/Elementosporseparado/2Coloresprimarios/Azul/auto.png' alt="img" />
 
                             </div>
-                            <div className="col-2 border   border-dark bg-amarillo p-2" onClick={()=>{handleClickWrong()}}>
+                            <div className="col-2 border   border-dark bg-amarillo p-2 img-hover" onClick={()=>{handleClickWrong()}}>
                                 <img style={{width: "4vw"}} src='/static/Elementosporseparado/2Coloresprimarios/Azul/muffin.png' alt="img"/>
 
                             </div>
                             <div onClick={()=>{handleSelect(4)}} className={`col-2 border   p-2 ${isSelected[4] ? "selected" : "border-dark"} bg-amarillo img-hover`}>
                                 <img style={{width: "4vw"}} src='/static/Elementosporseparado/2Coloresprimarios/Azul/sombrero.png' alt="img"/>
                             </div>
-                            <div className="col-2 border   border-dark bg-amarillo p-2" onClick={()=>{handleClickWrong()}}>
+                            <div className="col-2 border   border-dark bg-amarillo p-2 img-hover" onClick={()=>{handleClickWrong()}}>
                                 <img style={{width: "4vw"}} src='/static/Elementosporseparado/2Coloresprimarios/Azul/cohete.png' alt="img"/>
                             </div>
                         </div>

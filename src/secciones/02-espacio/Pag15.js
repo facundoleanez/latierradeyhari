@@ -37,10 +37,10 @@ export const Pag15 = () => {
                     
                     
                     <div className="d-flex flex-column position-absolute top-50 start-0 translate-middle-y mx-3 " style={{zIndex:1}}>
-                        <p className="btn btn-success" style={{fontSize:"1vw"}} onClick={()=>{handleClickTrue()}}>ARRIBA DE LA MESA</p>
-                        <p className="btn btn-primary" style={{fontSize:"1vw"}} onClick={()=>{handleClickWrong()}}>DEBAJO DE LA MESA</p>
-                        <p className="btn btn-warning" style={{fontSize:"1vw"}} onClick={()=>{handleClickWrong()}}>AL LADO DE LA MESA</p>
-                        <p className="btn btn-danger" style={{fontSize:"1vw"}} onClick={()=>{handleClickWrong()}}>DETRÁS DE LA MESA</p>                     
+                        <p className="btn btn-success" style={{fontSize:"1.3vw"}} onClick={()=>{handleClickTrue()}}>ARRIBA DE LA MESA</p>
+                        <p className="btn btn-primary" style={{fontSize:"1.3vw"}} onClick={()=>{handleClickWrong()}}>DEBAJO DE LA MESA</p>
+                        <p className="btn btn-warning" style={{fontSize:"1.3vw"}} onClick={()=>{handleClickWrong()}}>AL LADO DE LA MESA</p>
+                        <p className="btn btn-danger" style={{fontSize:"1.3vw"}} onClick={()=>{handleClickWrong()}}>DETRÁS DE LA MESA</p>                     
                     </div>
                 </div>
             </div> 
