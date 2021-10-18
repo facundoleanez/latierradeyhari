@@ -13,7 +13,7 @@ function App() {
 
       <TopBar/>
 
-      <button onClick={handle.enter} style={{zIndex:3}}>
+      <button className="btn btn-dark position-absolute justify-content-center" onClick={handle.enter} style={{zIndex:4}}>
         Enter fullscreen
       </button>
       
