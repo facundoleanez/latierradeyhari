@@ -3,7 +3,8 @@ import HTMLFlipBook from 'react-pageflip';
 import useSound from 'use-sound';
 
 
-import useWindowDimensions, {responsiveWidth, responsiveHeight} from '../../hooks/useWindowDimensions';
+
+import useWindowDimensions from '../../hooks/useWindowDimensions';
 import { Pag4 } from '../01-colores/Pag4';
 import { Pag5 } from '../01-colores/Pag5';
 import { Pag7 } from '../01-colores/Pag7';
@@ -61,10 +62,14 @@ import { Pag68 } from '../04-num-0-5/Pag68';
 
 export const Libro = () => {
     
-    const { width } = useWindowDimensions();
+    const { width, height } = useWindowDimensions();
+    const widthBook = width *0.85 ;
+    const heightBook = (width *0.56)*0.85;
+
     const book = useRef();
     const [playBad] = useSound(badSound);
     const [playGood] = useSound(goodSound);
+    console.log(height, width);
 
     return (
         <div className="position-absolute top-50 start-50 translate-middle">
@@ -73,10 +78,10 @@ export const Libro = () => {
                 <button className="carousel-control-prev position-absolute top-50 start-0 translate-middle" type="button" onClick={() => book.current.pageFlip().flipPrev()}>
                     <span className="carousel-control-prev-icon position-absolute top-50 start-0 translate-middle-y border border-dark ml-5 btn-secondary" aria-hidden="true"></span>
                 </button>
-                <HTMLFlipBook width={responsiveWidth(width)} height={responsiveHeight(width)}  useMouseEvents={false} ref={book}  autoSize={true} className="libro">
+                <HTMLFlipBook width={widthBook} height={heightBook}  useMouseEvents={false} ref={book}  autoSize={true} className="libro">
                     
                     
-                    <div className="demoPage"><video  src="static/Diapositivas PNG/0 - Portada.mp4" width={responsiveWidth(width)} height={responsiveHeight(width)} loop={true} autoPlay={true} /></div>
+                    <div className="demoPage"><video  src="static/Diapositivas PNG/0 - Portada.mp4" loop={true} autoPlay={true} width={widthBook} height={heightBook}/></div>
                     <img className="demoPage" src="static/Diapositivas PNG/1.png" alt="page-1"/>
                     <img className="demoPage" src="static/Diapositivas PNG/2.png" alt="page-2"/>
                     <img className="demoPage" src="static/Diapositivas PNG/3.png" alt="page-3"/>
