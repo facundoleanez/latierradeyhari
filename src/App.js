@@ -12,8 +12,8 @@ function App() {
     <div className="App" >
 
       <TopBar/>
-      
-      <button onClick={handle.enter}>
+
+      <button onClick={handle.enter} style={{zIndex:3}}>
         Enter fullscreen
       </button>
       
