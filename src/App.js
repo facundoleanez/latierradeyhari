@@ -1,4 +1,5 @@
 import { FullScreen, useFullScreenHandle } from "react-full-screen";
+import { LibroPortada } from "./components/LibroPortada";
 import { Footer } from "./secciones/00-home/Footer";
 import { Libro } from "./secciones/00-home/Libro";
 import { TopBar } from "./secciones/00-home/TopBar";
@@ -8,17 +9,18 @@ import { TopBar } from "./secciones/00-home/TopBar";
 function App() {
 
   const handle = useFullScreenHandle();
+  
   return (
     <div className="App" >
 
       <TopBar/>
 
-      <button className="btn btn-dark position-absolute justify-content-center" onClick={handle.enter} style={{zIndex:4}}>
-        Enter fullscreen
-      </button>
+      <div className="img-hover text-center p-5" onClick={handle.enter}>
+        <LibroPortada />
+      </div>
       
       <FullScreen handle={handle} >
-        <Libro />
+        {handle.active && <Libro />}
       </FullScreen>
       
 

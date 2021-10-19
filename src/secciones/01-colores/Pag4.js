@@ -57,40 +57,40 @@ export const Pag4 = ({playBad, playGood}) => {
                         <div className="row mt-3" >
                             <div className="col-1"></div>
                             <div onClick={()=>{handleSelect(0)}} className={`col-2 border p-2 ${isSelected[0] ? "selected" : "border-dark"} bg-amarillo img-hover`} >
-                                <img style={{width: " 4.5vw"}} src='static/Elementosporseparado/2Coloresprimarios/Rojo/Helado.png' alt="img" />
+                                <img style={{width: "8vw"}} src='static/Elementosporseparado/2Coloresprimarios/Rojo/Helado.png' alt="img" />
                             </div>
                             <div  className="col-2 border border-dark bg-amarillo p-2 img-hover" onClick={()=>{handleClickWrong()}}>
-                                <img style={{width: " 4.5vw"}} src='/static/Elementosporseparado/2Coloresprimarios/Rojo/Regalo.png' alt="img" />
+                                <img style={{width: "8vw"}} src='/static/Elementosporseparado/2Coloresprimarios/Rojo/Regalo.png' alt="img" />
 
                             </div>
                             <div onClick={()=>{handleSelect(1)}} className={`col-2 border p-2 ${isSelected[1] ? "selected" : "border-dark"} bg-amarillo img-hover`}>
-                                <img style={{width: " 4.5vw"}} src='/static/Elementosporseparado/2Coloresprimarios/Rojo/Botón.png' alt="img" />
+                                <img style={{width: "8vw"}} src='/static/Elementosporseparado/2Coloresprimarios/Rojo/Botón.png' alt="img" />
                             </div> 
                             <div className="col-2 border   border-dark bg-amarillo p-2 img-hover" onClick={()=>{handleClickWrong()}}>
-                                <img style={{width: " 4.5vw"}} src='/static/Elementosporseparado/2Coloresprimarios/Rojo/Paraguas.png' alt="img" />
+                                <img style={{width: "8vw"}} src='/static/Elementosporseparado/2Coloresprimarios/Rojo/Paraguas.png' alt="img" />
                             </div>
                             <div onClick={()=>{handleSelect(2)}} className={`col-2 border   p-2 ${isSelected[2] ? "selected" : "border-dark"} bg-amarillo img-hover`}>
-                                <img style={{width: " 4.5vw"}} src='/static/Elementosporseparado/2Coloresprimarios/Rojo/Crayón.png' alt="img" />
+                                <img style={{width: "8vw"}} src='/static/Elementosporseparado/2Coloresprimarios/Rojo/Crayón.png' alt="img" />
                             </div>
                         </div>
                         <div className="row">
                             <div className="col-1"></div>
                             <div className="col-2 border   border-dark bg-amarillo p-2 img-hover" onClick={()=>{handleClickWrong()}}>
-                                <img style={{width: " 5vw"}} src='/static/Elementosporseparado/2Coloresprimarios/Rojo/Peine.png' alt="img" />
+                                <img style={{width: " 8vw"}} src='/static/Elementosporseparado/2Coloresprimarios/Rojo/Peine.png' alt="img" />
                             </div>
                             <div onClick={()=>{handleSelect(3)}} className={`col-2 border   p-2 ${isSelected[3] ? "selected" : "border-dark"} bg-amarillo img-hover`}>
-                                <img style={{width: " 4.5vw"}} src='/static/Elementosporseparado/2Coloresprimarios/Rojo/Cereza.png' alt="img" />
+                                <img style={{width: "8vw"}} src='/static/Elementosporseparado/2Coloresprimarios/Rojo/Cereza.png' alt="img" />
 
                             </div>
                             <div className="col-2 border   border-dark bg-amarillo p-2 img-hover" onClick={()=>{handleClickWrong()}}>
-                                <img style={{width: " 4.5vw"}} src='/static/Elementosporseparado/2Coloresprimarios/Rojo/Pasta-dental.png' alt="img"/>
+                                <img style={{width: "8vw"}} src='/static/Elementosporseparado/2Coloresprimarios/Rojo/Pasta-dental.png' alt="img"/>
 
                             </div>
                             <div onClick={()=>{handleSelect(4)}} className={`col-2 border   p-2 ${isSelected[4] ? "selected" : "border-dark"} bg-amarillo img-hover`}>
-                                <img style={{width: " 4.5vw"}} src='/static/Elementosporseparado/2Coloresprimarios/Rojo/Vaquita-de-san-antonio.png' alt="img"/>
+                                <img style={{width: "8vw"}} src='/static/Elementosporseparado/2Coloresprimarios/Rojo/Vaquita-de-san-antonio.png' alt="img"/>
                             </div>
                             <div className="col-2 border   border-dark bg-amarillo p-2 img-hover" onClick={()=>{handleClickWrong()}}>
-                                <img style={{width: " 4.5vw"}} src='/static/Elementosporseparado/2Coloresprimarios/Rojo/Cactus.png' alt="img"/>
+                                <img style={{width: "8vw"}} src='/static/Elementosporseparado/2Coloresprimarios/Rojo/Cactus.png' alt="img"/>
                             </div>
                         </div>
                     </div>
