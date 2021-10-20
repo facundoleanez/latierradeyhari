@@ -45,11 +45,11 @@ export const Pag7 = ({playBad, playGood}) => {
         <div className="container text-center">
             { completed ? ( <BienHecho setCompleted={setCompleted}/> ) :
                 <div className="row">
-                    <div className="text-start" style={{zIndex:1}}>
+                    <img className="position-absolute top-50 start-50 translate-middle p-0" src="static/Diapositivas PNG/7.png" alt="pag-4" />
+                    <div className="position-absolute" style={{zIndex:1}}>
                         { good ? <img className="animate__animated animate__bounceIn" src="static/Elementosporseparado/bien.png" alt="bien" style={{width:"10vw"}}/> : <></> }
                         { wrong ? <img className="animate__animated animate__bounceIn" src="static/Elementosporseparado/mal.png" alt="bien" style={{width:"10vw"}}/> : <></>}
                     </div>
-                    <img className="position-absolute p-0" src="static/Diapositivas PNG/7.png" alt="pag-4" />
                     <div className="position-absolute top-50 start-50 translate-middle" style={{zIndex:2}}>
                         <div className="row mt-3" >
                             <div className="col-1"></div>

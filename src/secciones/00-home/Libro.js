@@ -62,21 +62,21 @@ import { Pag68 } from '../04-num-0-5/Pag68';
 
 export const Libro = () => {
     
-    const { width, height } = useWindowDimensions();
+    const { width} = useWindowDimensions();
     const widthBook = width *0.85 ;
     const heightBook = (width *0.56)*0.85;
 
     const book = useRef();
     const [playBad] = useSound(badSound);
     const [playGood] = useSound(goodSound);
-    console.log(height, width);
+    
 
     return (
         <div className="position-absolute top-50 start-50 translate-middle">
             <h3 className="d-sm-none text-center mb-5">Para una mejor experiencia gire la pantalla y recargue la pagina</h3>
             <div>
                 <button className="carousel-control-prev position-absolute top-50 start-0 translate-middle" type="button" onClick={() => book.current.pageFlip().flipPrev()}>
-                    <span className="carousel-control-prev-icon position-absolute top-50 start-0 translate-middle-y border border-dark ml-5 btn-secondary" aria-hidden="true"></span>
+                    <span className="carousel-control-prev-icon position-absolute top-50 start-0 translate-middle-y ml-5 btn btn-primary" aria-hidden="true"></span>
                 </button>
                 <HTMLFlipBook width={widthBook} height={heightBook}  useMouseEvents={false} ref={book}  autoSize={true} className="libro">
                     
@@ -194,7 +194,7 @@ export const Libro = () => {
                     <img className="demoPage" src="static/Diapositivas PNG/169.png" alt="page-3"/> */}
                 </HTMLFlipBook>
                 <button className="carousel-control-next position-absolute top-50 start-100 translate-middle" type="button" onClick={() => book.current.pageFlip().flipNext()}>
-                    <span className="carousel-control-next-icon position-absolute top-50 end-0 translate-middle-y border border-dark btn-secondary" aria-hidden="true" ></span>
+                    <span className="carousel-control-next-icon position-absolute top-50 end-0 translate-middle-y btn btn-primary" aria-hidden="true" ></span>
                 </button>
             </div>
             <div className="mt-3 text-center d-flex justify-content-center">

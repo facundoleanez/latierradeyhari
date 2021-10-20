@@ -38,11 +38,11 @@ export const Pag15 = ({playBad, playGood}) => {
                     { wrong ? <img className="position-absolute animate__animated animate__bounceIn top-0 end-0" src="static/Elementosporseparado/mal.png" alt="bien"/> : <></>}
                     
                     
-                    <div className="d-flex flex-column position-absolute top-50 start-0 translate-middle-y mx-3 " style={{zIndex:1}}>
-                        <p className="btn btn-success" style={{fontSize:"1.3vw"}} onClick={()=>{handleClickTrue()}}>ARRIBA DE LA MESA</p>
-                        <p className="btn btn-primary" style={{fontSize:"1.3vw"}} onClick={()=>{handleClickWrong()}}>DEBAJO DE LA MESA</p>
-                        <p className="btn btn-warning" style={{fontSize:"1.3vw"}} onClick={()=>{handleClickWrong()}}>AL LADO DE LA MESA</p>
-                        <p className="btn btn-danger" style={{fontSize:"1.3vw"}} onClick={()=>{handleClickWrong()}}>DETRÁS DE LA MESA</p>                     
+                    <div className="d-flex flex-column position-absolute top-50 start-0 translate-middle-y px-5 pt-5" style={{zIndex:1}}>
+                        <p className="btn btn-success letra-titulo my-4" style={{fontSize:"2vw"}} onClick={()=>{handleClickTrue()}}>ARRIBA DE LA MESA</p>
+                        <p className="btn btn-primary letra-titulo my-4" style={{fontSize:"2vw"}} onClick={()=>{handleClickWrong()}}>DEBAJO DE LA MESA</p>
+                        <p className="btn btn-warning letra-titulo my-4" style={{fontSize:"2vw"}} onClick={()=>{handleClickWrong()}}>AL LADO DE LA MESA</p>
+                        <p className="btn btn-danger letra-titulo my-4" style={{fontSize:"2vw"}} onClick={()=>{handleClickWrong()}}>DETRÁS DE LA MESA</p>                     
                     </div>
                 </div>
             </div> 

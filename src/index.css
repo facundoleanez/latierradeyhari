@@ -20,9 +20,7 @@
   color: #FF7A02;
   text-shadow: 0px 5px 10px  #111
 }
-h3 {
-  font-family: 'KidsMonday', sans-serif;
-}
+
 .letra-titulo {
   font-family: 'KidsMonday', sans-serif;
 }
@@ -33,19 +31,10 @@ h3 {
 
 .bg-rosa {
   background-color: #FEC2C2;
-
-  background-image: repeating-linear-gradient(
-    #bebebe 0,
-    #bebebe 1px,
-    transparent 1px,
-    transparent 40px
-  );
-
 }
 
 .bg-amarillo {
   background-color: #FFF6AD;
-
 }
 
 
