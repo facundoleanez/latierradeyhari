@@ -39,10 +39,10 @@ export const Pag14 = ({playBad, playGood}) => {
                     
                     
                     <div className="d-flex flex-column position-absolute top-50 end-0 translate-middle-y px-4 px-md-5 pt-5" style={{zIndex:1}}>
-                        <p className="btn btn-primary letra-titulo my-md-4" style={{fontSize:"1.5vw"}} onClick={()=>{handleClickWrong()}}>DELANTE DE LA CANASTA</p>
-                        <p className="btn btn-warning letra-titulo my-md-4" style={{fontSize:"1.5vw"}} onClick={()=>{handleClickWrong()}}>AL COSTADO DE LA CANASTA</p>
-                        <p className="btn btn-success letra-titulo my-md-4" style={{fontSize:"1.5vw"}} onClick={()=>{handleClickTrue()}}>DENTRO DE LA CANASTA</p>
-                        <p className="btn btn-danger letra-titulo my-md-4" style={{fontSize:"1.5vw"}} onClick={()=>{handleClickWrong()}}>BAJO DE LA CANASTA</p>                     
+                        <p className="btn btn-primary letra-titulo my-lg-4" style={{fontSize:"1.5vw"}} onClick={()=>{handleClickWrong()}}>DELANTE DE LA CANASTA</p>
+                        <p className="btn btn-warning letra-titulo my-lg-4" style={{fontSize:"1.5vw"}} onClick={()=>{handleClickWrong()}}>AL COSTADO DE LA CANASTA</p>
+                        <p className="btn btn-success letra-titulo my-lg-4" style={{fontSize:"1.5vw"}} onClick={()=>{handleClickTrue()}}>DENTRO DE LA CANASTA</p>
+                        <p className="btn btn-danger letra-titulo my-lg-4" style={{fontSize:"1.5vw"}} onClick={()=>{handleClickWrong()}}>BAJO DE LA CANASTA</p>                     
                     </div>
                 </div>
             </div> 

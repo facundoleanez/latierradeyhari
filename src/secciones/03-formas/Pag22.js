@@ -54,7 +54,7 @@ export const Pag22 = ({playBad, playGood}) => {
                     </div>
                     <div className="row" style={{height:"10vw"}}></div>
                     <div className="col-8"style={{zIndex:2}}>
-                        <div className="bg-amarillo m-3 m-md-5 p-3 border border-dark d-flex flex-wrap" >
+                        <div className="bg-amarillo m-3 m-md-5 p-2 border border-dark d-flex flex-wrap" >
                             <img className={`img-hover m-1 ${isSelected[0] ? "selected" : ""}`} alt="img-1" onClick={()=>{handleSelect(0)}} style={{height:"6.5vw"}} src="static/Elementosporseparado/4 Formas geométricas/cuadrado-amarillo.png" />
                             <img className="img-hover m-1" alt="img-1" onClick={()=>{handleClickWrong()}} style={{height:"6.5vw"}} src="static/Elementosporseparado/4 Formas geométricas/circulo-azul.png" />
                             <img className="img-hover m-1" alt="img-1" onClick={()=>{handleClickWrong()}} style={{height:"6.5vw"}} src="static/Elementosporseparado/4 Formas geométricas/exagono-fucsia.png" />
