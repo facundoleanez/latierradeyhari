@@ -47,27 +47,36 @@ export const Pag27 = ({playBad, playGood}) => {
         <div className="container">
             { completed ? ( <BienHecho setCompleted={setCompleted}/> ) :
                 <div className="row">
-                    <div className="text-start" style={{zIndex:1}}>
+                    <img className="position-absolute top-50 start-50 translate-middle p-0" src="static/Diapositivas PNG/27.png" alt="pag-5"/> 
+                    <div className="position-absolute" style={{zIndex:1}}>
                         { good && <img className="animate__animated animate__bounceIn" src="static/Elementosporseparado/bien.png" alt="bien" style={{width:"10vw"}}/>}
                         { wrong && <img className="animate__animated animate__bounceIn" src="static/Elementosporseparado/mal.png" alt="bien" style={{width:"10vw"}}/>}
                     </div>
-                    <img className="position-absolute p-0" src="static/Diapositivas PNG/27.png" alt="pag-5"/> 
-                    <div className="bg-amarillo overflow-hidden m-3 m-sm-5 p-3 p-xl-5 position-absolute bottom-0 start-0 border border-dark" style={{width:"50%", zIndex:2}}>
-                        <img className={`img-hover m-1 ${isSelected[0] ? "selected" : ""}`} alt="img-1" onClick={()=>{handleSelect(0)}} style={{height:" 4vw"}} src="static/Elementosporseparado/4 Formas geométricas/circulo-amarillo.png" />
-                        <img className="img-hover m-1" alt="img-1" onClick={()=>{handleClickWrong()}} style={{height:" 4vw"}} src="static/Elementosporseparado/4 Formas geométricas/cuadrado-azul.png" />
-                        <img className="img-hover m-1" alt="img-1" onClick={()=>{handleClickWrong()}} style={{height:" 4vw"}} src="static/Elementosporseparado/4 Formas geométricas/exagono-fucsia.png" />
-                        <img className={`img-hover m-1 ${isSelected[1] ? "selected" : ""}`} alt="img-1" onClick={()=>{handleSelect(1)}} style={{height:" 4vw"}} src="static/Elementosporseparado/4 Formas geométricas/circulo-azul.png" />
-                        <img className="img-hover m-1" alt="img-1" onClick={()=>{handleClickWrong()}} style={{height:" 4vw"}} src="static/Elementosporseparado/4 Formas geométricas/cuadrado-amarillo.png" />
-                        <img className="img-hover m-1" alt="img-1" onClick={()=>{handleClickWrong()}} style={{height:" 4vw"}} src="static/Elementosporseparado/4 Formas geométricas/exagono-azul.png" />
-                        <img className={`img-hover m-1 ${isSelected[2] ? "selected" : ""}`} alt="img-1" onClick={()=>{handleSelect(2)}} style={{height:" 4vw"}} src="static/Elementosporseparado/4 Formas geométricas/circulo-fucsia.png" />
-                        <img className={`img-hover m-1 ${isSelected[3] ? "selected" : ""}`} alt="img-1" onClick={()=>{handleSelect(3)}} style={{height:" 4vw"}} src="static/Elementosporseparado/4 Formas geométricas/circulo-azul.png" />
-                        <img className="img-hover m-1" alt="img-1" onClick={()=>{handleClickWrong()}} style={{height:" 4vw"}} src="static/Elementosporseparado/4 Formas geométricas/cuadrado-naranja.png" />
-                        <img className={`img-hover m-1 ${isSelected[4] ? "selected" : ""}`} alt="img-1" onClick={()=>{handleSelect(4)}} style={{height:" 4vw"}} src="static/Elementosporseparado/4 Formas geométricas/circulo-amarillo.png" />
-                        <img className="img-hover m-1" alt="img-1" onClick={()=>{handleClickWrong()}} style={{height:" 4vw"}} src="static/Elementosporseparado/4 Formas geométricas/exagono-fucsia.png" />
-                        <img className={`img-hover m-1 ${isSelected[5] ? "selected" : ""}`} alt="img-1" onClick={()=>{handleSelect(5)}} style={{height:" 4vw"}} src="static/Elementosporseparado/4 Formas geométricas/circulo-azul.png" />
-                        <img className="img-hover m-1" alt="img-1" onClick={()=>{handleClickWrong()}} style={{height:" 4vw"}} src="static/Elementosporseparado/4 Formas geométricas/cuadrado-amarillo.png" />
-                        <img className="img-hover m-1" alt="img-1" onClick={()=>{handleClickWrong()}} style={{height:" 4vw"}} src="static/Elementosporseparado/4 Formas geométricas/exagono-azul.png" />
-                        <img className={`img-hover m-1 ${isSelected[6] ? "selected" : ""}`} alt="img-1" onClick={()=>{handleSelect(6)}} style={{height:" 4vw"}} src="static/Elementosporseparado/4 Formas geométricas/circulo-fucsia.png" />
+
+                    <div className="row" style={{height:"10vw"}}></div>
+                    <div className="col-8"style={{zIndex:2}}>
+                        <div className="bg-amarillo m-3 m-md-5 p-3 border border-dark d-flex flex-wrap" >
+                            <img className={`img-hover m-1 ${isSelected[0] ? "selected" : ""}`} alt="img-1" onClick={()=>{handleSelect(0)}} style={{height:"6.5vw"}} src="static/Elementosporseparado/4 Formas geométricas/circulo-amarillo.png" />
+                            <img className="img-hover m-1" alt="img-1" onClick={()=>{handleClickWrong()}} style={{height:"6.5vw"}} src="static/Elementosporseparado/4 Formas geométricas/cuadrado-azul.png" />
+                            <img className="img-hover m-1" alt="img-1" onClick={()=>{handleClickWrong()}} style={{height:"6.5vw"}} src="static/Elementosporseparado/4 Formas geométricas/exagono-fucsia.png" />
+                            <img className={`img-hover m-1 ${isSelected[1] ? "selected" : ""}`} alt="img-1" onClick={()=>{handleSelect(1)}} style={{height:"6.5vw"}} src="static/Elementosporseparado/4 Formas geométricas/circulo-azul.png" />
+                            <img className="img-hover m-1" alt="img-1" onClick={()=>{handleClickWrong()}} style={{height:"6.5vw"}} src="static/Elementosporseparado/4 Formas geométricas/cuadrado-amarillo.png" />
+                            <img className="img-hover m-1" alt="img-1" onClick={()=>{handleClickWrong()}} style={{height:"6.5vw"}} src="static/Elementosporseparado/4 Formas geométricas/exagono-azul.png" />
+                            <img className={`img-hover m-1 ${isSelected[2] ? "selected" : ""}`} alt="img-1" onClick={()=>{handleSelect(2)}} style={{height:"6.5vw"}} src="static/Elementosporseparado/4 Formas geométricas/circulo-fucsia.png" />
+                            <img className={`img-hover m-1 ${isSelected[3] ? "selected" : ""}`} alt="img-1" onClick={()=>{handleSelect(3)}} style={{height:"6.5vw"}} src="static/Elementosporseparado/4 Formas geométricas/circulo-azul.png" />
+                            <img className="img-hover m-1" alt="img-1" onClick={()=>{handleClickWrong()}} style={{height:"6.5vw"}} src="static/Elementosporseparado/4 Formas geométricas/cuadrado-naranja.png" />
+                            <img className={`img-hover m-1 ${isSelected[4] ? "selected" : ""}`} alt="img-1" onClick={()=>{handleSelect(4)}} style={{height:"6.5vw"}} src="static/Elementosporseparado/4 Formas geométricas/circulo-amarillo.png" />
+                            <img className="img-hover m-1" alt="img-1" onClick={()=>{handleClickWrong()}} style={{height:"6.5vw"}} src="static/Elementosporseparado/4 Formas geométricas/exagono-fucsia.png" />
+                            <img className={`img-hover m-1 ${isSelected[5] ? "selected" : ""}`} alt="img-1" onClick={()=>{handleSelect(5)}} style={{height:"6.5vw"}} src="static/Elementosporseparado/4 Formas geométricas/circulo-azul.png" />
+                            <img className="img-hover m-1" alt="img-1" onClick={()=>{handleClickWrong()}} style={{height:"6.5vw"}} src="static/Elementosporseparado/4 Formas geométricas/cuadrado-amarillo.png" />
+                            <img className="img-hover m-1" alt="img-1" onClick={()=>{handleClickWrong()}} style={{height:"6.5vw"}} src="static/Elementosporseparado/4 Formas geométricas/exagono-azul.png" />
+                            <img className={`img-hover m-1 ${isSelected[6] ? "selected" : ""}`} alt="img-1" onClick={()=>{handleSelect(6)}} style={{height:"6.5vw"}} src="static/Elementosporseparado/4 Formas geométricas/circulo-fucsia.png" />
+                            <div className="d-none d-xl-block">
+                                <img className="img-hover m-1" alt="img-1" onClick={()=>{handleClickWrong()}} style={{height:"6.5vw"}} src="static/Elementosporseparado/4 Formas geométricas/cuadrado-amarillo.png" />
+                                <img className="img-hover m-1" alt="img-1" onClick={()=>{handleClickWrong()}} style={{height:"6.5vw"}} src="static/Elementosporseparado/4 Formas geométricas/exagono-azul.png" />
+                                <img className="img-hover m-1" alt="img-1" onClick={()=>{handleClickWrong()}} style={{height:"6.5vw"}} src="static/Elementosporseparado/4 Formas geométricas/exagono-fucsia.png" />
+                            </div>
+                        </div>
                     </div>
                 </div>
             }

@@ -33,16 +33,16 @@ export const Pag16 = ({playBad, playGood}) => {
             { completed ? (<BienHecho setCompleted={setCompleted}/>) : 
             <div className="row">
                 <img className="position-absolute p-0" src="static/Diapositivas PNG/16.png" alt="pag-16"/> 
-                <div className="">
+                <div>
                     { good ? <img className="position-absolute animate__animated animate__bounceIn top-0 end-0" src="static/Elementosporseparado/bien.png" alt="bien"/> : <></> }
                     { wrong ? <img className="position-absolute animate__animated animate__bounceIn top-0 end-0" src="static/Elementosporseparado/mal.png" alt="bien"/> : <></>}
                     
                     
-                    <div className="d-flex flex-column position-absolute top-50 start-0 translate-middle-y px-5 pt-5" style={{zIndex:1}}>
-                        <p className="btn btn-success letra-titulo my-4" style={{fontSize:"2vw"}} onClick={()=>{handleClickWrong()}}>ARRIBA DE LA MESA</p>
-                        <p className="btn btn-primary letra-titulo my-4" style={{fontSize:"2vw"}} onClick={()=>{handleClickTrue()}}>DEBAJO DE LA MESA</p>
-                        <p className="btn btn-warning letra-titulo my-4" style={{fontSize:"2vw"}} onClick={()=>{handleClickWrong()}}>AL LADO DE LA MESA</p>
-                        <p className="btn btn-danger letra-titulo my-4" style={{fontSize:"2vw"}} onClick={()=>{handleClickWrong()}}>DETRÁS DE LA MESA</p>                     
+                    <div className="d-flex flex-column position-absolute top-50 start-0 translate-middle-y px-4 px-md-5 pt-5" style={{zIndex:1}}>
+                        <p className="btn btn-success letra-titulo my-md-4" style={{fontSize:"1.8vw"}} onClick={()=>{handleClickWrong()}}>ARRIBA DE LA MESA</p>
+                        <p className="btn btn-primary letra-titulo my-md-4" style={{fontSize:"1.8vw"}} onClick={()=>{handleClickTrue()}}>DEBAJO DE LA MESA</p>
+                        <p className="btn btn-warning letra-titulo my-md-4" style={{fontSize:"1.8vw"}} onClick={()=>{handleClickWrong()}}>AL LADO DE LA MESA</p>
+                        <p className="btn btn-danger letra-titulo my-md-4" style={{fontSize:"1.8vw"}} onClick={()=>{handleClickWrong()}}>DETRÁS DE LA MESA</p>                     
                     </div>
                 </div>
             </div> 

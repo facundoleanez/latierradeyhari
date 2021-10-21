@@ -44,32 +44,34 @@ export const Pag30 = ({playBad, playGood}) => {
     }, [wrong])
   
     return (
-        <div className="container">
+        <div >
             { completed ? ( <BienHecho setCompleted={setCompleted}/> ) :
                 <div className="row">
-                    <div className="text-start" style={{zIndex:1}}>
+                    <img className="position-absolute top-50 start-50 translate-middle p-0" src="static/Diapositivas PNG/29.png" alt="pag-5"/> 
+                    <div className="position-absolute" style={{zIndex:1}}>
                         { good && <img className="animate__animated animate__bounceIn" src="static/Elementosporseparado/bien.png" alt="bien" style={{width:"10vw"}}/>}
                         { wrong && <img className="animate__animated animate__bounceIn" src="static/Elementosporseparado/mal.png" alt="bien" style={{width:"10vw"}}/>}
                     </div>
-                    <img className="position-absolute p-0" src="static/Diapositivas PNG/29.png" alt="pag-5"/> 
-                    <div className="row position-absolute top-50 start-50 translate-middle justify-content-center align-items-center" style={{zIndex:1}}>
-                        <div className="col-8" >
-                            <div className="row m-3 border border-dark border-2 d-flex bg-amarillo">
-                                <img style={{width: "7vw"}} src='/static/Elementosporseparado/4 Formas geométricas/triangulo-amarillo.png' alt="img"/>
-                                <img style={{width: "7vw"}} src='/static/Elementosporseparado/4 Formas geométricas/circulo-azul.png' alt="img" />
-                                <img style={{width: "7vw"}} src='/static/Elementosporseparado/4 Formas geométricas/triangulo-amarillo.png' alt="img"/>
-                                <img style={{width: "7vw"}} src='/static/Elementosporseparado/4 Formas geométricas/cuadrado-fucsia.png' alt="img" />
-                                <img style={{width: "7vw"}} src='/static/Elementosporseparado/4 Formas geométricas/circulo-azul.png' alt="img" />
+                    <div className="row" style={{height:"10vw"}}></div>
+                    <div className="row" style={{zIndex:1}}>
+                        <div className="col-1"></div>
+                        <div className="col-8 align-self-center" >
+                            <div className="row border border-dark border-2 bg-amarillo my-3">
+                                <img style={{width: "11vw"}} src='/static/Elementosporseparado/4 Formas geométricas/triangulo-amarillo.png' alt="img"/>
+                                <img style={{width: "11vw"}} src='/static/Elementosporseparado/4 Formas geométricas/circulo-azul.png' alt="img" />
+                                <img style={{width: "11vw"}} src='/static/Elementosporseparado/4 Formas geométricas/triangulo-amarillo.png' alt="img"/>
+                                <img style={{width: "11vw"}} src='/static/Elementosporseparado/4 Formas geométricas/cuadrado-fucsia.png' alt="img" />
+                                <img style={{width: "11vw"}} src='/static/Elementosporseparado/4 Formas geométricas/circulo-azul.png' alt="img" />
                             </div>
-                            <div className="row m-3 border border-dark border-2" >
-                            <img style={{width: " 7vw"}} src={`/static/Elementosporseparado/4 Formas geométricas/triangulo-amarillo${isSelected[0] ? "" : "-linea"}.png`} alt="img"/>
-                                <img style={{width: "7vw"}} src='/static/Elementosporseparado/4 Formas geométricas/circulo-azul.png' alt="img" />
-                                <img style={{width: "7vw"}} src={`/static/Elementosporseparado/4 Formas geométricas/triangulo-amarillo${isSelected[1] ? "" : "-linea"}.png`} alt="img"/>
-                                <img style={{width: "7vw"}} src='/static/Elementosporseparado/4 Formas geométricas/cuadrado-fucsia.png' alt="img" />
-                                <img style={{width: "7vw"}} src='/static/Elementosporseparado/4 Formas geométricas/circulo-azul.png' alt="img" />
+                            <div className="row border border-dark border-2 bg-amarillo my-3" >
+                                <img style={{width: " 11vw"}} src={`/static/Elementosporseparado/4 Formas geométricas/triangulo-amarillo${isSelected[0] ? "" : "-linea"}.png`} alt="img"/>
+                                <img style={{width: "11vw"}} src='/static/Elementosporseparado/4 Formas geométricas/circulo-azul.png' alt="img" />
+                                <img style={{width: "11vw"}} src={`/static/Elementosporseparado/4 Formas geométricas/triangulo-amarillo${isSelected[1] ? "" : "-linea"}.png`} alt="img"/>
+                                <img style={{width: "11vw"}} src='/static/Elementosporseparado/4 Formas geométricas/cuadrado-fucsia.png' alt="img" />
+                                <img style={{width: "11vw"}} src='/static/Elementosporseparado/4 Formas geométricas/circulo-azul.png' alt="img" />
                             </div>
                         </div>
-                        <div className="col-2 mt-5">
+                        <div className="col-2 text-center">
                             <div className={isSelected[0] ? "d-none" : "img-hover p-2"} onClick={()=>{handleSelect(0)}}>
                                 <img style={{width: " 6vw"}} src='/static/Elementosporseparado/4 Formas geométricas/triangulo-amarillo.png' alt="img" />
                             </div>

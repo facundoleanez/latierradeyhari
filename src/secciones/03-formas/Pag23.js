@@ -47,12 +47,14 @@ export const Pag23 = ({playBad, playGood}) => {
         <div className="container">
             { completed ? ( <BienHecho setCompleted={setCompleted}/> ) :
                 <div className="row">
-                    <div className="text-start" style={{zIndex:1}}>
+                    <img className="position-absolute top-50 start-50 translate-middle p-0" src="static/Diapositivas PNG/23.png" alt="pag-5"/> 
+                    <div className="position-absolute" style={{zIndex:1}}>
                         { good && <img className="animate__animated animate__bounceIn" src="static/Elementosporseparado/bien.png" alt="bien" style={{width:"10vw"}}/>}
                         { wrong && <img className="animate__animated animate__bounceIn" src="static/Elementosporseparado/mal.png" alt="bien" style={{width:"10vw"}}/>}
                     </div>
-                    <img className="position-absolute p-0" src="static/Diapositivas PNG/23.png" alt="pag-5"/> 
-                    <div className=" overflow-hidden m-3 m-sm-5 position-absolute bottom-0 end-0 border border-dark" style={{width:"50%", zIndex:2}}>
+                    <div className="row" style={{height:"15vw"}}></div>
+                    <div className="col-4"></div>
+                    <div className="col-7" style={{zIndex:1}}>
                         <div className="row text-center" >
                             <div onClick={()=>{handleSelect(0)}} className={`col-3 border p-2 ${isSelected[0] ? "selected" : "border-dark"} bg-amarillo img-hover`} >
                                 <img style={{width: " 6vw"}} src='static/Elementosporseparado/4 Formas geométricas/ventana.png' alt="img" />

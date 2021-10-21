@@ -13,7 +13,7 @@ export const BienHecho = ({setCompleted}) => {
         playVictory()
     },[playVictory])
     return (
-        <div className="img-hover" onClick={() => setCompleted(false)}>
+        <div className="img-hover position-absolute top-50 start-50 translate-middle" onClick={() => setCompleted(false)}>
             <video className="animate__animated animate__bounceIn" src="static\Diapositivas animadas y GIFs\¡Muy bien!.mp4" width={widthBook} height={heightBook} loop={true} autoPlay={true} />
         </div>
     )

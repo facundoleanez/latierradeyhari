@@ -33,16 +33,16 @@ export const Pag19 = ({playBad, playGood}) => {
             { completed ? (<BienHecho setCompleted={setCompleted}/>) : 
             <div className="row">
                 <img className="position-absolute p-0" src="static/Diapositivas PNG/19.png" alt="pag-19"/> 
-                <div className="">
+                <div>
                     { good ? <img className="position-absolute animate__animated animate__bounceIn" src="static/Elementosporseparado/bien.png" alt="bien"/> : <></> }
                     { wrong ? <img className="position-absolute animate__animated animate__bounceIn" src="static/Elementosporseparado/mal.png" alt="bien"/> : <></>}
                     
                     
-                    <div className="d-flex flex-column position-absolute top-50 end-0 translate-middle-y px-5 pt-5" style={{zIndex:1}}>
-                        <p className="btn btn-primary letra-titulo my-4" style={{fontSize:"1.8vw"}} onClick={()=>{handleClickWrong()}}>ARRIBA DE LOS ARBOLES</p>
-                        <p className="btn btn-warning letra-titulo my-4" style={{fontSize:"1.8vw"}} onClick={()=>{handleClickWrong()}}>DENTRO DE LOS ARBOLES</p>
-                        <p className="btn btn-success letra-titulo my-4" style={{fontSize:"1.8vw"}} onClick={()=>{handleClickTrue()}}>EN EL MEDIO <br/>DE LOS ARBOLES</p>
-                        <p className="btn btn-danger letra-titulo my-4" style={{fontSize:"1.8vw"}} onClick={()=>{handleClickWrong()}}>AL LADO IZQUIERDO <br/> DE LOS ARBOLES</p>                     
+                    <div className="d-flex flex-column position-absolute top-50 end-0 translate-middle-y px-4 px-md-5 pt-5" style={{zIndex:1}}>
+                        <p className="btn btn-primary letra-titulo my-md-4" style={{fontSize:"1.6vw"}} onClick={()=>{handleClickWrong()}}>ARRIBA DE LOS ARBOLES</p>
+                        <p className="btn btn-warning letra-titulo my-md-4" style={{fontSize:"1.6vw"}} onClick={()=>{handleClickWrong()}}>DENTRO DE LOS ARBOLES</p>
+                        <p className="btn btn-success letra-titulo my-md-4" style={{fontSize:"1.6vw"}} onClick={()=>{handleClickTrue()}}>EN EL MEDIO <br/>DE LOS ARBOLES</p>
+                        <p className="btn btn-danger letra-titulo my-md-4" style={{fontSize:"1.6vw"}} onClick={()=>{handleClickWrong()}}>AL LADO IZQUIERDO <br/> DE LOS ARBOLES</p>                     
                     </div>
                 </div>
             </div> 

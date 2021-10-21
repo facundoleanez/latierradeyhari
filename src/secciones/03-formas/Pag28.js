@@ -47,12 +47,14 @@ export const Pag28 = ({playBad, playGood}) => {
         <div className="container">
             { completed ? ( <BienHecho setCompleted={setCompleted}/> ) :
                 <div className="row">
-                    <div className="text-start" style={{zIndex:1}}>
+                    <img className="position-absolute top-50 start-50 translate-middle p-0" src="static/Diapositivas PNG/28.png" alt="pag-5"/> 
+                    <div className="position-absolute" style={{zIndex:1}}>
                         { good && <img className="animate__animated animate__bounceIn" src="static/Elementosporseparado/bien.png" alt="bien" style={{width:"10vw"}}/>}
                         { wrong && <img className="animate__animated animate__bounceIn" src="static/Elementosporseparado/mal.png" alt="bien" style={{width:"10vw"}}/>}
                     </div>
-                    <img className="position-absolute p-0" src="static/Diapositivas PNG/28.png" alt="pag-5"/> 
-                    <div className=" overflow-hidden m-3 m-sm-5 position-absolute bottom-0 end-0 border border-dark" style={{width:"50%", zIndex:2}}>
+                    <div className="row" style={{height:"15vw"}}></div>
+                    <div className="col-5"></div>
+                    <div className="col-6" style={{zIndex:1}}>   
                         <div className="row text-center">
                             <div className="col-3 border   border-dark bg-amarillo p-2 img-hover" onClick={()=>{handleClickWrong()}}>
                                 <img style={{width: " 3vw"}} src='/static/Elementosporseparado/4 Formas geométricas/pincel.png' alt="img" />
