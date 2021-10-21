@@ -44,7 +44,7 @@ export const Pag27 = ({playBad, playGood}) => {
     }, [wrong])
   
     return (
-        <div className="container">
+        <div>
             { completed ? ( <BienHecho setCompleted={setCompleted}/> ) :
                 <div className="row">
                     <img className="position-absolute top-50 start-50 translate-middle p-0" src="static/Diapositivas PNG/27.png" alt="pag-5"/> 
