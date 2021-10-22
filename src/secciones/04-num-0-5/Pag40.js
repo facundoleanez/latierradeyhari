@@ -30,7 +30,7 @@ export const Pag40 = ({playBad, playGood}) => {
     }, [wrong])
 
     return (
-        <div className="row ">
+        <div>
             { completed ? (<BienHecho setCompleted={setCompleted}/>) : 
             <div className="row">
                     { good ? <img className="position-absolute animate__animated animate__bounceIn" src="static/Elementosporseparado/bien.png" alt="bien" style={{zIndex:2, width:"10vw"}}/> : <></> }
@@ -38,11 +38,11 @@ export const Pag40 = ({playBad, playGood}) => {
                 <img className="position-absolute p-0" src="static/Diapositivas PNG/40.png" alt="pag-19"/> 
                 <div className="">
                     <div className="d-flex position-absolute top-50 start-0 translate-middle-y mx-3 " style={{zIndex:1}}>
-                        <div className="bg-amarillo border border-dark p-1 m-3 img-hover" onClick={()=>{handleClickWrong()}}>
-                            <img style={{height:"8vw"}} src="static/Elementosporseparado/5 Números del 0 al 5/1-auto.png" alt="img"/>
+                        <div className="bg-amarillo border border-dark p-1 m-2 img-hover" onClick={()=>{handleClickWrong()}}>
+                            <img style={{height:"11vw"}} src="static/Elementosporseparado/5 Números del 0 al 5/1-auto.png" alt="img"/>
                         </div>
-                        <div className="bg-amarillo border border-dark p-1 m-3 img-hover" onClick={()=>{handleClickTrue()}}>
-                            <img style={{height:"8vw"}} src="static/Elementosporseparado/5 Números del 0 al 5/2-autos.png" alt="img"/>
+                        <div className="bg-amarillo border border-dark p-1 m-2 img-hover" onClick={()=>{handleClickTrue()}}>
+                            <img style={{height:"11vw"}} src="static/Elementosporseparado/5 Números del 0 al 5/2-autos.png" alt="img"/>
                         </div>
                     </div>
                 </div>

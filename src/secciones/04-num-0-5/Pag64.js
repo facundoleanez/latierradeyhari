@@ -29,17 +29,17 @@ export const Pag64 = ({playBad, playGood}) => {
         }
     }, [wrong])
     return (
-        <div className="row ">
+        <div>
             { completed ? (<BienHecho setCompleted={setCompleted}/>) : 
-            <div className="row">
-                                    { good ? <img className="position-absolute animate__animated animate__bounceIn" src="static/Elementosporseparado/bien.png" alt="bien" style={{zIndex:2, width:"10vw"}}/> : <></> }
-                    { wrong ? <img className="position-absolute animate__animated animate__bounceIn" src="static/Elementosporseparado/mal.png" alt="bien" style={{zIndex:2, width:"10vw"}}/> : <></>}
+            <div className="row ">
+                { good ? <img className="position-absolute animate__animated animate__bounceIn" src="static/Elementosporseparado/bien.png" alt="bien" style={{zIndex:2, width:"10vw"}}/> : <></> }
+                { wrong ? <img className="position-absolute animate__animated animate__bounceIn" src="static/Elementosporseparado/mal.png" alt="bien" style={{zIndex:2, width:"10vw"}}/> : <></>}
                 <img className="position-absolute p-0" src="static/Diapositivas PNG/64.png" alt="pag-14"/> 
                 <div>
-                    <div className="d-flex flex-column position-absolute top-50 end-0 translate-middle-y mx-3 " style={{zIndex:1}}>
-                        <div className="img-hover btn-success p-1 p-lg-4 m-2 rounded-circle" onClick={()=>{handleClickWrong()}}><h3 style={{fontSize:"5vw"}}>2</h3></div>
-                        <div className="img-hover btn-success p-1 p-lg-4 m-2 rounded-circle" onClick={()=>{handleClickTrue()}}><h3 style={{fontSize:"5vw"}}>5</h3></div>
-                        <div className="img-hover btn-success p-1 p-lg-4 m-2 rounded-circle" onClick={()=>{handleClickWrong()}}><h3 style={{fontSize:"5vw"}}>3</h3></div>
+                    <div className="d-flex flex-column position-absolute top-50 end-0 translate-middle-y mx-5 " style={{zIndex:1}}>
+                        <div className="img-hover btn-success p-2 p-lg-4 m-2 rounded-circle" onClick={()=>{handleClickWrong()}}><h3 style={{fontSize:"5vw"}}>2</h3></div>
+                        <div className="img-hover btn-success p-2 p-lg-4 m-2 rounded-circle" onClick={()=>{handleClickTrue()}}><h3 style={{fontSize:"5vw"}}>5</h3></div>
+                        <div className="img-hover btn-success p-2 p-lg-4 m-2 rounded-circle" onClick={()=>{handleClickWrong()}}><h3 style={{fontSize:"5vw"}}>3</h3></div>
                     </div>
                 </div>
             </div> 

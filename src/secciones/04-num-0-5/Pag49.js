@@ -44,29 +44,29 @@ export const Pag49 = ({playBad, playGood}) => {
     }, [wrong])
 
     return (
-        <div className="row ">
+        <div>
             { completed ? (<BienHecho setCompleted={setCompleted}/>) : 
             <div className="row">
-                    { good ? <img className="position-absolute animate__animated animate__bounceIn" src="static/Elementosporseparado/bien.png" alt="bien" style={{zIndex:2, width:"10vw"}}/> : <></> }
-                    { wrong ? <img className="position-absolute animate__animated animate__bounceIn" src="static/Elementosporseparado/mal.png" alt="bien" style={{zIndex:2, width:"10vw"}}/> : <></>}
-                <div className="row" style={{height:"5vw"}} ></div>
+                    { good ? <img className="position-absolute animate__animated animate__bounceIn" src="static/Elementosporseparado/bien.png" alt="bien" style={{zIndex:2, width:"11vw"}}/> : <></> }
+                    { wrong ? <img className="position-absolute animate__animated animate__bounceIn" src="static/Elementosporseparado/mal.png" alt="bien" style={{zIndex:2, width:"11vw"}}/> : <></>}
+                <div className="row" style={{height:"10vw"}} ></div>
                 <img className="position-absolute p-0" src="static/Diapositivas PNG/49.png"  alt="pag-19"/> 
                 <div className="col-5"></div>
                 <div className="col-7" style={{zIndex:2}}>
                     <div className="p-3" >
-                       <img className={`img-hover ${isSelected[0]? "animate__animated animate__jackInTheBox selected" : ""}`} onClick={()=>{handleSelect(0)}} style={{height:"8vw"}} src="static/Elementosporseparado/5 Números del 0 al 5/taza-y-el-3.png" alt="img"/>
-                       <img className="img-hover" onClick={()=>{handleClickWrong()}} style={{height:"8vw"}} src="static/Elementosporseparado/5 Números del 0 al 5/5-flores.png" alt="img"/>
-                       <img className={`img-hover ${isSelected[1]? "animate__animated animate__jackInTheBox selected" : ""}`} onClick={()=>{handleSelect(1)}} style={{height:"8vw"}} src="static/Elementosporseparado/5 Números del 0 al 5/mástil-y-el-3.png" alt="img"/>
-                       <img className="img-hover" onClick={()=>{handleClickWrong()}} style={{height:"6vw"}} src="static/Elementosporseparado/5 Números del 0 al 5/arbol-sin-manzanas.png" alt="img"/>
-                       <img className={`img-hover ${isSelected[3]? "animate__animated animate__jackInTheBox selected" : ""}`} onClick={()=>{handleSelect(3)}} style={{height:"8vw"}} src="static/Elementosporseparado/5 Números del 0 al 5/hada-y-el-3.png" alt="img"/>
-                       <img className="img-hover" onClick={()=>{handleClickWrong()}} style={{height:"8vw"}} src="static/Elementosporseparado/5 Números del 0 al 5/canasta-vacia.png" alt="img"/>
-                       <img className={`img-hover ${isSelected[4]? "animate__animated animate__jackInTheBox selected" : ""}`} onClick={()=>{handleSelect(4)}} style={{height:"8vw"}} src="static/Elementosporseparado/5 Números del 0 al 5/globos-y-el-3.png" alt="img"/>
-                       <img className="img-hover" onClick={()=>{handleClickWrong()}} style={{height:"8vw"}} src="static/Elementosporseparado/5 Números del 0 al 5/frutas.png" alt="img"/>
-                       <img className="img-hover" onClick={()=>{handleClickWrong()}} style={{height:"8vw"}} src="static/Elementosporseparado/5 Números del 0 al 5/3-medias.png" alt="img"/>
-                       <img className={`img-hover ${isSelected[2]? "animate__animated animate__jackInTheBox selected" : ""}`} onClick={()=>{handleSelect(2)}} style={{height:"8vw"}} src="static/Elementosporseparado/5 Números del 0 al 5/3-fucsia.png" alt="img"/>
-                       <img className="img-hover" onClick={()=>{handleClickWrong()}} style={{height:"8vw"}} src="static/Elementosporseparado/5 Números del 0 al 5/nene-en-bici.png" alt="img"/>
-                       <img className="img-hover" onClick={()=>{handleClickWrong()}} style={{height:"8vw"}} src="static/Elementosporseparado/5 Números del 0 al 5/panal-y-abejas.png" alt="img"/>
-                       <img className={`img-hover ${isSelected[5]? "animate__animated animate__jackInTheBox selected" : ""}`} onClick={()=>{handleSelect(5)}} style={{height:"8vw"}} src="static/Elementosporseparado/5 Números del 0 al 5/3-azul.png" alt="img"/>
+                       <img className={`img-hover ${isSelected[0]? "animate__animated animate__jackInTheBox selected" : ""}`} onClick={()=>{handleSelect(0)}} style={{height:"11vw"}} src="static/Elementosporseparado/5 Números del 0 al 5/taza-y-el-3.png" alt="img"/>
+                       <img className="img-hover" onClick={()=>{handleClickWrong()}} style={{height:"11vw"}} src="static/Elementosporseparado/5 Números del 0 al 5/5-flores.png" alt="img"/>
+                       <img className={`img-hover ${isSelected[1]? "animate__animated animate__jackInTheBox selected" : ""}`} onClick={()=>{handleSelect(1)}} style={{height:"11vw"}} src="static/Elementosporseparado/5 Números del 0 al 5/mástil-y-el-3.png" alt="img"/>
+                       <img className="img-hover" onClick={()=>{handleClickWrong()}} style={{height:"11vw"}} src="static/Elementosporseparado/5 Números del 0 al 5/arbol-sin-manzanas.png" alt="img"/>
+                       <img className={`img-hover ${isSelected[3]? "animate__animated animate__jackInTheBox selected" : ""}`} onClick={()=>{handleSelect(3)}} style={{height:"11vw"}} src="static/Elementosporseparado/5 Números del 0 al 5/hada-y-el-3.png" alt="img"/>
+                       <img className="img-hover" onClick={()=>{handleClickWrong()}} style={{height:"11vw"}} src="static/Elementosporseparado/5 Números del 0 al 5/canasta-vacia.png" alt="img"/>
+                       <img className={`img-hover ${isSelected[4]? "animate__animated animate__jackInTheBox selected" : ""}`} onClick={()=>{handleSelect(4)}} style={{height:"11vw"}} src="static/Elementosporseparado/5 Números del 0 al 5/globos-y-el-3.png" alt="img"/>
+                       <img className="img-hover" onClick={()=>{handleClickWrong()}} style={{height:"11vw"}} src="static/Elementosporseparado/5 Números del 0 al 5/frutas.png" alt="img"/>
+                       <img className="img-hover" onClick={()=>{handleClickWrong()}} style={{height:"11vw"}} src="static/Elementosporseparado/5 Números del 0 al 5/3-medias.png" alt="img"/>
+                       <img className={`img-hover ${isSelected[2]? "animate__animated animate__jackInTheBox selected" : ""}`} onClick={()=>{handleSelect(2)}} style={{height:"11vw"}} src="static/Elementosporseparado/5 Números del 0 al 5/3-fucsia.png" alt="img"/>
+                       <img className="img-hover" onClick={()=>{handleClickWrong()}} style={{height:"11vw"}} src="static/Elementosporseparado/5 Números del 0 al 5/nene-en-bici.png" alt="img"/>
+                       <img className="img-hover" onClick={()=>{handleClickWrong()}} style={{height:"11vw"}} src="static/Elementosporseparado/5 Números del 0 al 5/panal-y-abejas.png" alt="img"/>
+                       <img className={`img-hover ${isSelected[5]? "animate__animated animate__jackInTheBox selected" : ""}`} onClick={()=>{handleSelect(5)}} style={{height:"11vw"}} src="static/Elementosporseparado/5 Números del 0 al 5/3-azul.png" alt="img"/>
 
                     </div>
                 </div>

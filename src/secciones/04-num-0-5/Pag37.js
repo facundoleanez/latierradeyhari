@@ -30,23 +30,24 @@ export const Pag37 = ({playBad, playGood}) => {
     }, [wrong])
 
     return (
-        <div className="row ">
+        <div>
             { completed ? (<BienHecho setCompleted={setCompleted}/>) : 
             <div className="row">
-                                    { good ? <img className="position-absolute animate__animated animate__bounceIn" src="static/Elementosporseparado/bien.png" alt="bien" style={{zIndex:2, width:"10vw"}}/> : <></> }
-                    { wrong ? <img className="position-absolute animate__animated animate__bounceIn" src="static/Elementosporseparado/mal.png" alt="bien" style={{zIndex:2, width:"10vw"}}/> : <></>}
+                { good ? <img className="position-absolute animate__animated animate__bounceIn" src="static/Elementosporseparado/bien.png" alt="bien" style={{zIndex:2, width:"10vw"}}/> : <></> }
+                { wrong ? <img className="position-absolute animate__animated animate__bounceIn" src="static/Elementosporseparado/mal.png" alt="bien" style={{zIndex:2, width:"10vw"}}/> : <></>}
                 <img className="position-absolute p-0" src="static/Diapositivas PNG/37.png" alt="pag-19"/> 
-                <div className="">
-
-                    <div className="d-flex position-absolute top-50 end-0 translate-middle-y mx-3 " style={{zIndex:1}}>
-                        <div className="bg-amarillo border border-dark p-3 m-lg-3 m-1 img-hover" onClick={()=>{handleClickWrong()}}>
-                            <img style={{height:"16vw"}} src="static/Elementosporseparado/5 Números del 0 al 5/arbol-con-manzanas.png" alt="img"/>
-                        </div>
-                        <div className="bg-amarillo border border-dark p-3 m-lg-3 m-1 img-hover" onClick={()=>{handleClickTrue()}}>
-                            <img style={{height:"16vw"}} src="static/Elementosporseparado/5 Números del 0 al 5/arbol-sin-manzanas.png" alt="img"/>
-                        </div>
+                <div className="row" style={{height:"10vw"}}></div>
+                <div className="col-4"></div>
+                <div className="col-7 d-flex justify-content-center" style={{zIndex:1}}>
+                    <div className="bg-amarillo border border-dark p-3 m-lg-3 m-1 img-hover" onClick={()=>{handleClickWrong()}}>
+                        <img style={{height:"25vw"}} src="static/Elementosporseparado/5 Números del 0 al 5/arbol-con-manzanas.png" alt="img"/>
+                    </div>
+                    <div className="bg-amarillo border border-dark p-3 m-lg-3 m-1 img-hover" onClick={()=>{handleClickTrue()}}>
+                        <img style={{height:"25vw"}} src="static/Elementosporseparado/5 Números del 0 al 5/arbol-sin-manzanas.png" alt="img"/>
                     </div>
                 </div>
+                <div className="col-1"></div>
+                
             </div> 
              }
         </div>
