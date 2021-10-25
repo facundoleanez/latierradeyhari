@@ -63,7 +63,7 @@ export const Pag31 = ({playBad, playGood}) => {
                                 <img style={{width: "11vw"}} src='/static/Elementosporseparado/4 Formas geométricas/circulo-azul.png' alt="img" />
                                 <img style={{width: "11vw"}} src='/static/Elementosporseparado/4 Formas geométricas/cuadrado-fucsia.png' alt="img" />
                             </div>
-                            <div className="row my-3 border border-dark border-2 bg-amarillo"  >
+                            <div className="row my-3 border border-dark border-2 bg-amarillo">
                                 <img style={{width: "11vw"}} src='/static/Elementosporseparado/4 Formas geométricas/cuadrado-fucsia.png' alt="img" />
                                 <img style={{width: "11vw"}} src={`/static/Elementosporseparado/4 Formas geométricas/circulo-azul${isSelected[0] ? "" : "-linea"}.png`} alt="img"/>
                                 <img style={{width: "11vw"}} src='/static/Elementosporseparado/4 Formas geométricas/triangulo-amarillo.png' alt="img" />

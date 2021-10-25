@@ -38,10 +38,10 @@ export const Pag51 = ({playBad, playGood}) => {
                 <img className="position-absolute p-0" src="static/Diapositivas PNG/51.png" alt="pag-19"/> 
                 <div className="">
                     <div className="d-flex position-absolute top-50 start-0 translate-middle-y mx-3 " style={{zIndex:1}}>
-                        <div className="bg-amarillo border border-dark p-3 m-lg-3 m-2 img-hover" onClick={()=>{handleClickWrong()}}>
+                        <div className="bg-amarillo border border-dark p-3 p-lg-5 m-lg-3 m-2 img-hover" onClick={()=>{handleClickWrong()}}>
                             <img style={{height:"16vw"}} src="static/Elementosporseparado/5 Números del 0 al 5/1-chanchito.png" alt="img"/>
                         </div>
-                        <div className="bg-amarillo border border-dark p-3 m-lg-3 m-2 img-hover" onClick={()=>{handleClickTrue()}}>
+                        <div className="bg-amarillo border border-dark p-3 p-lg-5 m-lg-3 m-2 img-hover" onClick={()=>{handleClickTrue()}}>
                             <img style={{height:"17vw"}} src="static/Elementosporseparado/5 Números del 0 al 5/3-chanchitos.png" alt="img"/>
                         </div>
                     </div>

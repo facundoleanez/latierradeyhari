@@ -68,6 +68,13 @@ import { Pag80 } from '../05-vocales/Pag80';
 import { Pag81 } from '../05-vocales/Pag81';
 import { Pag83 } from '../05-vocales/Pag83';
 import { Pag84 } from '../05-vocales/Pag84';
+import { Pag86 } from '../06-tamano/Pag86';
+import { Pag87 } from '../06-tamano/Pag87';
+import { Pag88 } from '../06-tamano/Pag88';
+import { Pag89 } from '../06-tamano/Pag89';
+import { Pag90 } from '../06-tamano/Pag90';
+import { Pag91 } from '../06-tamano/Pag91';
+import { Pag92 } from '../06-tamano/Pag92';
 
 
 export const Libro = () => {
@@ -183,6 +190,13 @@ export const Libro = () => {
                     <div className="demoPage"><Pag84 playBad={playBad} playGood={playGood}/></div>
                     <img className="demoPage" src="static/Diapositivas PNG/84.png" alt="page-3"/>
                     <img className="demoPage" src="static/Diapositivas PNG/85.png" alt="page-3"/>
+                    <div className="demoPage"><Pag86 playBad={playBad} playGood={playGood}/></div>
+                    <div className="demoPage"><Pag87 playBad={playBad} playGood={playGood}/></div>
+                    <div className="demoPage"><Pag88 playBad={playBad} playGood={playGood}/></div>
+                    <div className="demoPage"><Pag89 playBad={playBad} playGood={playGood}/></div>
+                    <div className="demoPage"><Pag90 playBad={playBad} playGood={playGood}/></div>
+                    <div className="demoPage"><Pag91 playBad={playBad} playGood={playGood}/></div>
+                    <div className="demoPage"><Pag92 playBad={playBad} playGood={playGood}/></div>
 
 
 
