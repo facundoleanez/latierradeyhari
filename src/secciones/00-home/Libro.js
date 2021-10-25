@@ -58,11 +58,21 @@ import { Pag65 } from '../04-num-0-5/Pag65';
 import { Pag66 } from '../04-num-0-5/Pag66';
 import { Pag67 } from '../04-num-0-5/Pag67';
 import { Pag68 } from '../04-num-0-5/Pag68';
+import { Pag71 } from '../05-vocales/Pag71';
+import { Pag72 } from '../05-vocales/Pag72';
+import { Pag74 } from '../05-vocales/Pag74';
+import { Pag75 } from '../05-vocales/Pag75';
+import { Pag77 } from '../05-vocales/Pag77';
+import { Pag78 } from '../05-vocales/Pag78';
+import { Pag80 } from '../05-vocales/Pag80';
+import { Pag81 } from '../05-vocales/Pag81';
+import { Pag83 } from '../05-vocales/Pag83';
+import { Pag84 } from '../05-vocales/Pag84';
 
 
 export const Libro = () => {
     
-    const { width} = useWindowDimensions();
+    const { width } = useWindowDimensions();
     const widthBook = width *0.85 ;
     const heightBook = (width *0.56)*0.85;
 
@@ -79,9 +89,13 @@ export const Libro = () => {
                     <span className="carousel-control-prev-icon position-absolute top-50 start-0 translate-middle-y ml-5 btn btn-primary" aria-hidden="true"></span>
                 </button>
                 <HTMLFlipBook width={widthBook} height={heightBook}  useMouseEvents={false} ref={book}  autoSize={true} className="libro">
-                    
-                    
+                   
+                   
+
+
+
                     <div className="demoPage"><video  src="static/Diapositivas PNG/0 - Portada.mp4" loop={true} autoPlay={true} width={widthBook} height={heightBook}/></div>
+                    
                     <img className="demoPage" src="static/Diapositivas PNG/1.png" alt="page-1"/>
                     <img className="demoPage" src="static/Diapositivas PNG/2.png" alt="page-2"/>
                     <img className="demoPage" src="static/Diapositivas PNG/3.png" alt="page-3"/>
@@ -153,16 +167,26 @@ export const Libro = () => {
                     <div className="demoPage"><Pag68 playBad={playBad} playGood={playGood}/></div>
                     <img className="demoPage" src="static/Diapositivas PNG/69.png" alt="page-3"/>
                     <img className="demoPage" src="static/Diapositivas PNG/70.png" alt="page-3"/>
+                    <div className="demoPage"><Pag71 playBad={playBad} playGood={playGood}/></div>
+                    <div className="demoPage"><Pag72 playBad={playBad} playGood={playGood}/></div>
+                    <img className="demoPage" src="static/Diapositivas PNG/73.png" alt="page-3"/>
+                    <div className="demoPage"><Pag74 playBad={playBad} playGood={playGood}/></div>
+                    <div className="demoPage"><Pag75 playBad={playBad} playGood={playGood}/></div>
+                    <img className="demoPage" src="static/Diapositivas PNG/76.png" alt="page-3"/>
+                    <div className="demoPage"><Pag77 playBad={playBad} playGood={playGood}/></div>
+                    <div className="demoPage"><Pag78 playBad={playBad} playGood={playGood}/></div>
+                    <img className="demoPage" src="static/Diapositivas PNG/79.png" alt="page-3"/>
+                    <div className="demoPage"><Pag80 playBad={playBad} playGood={playGood}/></div>
+                    <div className="demoPage"><Pag81 playBad={playBad} playGood={playGood}/></div>
+                    <img className="demoPage" src="static/Diapositivas PNG/82.png" alt="page-3"/>
+                    <div className="demoPage"><Pag83 playBad={playBad} playGood={playGood}/></div>
+                    <div className="demoPage"><Pag84 playBad={playBad} playGood={playGood}/></div>
+                    <img className="demoPage" src="static/Diapositivas PNG/84.png" alt="page-3"/>
+                    <img className="demoPage" src="static/Diapositivas PNG/85.png" alt="page-3"/>
 
 
 
 {/*                    
-                    <img className="demoPage" src="static/Diapositivas PNG/73.png" alt="page-3"/>
-                    <img className="demoPage" src="static/Diapositivas PNG/76.png" alt="page-3"/>
-                    <img className="demoPage" src="static/Diapositivas PNG/79.png" alt="page-3"/>
-                    <img className="demoPage" src="static/Diapositivas PNG/82.png" alt="page-3"/>
-                    <img className="demoPage" src="static/Diapositivas PNG/84.png" alt="page-3"/>
-                    <img className="demoPage" src="static/Diapositivas PNG/85.png" alt="page-3"/>
                     <img className="demoPage" src="static/Diapositivas PNG/86.png" alt="page-3"/>
                     <img className="demoPage" src="static/Diapositivas PNG/87.png" alt="page-3"/>
                     <img className="demoPage" src="static/Diapositivas PNG/88.png" alt="page-3"/>
