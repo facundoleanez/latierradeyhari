@@ -50,5 +50,11 @@
 .adelante {
   z-index: 1;
 }
+.letra-grande {
+  font-size: 3vw;
+}
+.letra-chica {
+  font-size: 2vw;
+}
 
 

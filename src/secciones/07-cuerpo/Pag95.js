@@ -1,0 +1,55 @@
+import React, { useEffect,useState } from 'react'
+import { BienHecho } from '../../components/BienHecho'
+
+export const Pag95 = ({playBad, playGood}) => {
+
+    const [completed, setCompleted] = useState(false);
+    const [good, setGood] = useState(false);
+    const [wrong, setWrong] = useState(false);
+
+    const handleClickTrue = () => {
+        setCompleted(true);
+        setGood(true);
+        setWrong(false);
+        playGood()
+    }
+    const handleClickWrong = () => {
+        setGood(false);
+        setWrong(true);
+        playBad()
+    }
+    useEffect(() => {
+        if (wrong) {
+            const timeOut = setTimeout(()=>setWrong(false), 1000)
+            return () => {
+                clearTimeout(timeOut)
+            }
+        }
+    }, [wrong])
+
+    return (
+        <>
+            { completed ? (<BienHecho setCompleted={setCompleted}/>) :
+            <div className="row p-3 p-lg-5">
+                <img className="position-absolute top-50 start-50 translate-middle p-0 m-0" src="static/Diapositivas PNG/95.png" alt="pag-19"/>
+                { good && <img className="position-absolute animate__animated animate__bounceIn" src="static/Elementosporseparado/bien.png" alt="bien" style={{zIndex:2, width:"10vw"}}/>}
+                { wrong && <img className="position-absolute animate__animated animate__bounceIn" src="static/Elementosporseparado/mal.png" alt="bien" style={{zIndex:2, width:"10vw"}}/>}
+                <div className="row" style={{height:"20vw"}}></div>
+                <div className="col-7 adelante px-lg-5 px-4">
+                    <div>
+                        <img className="img-hover" onClick={()=>{handleClickWrong()}} style={{height:"4vw"}} src="static/Elementosporseparado/9 El cuerpo humano/cejas.png" alt="img"/>
+                    </div>
+                    <div style={{height:"4vw"}}>
+                    </div>
+                    <div className={good ? "px-lg-5 text-end" : "px-md-4"}>
+                        <img className="img-hover mx-4 mx-md-5" onClick={()=>{handleClickTrue()}} style={{height:"4vw"}} src="static/Elementosporseparado/9 El cuerpo humano/nariz.png" alt="img"/>
+                    </div>
+                    <div>
+                        <img className="img-hover" onClick={()=>{handleClickWrong()}} style={{height:"4vw"}} src="static/Elementosporseparado/9 El cuerpo humano/boca.png" alt="img"/>
+                    </div>
+                </div>
+            </div>
+            }
+        </>
+    )
+}

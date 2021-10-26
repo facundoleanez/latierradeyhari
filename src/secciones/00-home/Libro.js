@@ -75,6 +75,11 @@ import { Pag89 } from '../06-tamano/Pag89';
 import { Pag90 } from '../06-tamano/Pag90';
 import { Pag91 } from '../06-tamano/Pag91';
 import { Pag92 } from '../06-tamano/Pag92';
+import { Pag93 } from '../07-cuerpo/Pag93';
+import { Pag94 } from '../07-cuerpo/Pag94';
+import { Pag95 } from '../07-cuerpo/Pag95';
+import { Pag96 } from '../07-cuerpo/Pag96';
+import { Pag97 } from '../07-cuerpo/Pag97';
 
 
 export const Libro = () => {
@@ -96,6 +101,7 @@ export const Libro = () => {
                     <span className="carousel-control-prev-icon position-absolute top-50 start-0 translate-middle-y ml-5 btn btn-primary" aria-hidden="true"></span>
                 </button>
                 <HTMLFlipBook width={widthBook} height={heightBook}  useMouseEvents={false} ref={book}  autoSize={true} className="libro">
+                   
                    
                    
 
@@ -197,18 +203,23 @@ export const Libro = () => {
                     <div className="demoPage"><Pag90 playBad={playBad} playGood={playGood}/></div>
                     <div className="demoPage"><Pag91 playBad={playBad} playGood={playGood}/></div>
                     <div className="demoPage"><Pag92 playBad={playBad} playGood={playGood}/></div>
+                    <div className="demoPage"><video  src="static/Diapositivas PNG/93 CUERPO HUMANO ANIMADA.mp4" width={widthBook} height={heightBook} loop={true} autoPlay={true} /></div>
+                    <div className="demoPage"><Pag93 playBad={playBad} playGood={playGood}/></div>
+                    <div className="demoPage"><Pag94 playBad={playBad} playGood={playGood}/></div>
+                    <div className="demoPage"><Pag95 playBad={playBad} playGood={playGood}/></div>
+                    <div className="demoPage"><Pag96 playBad={playBad} playGood={playGood}/></div>
+                    <div className="demoPage"><Pag97 playBad={playBad} playGood={playGood}/></div>
+
+
+
 
 
 
 {/*                    
-                    <img className="demoPage" src="static/Diapositivas PNG/86.png" alt="page-3"/>
-                    <img className="demoPage" src="static/Diapositivas PNG/87.png" alt="page-3"/>
-                    <img className="demoPage" src="static/Diapositivas PNG/88.png" alt="page-3"/>
-                    <img className="demoPage" src="static/Diapositivas PNG/89.png" alt="page-3"/>
-                    <div className="demoPage"><video  src="static/Diapositivas PNG/93 CUERPO HUMANO ANIMADA.mp4" width={responsiveWidth(width)} height={responsiveHeight(width)} loop={true} autoPlay={true} /></div>
-                    <img className="demoPage" src="static/Diapositivas PNG/104.png" alt="page-3"/>
-                    <img className="demoPage" src="static/Diapositivas PNG/105.png" alt="page-3"/>
-                    <img className="demoPage" src="static/Diapositivas PNG/106.png" alt="page-3"/>
+
+<img className="demoPage" src="static/Diapositivas PNG/104.png" alt="page-3"/>
+<img className="demoPage" src="static/Diapositivas PNG/105.png" alt="page-3"/>
+<img className="demoPage" src="static/Diapositivas PNG/106.png" alt="page-3"/>
                     <img className="demoPage" src="static/Diapositivas PNG/108.png" alt="page-3"/>
                     <img className="demoPage" src="static/Diapositivas PNG/113.png" alt="page-3"/>
                     <img className="demoPage" src="static/Diapositivas PNG/120.png" alt="page-3"/>
