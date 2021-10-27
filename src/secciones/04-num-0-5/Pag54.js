@@ -65,7 +65,7 @@ export const Pag54 = ({playBad, playGood}) => {
                        <img className="img-hover" onClick={()=>{handleClickWrong()}} style={{height:"8vw"}} src="static/Elementosporseparado/4 Formas geométricas/circulo-personaje.png" alt="img"/>
                        <img className="img-hover" onClick={()=>{handleClickWrong()}} style={{height:"11vw"}} src="static/Elementosporseparado/4 Formas geométricas/cono-helado.png" alt="img"/>
                        <img className={`img-hover ${isSelected[2]? "animate__animated animate__zoomInDown selected" : ""}`} onClick={()=>{handleSelect(2)}} style={{height:"11vw"}} src="static/Elementosporseparado/5 Números del 0 al 5/4-rojo-y-blanco.png" alt="img"/>
-                       <img className="img-hover" onClick={()=>{handleClickWrong()}} style={{height:"11vw"}} src="static/Elementosporseparado/4 Formas geométricas/cuadrado.png" alt="img"/>
+                       <img className="img-hover" onClick={()=>{handleClickWrong()}} style={{height:"11vw"}} src="static/Elementosporseparado/4 Formas geométricas/Cuadrado.png" alt="img"/>
                        <img className={`img-hover ${isSelected[5]? "animate__animated animate__zoomInDown selected" : ""}`} onClick={()=>{handleSelect(5)}} style={{height:"11vw"}} src="static/Elementosporseparado/5 Números del 0 al 5/4-azul.png" alt="img"/>
 
                     </div>

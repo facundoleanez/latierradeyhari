@@ -100,7 +100,6 @@ export const Libro = () => {
 
     return (
         <div className="position-absolute top-50 start-50 translate-middle">
-            <h3 className="d-sm-none text-center mb-5">Para una mejor experiencia gire la pantalla y recargue la pagina</h3>
             <div>
                 <button className="carousel-control-prev position-absolute top-50 start-0 translate-middle" type="button" onClick={() => book.current.pageFlip().flipPrev()}>
                     <span className="carousel-control-prev-icon position-absolute top-50 start-0 translate-middle-y ml-5 btn btn-primary" aria-hidden="true"></span>
@@ -219,9 +218,9 @@ export const Libro = () => {
                     <div className="demoPage"><Pag101 playBad={playBad} playGood={playGood}/></div>
                     <div className="demoPage"><Pag102 playBad={playBad} playGood={playGood}/></div>
                     <div className="demoPage"><Pag103 playBad={playBad} playGood={playGood}/></div>
+
+
                     <img className="demoPage" src="static/Diapositivas PNG/104.png" alt="page-3"/>
-
-
 
 
 {/*                    

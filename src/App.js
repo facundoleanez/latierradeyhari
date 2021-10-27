@@ -15,7 +15,9 @@ function App() {
 
       <TopBar/>
 
-      <div className="img-hover text-center p-5" onClick={handle.enter}>
+      <h3 className="d-sm-none text-center mb-5">Para una mejor experiencia gire la pantalla</h3>
+
+      <div className="img-hover text-center p-5 d-none d-md-block" onClick={handle.enter}>
         <LibroPortada />
       </div>
       
