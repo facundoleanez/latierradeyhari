@@ -13,11 +13,7 @@ export const Pag97 = ({playBad, playGood}) => {
         setWrong(false);
         playGood()
     }
-    const handleClickWrong = () => {
-        setGood(false);
-        setWrong(true);
-        playBad()
-    }
+
     useEffect(() => {
         if (wrong) {
             const timeOut = setTimeout(()=>setWrong(false), 1000)
