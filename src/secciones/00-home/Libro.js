@@ -85,6 +85,11 @@ import { Pag100 } from '../07-cuerpo/Pag100';
 import { Pag101 } from '../07-cuerpo/Pag101';
 import { Pag102 } from '../07-cuerpo/Pag102';
 import { Pag103 } from '../07-cuerpo/Pag103';
+import { Pag107 } from '../08-num-6-10/Pag107';
+import { Pag114 } from '../08-num-6-10/Pag114';
+import { Pag121 } from '../08-num-6-10/Pag121';
+import { Pag128 } from '../08-num-6-10/Pag128';
+import { Pag135 } from '../08-num-6-10/Pag135';
 
 
 export const Libro = () => {
@@ -107,7 +112,12 @@ export const Libro = () => {
                 <HTMLFlipBook width={widthBook} height={heightBook}  useMouseEvents={false} ref={book}  autoSize={true} className="libro">
                    
                    
-                   
+                <div className="demoPage"><Pag107 playBad={playBad} playGood={playGood}/></div>
+                <div className="demoPage"><Pag114 playBad={playBad} playGood={playGood}/></div>
+                <div className="demoPage"><Pag121 playBad={playBad} playGood={playGood}/></div>
+                <div className="demoPage"><Pag128 playBad={playBad} playGood={playGood}/></div>
+                <div className="demoPage"><Pag135 playBad={playBad} playGood={playGood}/></div>
+
 
 
                     <div className="demoPage"><video  src="static/Diapositivas PNG/0 - Portada.mp4" loop={true} autoPlay={true} width={widthBook} height={heightBook}/></div>
@@ -218,15 +228,15 @@ export const Libro = () => {
                     <div className="demoPage"><Pag101 playBad={playBad} playGood={playGood}/></div>
                     <div className="demoPage"><Pag102 playBad={playBad} playGood={playGood}/></div>
                     <div className="demoPage"><Pag103 playBad={playBad} playGood={playGood}/></div>
-
-
                     <img className="demoPage" src="static/Diapositivas PNG/104.png" alt="page-3"/>
+                    <img className="demoPage" src="static/Diapositivas PNG/105.png" alt="page-3"/>
+                    <img className="demoPage" src="static/Diapositivas PNG/106.png" alt="page-3"/>
+
+
 
 
 {/*                    
 
-<img className="demoPage" src="static/Diapositivas PNG/105.png" alt="page-3"/>
-<img className="demoPage" src="static/Diapositivas PNG/106.png" alt="page-3"/>
                     <img className="demoPage" src="static/Diapositivas PNG/108.png" alt="page-3"/>
                     <img className="demoPage" src="static/Diapositivas PNG/113.png" alt="page-3"/>
                     <img className="demoPage" src="static/Diapositivas PNG/120.png" alt="page-3"/>
