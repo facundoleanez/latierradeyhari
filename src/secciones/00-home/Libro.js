@@ -80,6 +80,11 @@ import { Pag94 } from '../07-cuerpo/Pag94';
 import { Pag95 } from '../07-cuerpo/Pag95';
 import { Pag96 } from '../07-cuerpo/Pag96';
 import { Pag97 } from '../07-cuerpo/Pag97';
+import { Pag99 } from '../07-cuerpo/Pag99';
+import { Pag100 } from '../07-cuerpo/Pag100';
+import { Pag101 } from '../07-cuerpo/Pag101';
+import { Pag102 } from '../07-cuerpo/Pag102';
+import { Pag103 } from '../07-cuerpo/Pag103';
 
 
 export const Libro = () => {
@@ -104,7 +109,6 @@ export const Libro = () => {
                    
                    
                    
-
 
 
                     <div className="demoPage"><video  src="static/Diapositivas PNG/0 - Portada.mp4" loop={true} autoPlay={true} width={widthBook} height={heightBook}/></div>
@@ -209,15 +213,19 @@ export const Libro = () => {
                     <div className="demoPage"><Pag95 playBad={playBad} playGood={playGood}/></div>
                     <div className="demoPage"><Pag96 playBad={playBad} playGood={playGood}/></div>
                     <div className="demoPage"><Pag97 playBad={playBad} playGood={playGood}/></div>
-
-
+                    <img className="demoPage" src="static/Diapositivas PNG/98.png" alt="page-3"/>
+                    <div className="demoPage"><Pag99 playBad={playBad} playGood={playGood}/></div>
+                    <div className="demoPage"><Pag100 playBad={playBad} playGood={playGood}/></div>
+                    <div className="demoPage"><Pag101 playBad={playBad} playGood={playGood}/></div>
+                    <div className="demoPage"><Pag102 playBad={playBad} playGood={playGood}/></div>
+                    <div className="demoPage"><Pag103 playBad={playBad} playGood={playGood}/></div>
+                    <img className="demoPage" src="static/Diapositivas PNG/104.png" alt="page-3"/>
 
 
 
 
 {/*                    
 
-<img className="demoPage" src="static/Diapositivas PNG/104.png" alt="page-3"/>
 <img className="demoPage" src="static/Diapositivas PNG/105.png" alt="page-3"/>
 <img className="demoPage" src="static/Diapositivas PNG/106.png" alt="page-3"/>
                     <img className="demoPage" src="static/Diapositivas PNG/108.png" alt="page-3"/>

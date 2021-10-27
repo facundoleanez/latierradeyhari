@@ -54,7 +54,7 @@ export const Pag88 = ({playBad, playGood}) => {
                         </div>
                         <div className="col-4">
                             { good ? 
-                            <img className="img-hover" style={{height:"15vw"}} src="static/Elementosporseparado/8 Nocion de tamaño/perrito+comida.png" alt="img"/> :
+                            <img className="img-hover" style={{height:"15vw"}} src="static/Elementosporseparado/8 Nocion de tamaño/perrito-comida.png" alt="img"/> :
                             <img className="img-hover" style={{height:"10vw"}} src="static/Elementosporseparado/8 Nocion de tamaño/comida-amarillo.png" alt="img"/>
                             }
                             </div>
