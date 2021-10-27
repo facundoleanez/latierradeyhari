@@ -49,24 +49,24 @@ export const Pag114 = ({playBad, playGood}) => {
                 { wrong && <img className="position-absolute animate__animated animate__bounceIn" src="static/Elementosporseparado/mal.png" alt="bien" style={{zIndex:2, width:"10vw"}}/>}
                 <div className="row" style={{height:"15vw"}}></div>
                 <div className="px-lg-5 col-11 adelante">
-                    <img className="img-hover" onClick={()=>{handleClickWrong()}} src="static/Elementosporseparado/10 Números del 6 al 10/estrella-2.png" style={{height:"10vw"}} />
-                    <img className={isSelected[0] ? "selected" : "img-hover"} onClick={()=>{handleClickTrue(0)}} src="static/Elementosporseparado/10 Números del 6 al 10/estrella-9.png" style={{height:"10vw"}} />
-                    <img className="img-hover" onClick={()=>{handleClickWrong()}} src="static/Elementosporseparado/10 Números del 6 al 10/estrella-4.png" style={{height:"10vw"}} />
-                    <img className="img-hover" onClick={()=>{handleClickWrong()}} src="static/Elementosporseparado/10 Números del 6 al 10/estrella-6.png" style={{height:"10vw"}} />
-                    <img className={isSelected[1] ? "selected" : "img-hover"} onClick={()=>{handleClickTrue(1)}} src="static/Elementosporseparado/10 Números del 6 al 10/estrella-13.png" style={{height:"10vw"}} />
-                    <img className="img-hover" onClick={()=>{handleClickWrong()}} src="static/Elementosporseparado/10 Números del 6 al 10/estrella-8.png" style={{height:"10vw"}} />
-                    <img className="img-hover" onClick={()=>{handleClickWrong()}} src="static/Elementosporseparado/10 Números del 6 al 10/estrella-1.png" style={{height:"10vw"}} />
-                    <img className={isSelected[2] ? "selected" : "img-hover"} onClick={()=>{handleClickTrue(2)}} src="static/Elementosporseparado/10 Números del 6 al 10/estrella-14.png" style={{height:"10vw"}} />
-                    <img className="img-hover" onClick={()=>{handleClickWrong()}} src="static/Elementosporseparado/10 Números del 6 al 10/estrella-10.png" style={{height:"10vw"}} />
-                    <img className={isSelected[3] ? "selected" : "img-hover"} onClick={()=>{handleClickTrue(3)}} src="static/Elementosporseparado/10 Números del 6 al 10/estrella-15.png" style={{height:"10vw"}} />
-                    <img className="img-hover" onClick={()=>{handleClickWrong()}} src="static/Elementosporseparado/10 Números del 6 al 10/estrella-11.png" style={{height:"10vw"}} />
-                    <img className="img-hover" onClick={()=>{handleClickWrong()}} src="static/Elementosporseparado/10 Números del 6 al 10/estrella-12.png" style={{height:"10vw"}} />
-                    <img className={isSelected[4] ? "selected" : "img-hover"} onClick={()=>{handleClickTrue(4)}} src="static/Elementosporseparado/10 Números del 6 al 10/estrella-16.png" style={{height:"10vw"}} />
-                    <img className="img-hover" onClick={()=>{handleClickWrong()}} src="static/Elementosporseparado/10 Números del 6 al 10/estrella-3.png" style={{height:"10vw"}} />
-                    <img className="img-hover" onClick={()=>{handleClickWrong()}} src="static/Elementosporseparado/10 Números del 6 al 10/estrella-5.png" style={{height:"10vw"}} />
-                    <img className={isSelected[5] ? "selected" : "img-hover"} onClick={()=>{handleClickTrue(5)}} src="static/Elementosporseparado/10 Números del 6 al 10/estrella-9.png" style={{height:"10vw"}} />
-                    <img className="img-hover" onClick={()=>{handleClickWrong()}} src="static/Elementosporseparado/10 Números del 6 al 10/estrella-7.png" style={{height:"10vw"}} />
-                    <img className="img-hover" onClick={()=>{handleClickWrong()}} src="static/Elementosporseparado/10 Números del 6 al 10/estrella-1.png" style={{height:"10vw"}} />
+                    <img className="img-hover" onClick={()=>{handleClickWrong()}} src="static/Elementosporseparado/10 Números del 6 al 10/estrella-2.png" style={{height:"10vw"}} alt="img"/>
+                    <img className={isSelected[0] ? "selected" : "img-hover"} onClick={()=>{handleClickTrue(0)}} src="static/Elementosporseparado/10 Números del 6 al 10/estrella-9.png" style={{height:"10vw"}} alt="img"/>
+                    <img className="img-hover" onClick={()=>{handleClickWrong()}} src="static/Elementosporseparado/10 Números del 6 al 10/estrella-4.png" style={{height:"10vw"}} alt="img"/>
+                    <img className="img-hover" onClick={()=>{handleClickWrong()}} src="static/Elementosporseparado/10 Números del 6 al 10/estrella-6.png" style={{height:"10vw"}} alt="img"/>
+                    <img className={isSelected[1] ? "selected" : "img-hover"} onClick={()=>{handleClickTrue(1)}} src="static/Elementosporseparado/10 Números del 6 al 10/estrella-13.png" style={{height:"10vw"}} alt="img"/>
+                    <img className="img-hover" onClick={()=>{handleClickWrong()}} src="static/Elementosporseparado/10 Números del 6 al 10/estrella-8.png" style={{height:"10vw"}} alt="img"/>
+                    <img className="img-hover" onClick={()=>{handleClickWrong()}} src="static/Elementosporseparado/10 Números del 6 al 10/estrella-1.png" style={{height:"10vw"}} alt="img"/>
+                    <img className={isSelected[2] ? "selected" : "img-hover"} onClick={()=>{handleClickTrue(2)}} src="static/Elementosporseparado/10 Números del 6 al 10/estrella-14.png" style={{height:"10vw"}} alt="img"/>
+                    <img className="img-hover" onClick={()=>{handleClickWrong()}} src="static/Elementosporseparado/10 Números del 6 al 10/estrella-10.png" style={{height:"10vw"}} alt="img"/>
+                    <img className={isSelected[3] ? "selected" : "img-hover"} onClick={()=>{handleClickTrue(3)}} src="static/Elementosporseparado/10 Números del 6 al 10/estrella-15.png" style={{height:"10vw"}} alt="img"/>
+                    <img className="img-hover" onClick={()=>{handleClickWrong()}} src="static/Elementosporseparado/10 Números del 6 al 10/estrella-11.png" style={{height:"10vw"}} alt="img"/>
+                    <img className="img-hover" onClick={()=>{handleClickWrong()}} src="static/Elementosporseparado/10 Números del 6 al 10/estrella-12.png" style={{height:"10vw"}} alt="img"/>
+                    <img className={isSelected[4] ? "selected" : "img-hover"} onClick={()=>{handleClickTrue(4)}} src="static/Elementosporseparado/10 Números del 6 al 10/estrella-16.png" style={{height:"10vw"}} alt="img"/>
+                    <img className="img-hover" onClick={()=>{handleClickWrong()}} src="static/Elementosporseparado/10 Números del 6 al 10/estrella-3.png" style={{height:"10vw"}} alt="img"/>
+                    <img className="img-hover" onClick={()=>{handleClickWrong()}} src="static/Elementosporseparado/10 Números del 6 al 10/estrella-5.png" style={{height:"10vw"}} alt="img"/>
+                    <img className={isSelected[5] ? "selected" : "img-hover"} onClick={()=>{handleClickTrue(5)}} src="static/Elementosporseparado/10 Números del 6 al 10/estrella-9.png" style={{height:"10vw"}} alt="img"/>
+                    <img className="img-hover" onClick={()=>{handleClickWrong()}} src="static/Elementosporseparado/10 Números del 6 al 10/estrella-7.png" style={{height:"10vw"}} alt="img"/>
+                    <img className="img-hover" onClick={()=>{handleClickWrong()}} src="static/Elementosporseparado/10 Números del 6 al 10/estrella-1.png" style={{height:"10vw"}} alt="img"/>
                 </div>
             </div>
             }
