@@ -45,7 +45,7 @@ export const Pag93 = ({playBad, playGood}) => {
                 <div className="col-3 adelante">
                     <div style={{height:"12vw"}}></div>
                     <div className="bg-amarillo border border-dark rounded p-2 p-lg-3 m-lg-4 ">
-                        { !isSelected[9] && <div className="btn btn-primary letra-titulo m-md-2" onClick={()=>{handleClickTrue(9)}} style={{fontSize:"1vw"}}>TORSO</div>}
+                        { !isSelected[9] && <div className="btn btn-primary letra-titulo m-md-2" onClick={()=>{handleClickTrue(9)}} style={{fontSize:"1vw"}}>PIES</div>}
                         { !isSelected[5] && <div className="btn btn-warning letra-titulo m-md-2" onClick={()=>{handleClickTrue(5)}} style={{fontSize:"1vw"}}>OREJA</div>}
                         { !isSelected[6] && <div className="btn btn-success letra-titulo m-md-2" onClick={()=>{handleClickTrue(6)}} style={{fontSize:"1vw"}}>NARIZ</div>}
                         { !isSelected[7] && <div className="btn btn-danger letra-titulo m-md-2" onClick={()=>{handleClickTrue(7)}} style={{fontSize:"1vw"}}>MANO</div>}

@@ -46,7 +46,6 @@ export const Pag86 = ({playBad, playGood}) => {
                             <img className="img-hover" onClick={()=>{handleClickWrong()}} style={{height:"14vw"}} src="static/Elementosporseparado/7 Las vocales/patito.png" alt="img"/>
                         </div>
                         <div className="col-4">
-
                             {good && <div style={{height:"20vw"}}></div>}
                             <img className="img-hover" onClick={()=>{handleClickTrue()}} style={{height:"9vw"}} src="static/Elementosporseparado/7 Las vocales/patito.png" alt="img"/>
                         </div>

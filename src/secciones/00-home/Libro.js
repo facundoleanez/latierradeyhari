@@ -100,6 +100,21 @@ import { Pag129 } from '../08-num-6-10/Pag129';
 import { Pag130 } from '../08-num-6-10/Pag130';
 import { Pag136 } from '../08-num-6-10/Pag136';
 import { Pag137 } from '../08-num-6-10/Pag137';
+import { Pag110 } from '../08-num-6-10/Pag110';
+import { Pag111 } from '../08-num-6-10/Pag111';
+import { Pag112 } from '../08-num-6-10/Pag112';
+import { Pag117 } from '../08-num-6-10/Pag117';
+import { Pag118 } from '../08-num-6-10/Pag118';
+import { Pag119 } from '../08-num-6-10/Pag119';
+import { Pag124 } from '../08-num-6-10/Pag124';
+import { Pag125 } from '../08-num-6-10/Pag125';
+import { Pag126 } from '../08-num-6-10/Pag126';
+import { Pag131 } from '../08-num-6-10/Pag131';
+import { Pag132 } from '../08-num-6-10/Pag132';
+import { Pag133 } from '../08-num-6-10/Pag133';
+import { Pag138 } from '../08-num-6-10/Pag138';
+import { Pag139 } from '../08-num-6-10/Pag139';
+import { Pag140 } from '../08-num-6-10/Pag140';
 
 
 export const Libro = () => {
@@ -239,35 +254,46 @@ export const Libro = () => {
                     <div className="demoPage"><Pag107 playBad={playBad} playGood={playGood}/></div>
                     <div className="demoPage"><Pag108 playBad={playBad} playGood={playGood}/></div>
                     <div className="demoPage"><Pag109 playBad={playBad} playGood={playGood}/></div>
-
+                    <div className="demoPage"><Pag110 playBad={playBad} playGood={playGood}/></div>
+                    <div className="demoPage"><Pag111 playBad={playBad} playGood={playGood}/></div>
+                    <div className="demoPage"><Pag112 playBad={playBad} playGood={playGood}/></div>
+                    <img className="demoPage" src="static/Diapositivas PNG/113.png" alt="page-3"/>
                     <div className="demoPage"><Pag114 playBad={playBad} playGood={playGood}/></div>
                     <div className="demoPage"><Pag115 playBad={playBad} playGood={playGood}/></div>
                     <div className="demoPage"><Pag116 playBad={playBad} playGood={playGood}/></div>
-
+                    <div className="demoPage"><Pag117 playBad={playBad} playGood={playGood}/></div>
+                    <div className="demoPage"><Pag118 playBad={playBad} playGood={playGood}/></div>
+                    <div className="demoPage"><Pag119 playBad={playBad} playGood={playGood}/></div>
+                    <img className="demoPage" src="static/Diapositivas PNG/120.png" alt="page-3"/>
                     <div className="demoPage"><Pag121 playBad={playBad} playGood={playGood}/></div>
                     <div className="demoPage"><Pag122 playBad={playBad} playGood={playGood}/></div>
                     <div className="demoPage"><Pag123 playBad={playBad} playGood={playGood}/></div>
-
+                    <div className="demoPage"><Pag124 playBad={playBad} playGood={playGood}/></div>
+                    <div className="demoPage"><Pag125 playBad={playBad} playGood={playGood}/></div>
+                    <div className="demoPage"><Pag126 playBad={playBad} playGood={playGood}/></div>
+                    <img className="demoPage" src="static/Diapositivas PNG/127.png" alt="page-3"/>
                     <div className="demoPage"><Pag128 playBad={playBad} playGood={playGood}/></div>
                     <div className="demoPage"><Pag129 playBad={playBad} playGood={playGood}/></div>
                     <div className="demoPage"><Pag130 playBad={playBad} playGood={playGood}/></div>
-
+                    <div className="demoPage"><Pag131 playBad={playBad} playGood={playGood}/></div>
+                    <div className="demoPage"><Pag132 playBad={playBad} playGood={playGood}/></div>
+                    <div className="demoPage"><Pag133 playBad={playBad} playGood={playGood}/></div>
+                    <img className="demoPage" src="static/Diapositivas PNG/134.png" alt="page-3"/>
                     <div className="demoPage"><Pag135 playBad={playBad} playGood={playGood}/></div>
                     <div className="demoPage"><Pag136 playBad={playBad} playGood={playGood}/></div>
                     <div className="demoPage"><Pag137 playBad={playBad} playGood={playGood}/></div>
+                    <div className="demoPage"><Pag138 playBad={playBad} playGood={playGood}/></div>
+                    <div className="demoPage"><Pag139 playBad={playBad} playGood={playGood}/></div>
+                    <div className="demoPage"><Pag140 playBad={playBad} playGood={playGood}/></div>
 
 
 
 
 {/*                    
+                    <img className="demoPage" src="static/Diapositivas PNG/108.png" alt="page-3"/>
 
-<img className="demoPage" src="static/Diapositivas PNG/108.png" alt="page-3"/>
-<img className="demoPage" src="static/Diapositivas PNG/113.png" alt="page-3"/>
-<img className="demoPage" src="static/Diapositivas PNG/120.png" alt="page-3"/>
-<img className="demoPage" src="static/Diapositivas PNG/127.png" alt="page-3"/>
-<img className="demoPage" src="static/Diapositivas PNG/134.png" alt="page-3"/>
-                    <div className="demoPage"><video  src="static/Diapositivas PNG/141 ANIMADA.mp4" width={responsiveWidth(width)} height={responsiveHeight(width)} loop={true} autoPlay={true} /></div>
-                    <img className="demoPage" src="static/Diapositivas PNG/144.png" alt="page-3"/>
+<div className="demoPage"><video  src="static/Diapositivas PNG/141 ANIMADA.mp4" width={responsiveWidth(width)} height={responsiveHeight(width)} loop={true} autoPlay={true} /></div>
+<img className="demoPage" src="static/Diapositivas PNG/144.png" alt="page-3"/>
                     <img className="demoPage" src="static/Diapositivas PNG/150.png" alt="page-3"/>
                     <img className="demoPage" src="static/Diapositivas PNG/154.png" alt="page-3"/>
                     <img className="demoPage" src="static/Diapositivas PNG/155.png" alt="page-3"/>

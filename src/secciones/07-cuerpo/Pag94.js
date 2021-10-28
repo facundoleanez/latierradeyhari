@@ -48,23 +48,7 @@ export const Pag94 = ({playBad, playGood}) => {
                     <div>
                         <img className="img-hover" onClick={()=>{handleClickWrong()}} style={{height:"4vw"}} src="static/Elementosporseparado/9 El cuerpo humano/boca.png" alt="img"/>
                     </div>
-
                 </div>
-                
-                {/* 
-                <div className="col-8 adelante">
-                    <div className="row">
-                        <div className="col-4">
-                        </div>
-                        <div className="col-4">
-                            <img className="img-hover" onClick={()=>{handleClickWrong()}} style={{height:"25vw"}} src="static/Elementosporseparado/8 Nocion de tamaño/oso.png" alt="img"/>
-                        </div>
-                        <div className="col-4">
-                            <img className="img-hover" onClick={()=>{handleClickWrong()}} style={{height:"9vw"}} src="static/Elementosporseparado/8 Nocion de tamaño/oso.png" alt="img"/>
-                        </div>
-                    </div>
-                </div> */}
-
             </div>
             }
         </>

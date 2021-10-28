@@ -39,8 +39,8 @@ export const Pag95 = ({playBad, playGood}) => {
                     <div>
                         <img className="img-hover" onClick={()=>{handleClickWrong()}} style={{height:"4vw"}} src="static/Elementosporseparado/9 El cuerpo humano/cejas.png" alt="img"/>
                     </div>
-                    <div style={{height:"4vw"}}>
-                    </div>
+                    <div style={{height:"4vw"}}></div>
+                    
                     <div className={good ? "px-lg-5 text-end" : "px-md-4"}>
                         <img className="img-hover mx-4 mx-md-5" onClick={()=>{handleClickTrue()}} style={{height:"4vw"}} src="static/Elementosporseparado/9 El cuerpo humano/nariz.png" alt="img"/>
                     </div>
