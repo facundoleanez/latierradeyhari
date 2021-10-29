@@ -56,5 +56,12 @@
 .letra-chica {
   font-size: 2vw;
 }
-
-
+.alto-10{
+  height: 10vw ;
+}
+.alto-15{
+  height: 15vw ;
+}
+.ancho-10 {
+  width: 10vw;
+}

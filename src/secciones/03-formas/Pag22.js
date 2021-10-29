@@ -44,16 +44,16 @@ export const Pag22 = ({playBad, playGood}) => {
     }, [wrong])
   
     return (
-        <div>
+        <>
             { completed ? ( <BienHecho setCompleted={setCompleted}/> ) :
                 <div className="row">
                     <img className="position-absolute top-50 start-50 translate-middle p-0" src="static/Diapositivas PNG/22.png" alt="pag-5"/> 
-                    <div className="position-absolute" style={{zIndex:1}}>
-                        { good && <img className="animate__animated animate__bounceIn" src="static/Elementosporseparado/bien.png" alt="bien" style={{width:"10vw"}}/>}
-                        { wrong && <img className="animate__animated animate__bounceIn" src="static/Elementosporseparado/mal.png" alt="bien" style={{width:"10vw"}}/>}
+                    <div className="position-absolute adelante">
+                        { good ? <img className="animate__animated animate__bounceIn ancho-10" src="static/Elementosporseparado/bien.png" alt="bien"/> : <></> }
+                        { wrong ? <img className="animate__animated animate__bounceIn ancho-10" src="static/Elementosporseparado/mal.png" alt="bien"/> : <></>}
                     </div>
-                    <div className="row" style={{height:"10vw"}}></div>
-                    <div className="col-8"style={{zIndex:2}}>
+                    <div className="row alto-10"></div>
+                    <div className="col-8 adelante">
                         <div className="bg-amarillo m-3 m-md-5 p-2 border border-dark d-flex flex-wrap" >
                             <img className={`img-hover m-1 ${isSelected[0] ? "selected" : ""}`} alt="img-1" onClick={()=>{handleSelect(0)}} style={{height:"6.5vw"}} src="static/Elementosporseparado/4 Formas geométricas/cuadrado-amarillo.png" />
                             <img className="img-hover m-1" alt="img-1" onClick={()=>{handleClickWrong()}} style={{height:"6.5vw"}} src="static/Elementosporseparado/4 Formas geométricas/circulo-azul.png" />
@@ -80,7 +80,7 @@ export const Pag22 = ({playBad, playGood}) => {
                     </div>
                 </div>
             }
-        </div>
+        </>
         
     )
 }

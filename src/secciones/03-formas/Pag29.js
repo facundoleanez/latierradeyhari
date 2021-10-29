@@ -44,15 +44,15 @@ export const Pag29 = ({playBad, playGood}) => {
     }, [wrong])
   
     return (
-        <div>
+        <>
             { completed ? ( <BienHecho setCompleted={setCompleted}/> ) :
                 <div className="row">
                     <img className="position-absolute top-50 start-50 translate-middle p-0" src="static/Diapositivas PNG/29.png" alt="pag-5"/> 
-                    <div className="position-absolute" style={{zIndex:1}}>
-                        { good && <img className="animate__animated animate__bounceIn" src="static/Elementosporseparado/bien.png" alt="bien" style={{width:"10vw"}}/>}
-                        { wrong && <img className="animate__animated animate__bounceIn" src="static/Elementosporseparado/mal.png" alt="bien" style={{width:"10vw"}}/>}
+                    <div className="position-absolute adelante">
+                        { good ? <img className="animate__animated animate__bounceIn ancho-10" src="static/Elementosporseparado/bien.png" alt="bien"/> : <></> }
+                        { wrong ? <img className="animate__animated animate__bounceIn ancho-10" src="static/Elementosporseparado/mal.png" alt="bien"/> : <></>}
                     </div>
-                    <div className="row position-absolute top-50 start-50 translate-middle justify-content-center" style={{zIndex:1}}>
+                    <div className="row position-absolute top-50 start-50 translate-middle justify-content-center adelante">
                         <div className="col-8" >
                             <div className="row text-center justify-content-center m-3 mt-5 border border-dark border-2">
                                 <div className="col-3 bg-amarillo p-2">
@@ -101,7 +101,7 @@ export const Pag29 = ({playBad, playGood}) => {
                     </div>
                 </div>
             }
-        </div>
+        </>
         
     )
 }
