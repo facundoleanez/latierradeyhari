@@ -115,6 +115,13 @@ import { Pag133 } from '../08-num-6-10/Pag133';
 import { Pag138 } from '../08-num-6-10/Pag138';
 import { Pag139 } from '../08-num-6-10/Pag139';
 import { Pag140 } from '../08-num-6-10/Pag140';
+import { Pag142 } from '../08-num-6-10/Pag142';
+import { Pag143 } from '../08-num-6-10/Pag143';
+import { Pag145 } from '../09-cantidad/Pag145';
+import { Pag146 } from '../09-cantidad/Pag146';
+import { Pag147 } from '../09-cantidad/Pag147';
+import { Pag148 } from '../09-cantidad/Pag148';
+import { Pag149 } from '../09-cantidad/Pag149';
 
 
 export const Libro = () => {
@@ -227,7 +234,7 @@ export const Libro = () => {
                     <img className="demoPage" src="static/Diapositivas PNG/82.png" alt="page-3"/>
                     <div className="demoPage"><Pag83 playBad={playBad} playGood={playGood}/></div>
                     <div className="demoPage"><Pag84 playBad={playBad} playGood={playGood}/></div>
-                    <img className="demoPage" src="static/Diapositivas PNG/84.png" alt="page-3"/>
+                    {/* <img className="demoPage" src="static/Diapositivas PNG/84.png" alt="page-3"/> */}
                     <img className="demoPage" src="static/Diapositivas PNG/85.png" alt="page-3"/>
                     <div className="demoPage"><Pag86 playBad={playBad} playGood={playGood}/></div>
                     <div className="demoPage"><Pag87 playBad={playBad} playGood={playGood}/></div>
@@ -236,7 +243,7 @@ export const Libro = () => {
                     <div className="demoPage"><Pag90 playBad={playBad} playGood={playGood}/></div>
                     <div className="demoPage"><Pag91 playBad={playBad} playGood={playGood}/></div>
                     <div className="demoPage"><Pag92 playBad={playBad} playGood={playGood}/></div>
-                    <div className="demoPage"><video  src="static/Diapositivas PNG/93 CUERPO HUMANO ANIMADA.mp4" width={widthBook} height={heightBook} loop={true} autoPlay={true} /></div>
+                    {/* <div className="demoPage"><video  src="static/Diapositivas PNG/93 CUERPO HUMANO ANIMADA.mp4" width={widthBook} height={heightBook} loop={true} autoPlay={true} /></div> */}
                     <div className="demoPage"><Pag93 playBad={playBad} playGood={playGood}/></div>
                     <div className="demoPage"><Pag94 playBad={playBad} playGood={playGood}/></div>
                     <div className="demoPage"><Pag95 playBad={playBad} playGood={playGood}/></div>
@@ -285,16 +292,23 @@ export const Libro = () => {
                     <div className="demoPage"><Pag138 playBad={playBad} playGood={playGood}/></div>
                     <div className="demoPage"><Pag139 playBad={playBad} playGood={playGood}/></div>
                     <div className="demoPage"><Pag140 playBad={playBad} playGood={playGood}/></div>
+                    {/* <div className="demoPage"><video  src="static/Diapositivas PNG/141 ANIMADA.mp4" width={widthBook} height={heightBook} loop={true} autoPlay={true} /></div> */}
+                    <div className="demoPage"><Pag142 playBad={playBad} playGood={playGood}/></div>
+                    <div className="demoPage"><Pag143 playBad={playBad} playGood={playGood}/></div>
+                    <img className="demoPage" src="static/Diapositivas PNG/144.png" alt="page-3"/>
+                    <div className="demoPage"><Pag145 playBad={playBad} playGood={playGood}/></div>
+                    <div className="demoPage"><Pag146 playBad={playBad} playGood={playGood}/></div>
+                    <div className="demoPage"><Pag147 playBad={playBad} playGood={playGood}/></div>
+                    <div className="demoPage"><Pag148 playBad={playBad} playGood={playGood}/></div>
+                    <div className="demoPage"><Pag149 playBad={playBad} playGood={playGood}/></div>
+                    <img className="demoPage" src="static/Diapositivas PNG/150.png" alt="page-3"/>
 
 
 
 
 {/*                    
-                    <img className="demoPage" src="static/Diapositivas PNG/108.png" alt="page-3"/>
 
-<div className="demoPage"><video  src="static/Diapositivas PNG/141 ANIMADA.mp4" width={responsiveWidth(width)} height={responsiveHeight(width)} loop={true} autoPlay={true} /></div>
-<img className="demoPage" src="static/Diapositivas PNG/144.png" alt="page-3"/>
-                    <img className="demoPage" src="static/Diapositivas PNG/150.png" alt="page-3"/>
+
                     <img className="demoPage" src="static/Diapositivas PNG/154.png" alt="page-3"/>
                     <img className="demoPage" src="static/Diapositivas PNG/155.png" alt="page-3"/>
                     <img className="demoPage" src="static/Diapositivas PNG/156.png" alt="page-3"/>
@@ -307,7 +321,9 @@ export const Libro = () => {
                     <img className="demoPage" src="static/Diapositivas PNG/166.png" alt="page-3"/>
                     <img className="demoPage" src="static/Diapositivas PNG/167.png" alt="page-3"/>
                     <img className="demoPage" src="static/Diapositivas PNG/168.png" alt="page-3"/>
-                    <img className="demoPage" src="static/Diapositivas PNG/169.png" alt="page-3"/> */}
+                    <img className="demoPage" src="static/Diapositivas PNG/169.png" alt="page-3"/> 
+                    
+                    */}
                 </HTMLFlipBook>
                 <button className="carousel-control-next position-absolute top-50 start-100 translate-middle" type="button" onClick={() => book.current.pageFlip().flipNext()}>
                     <span className="carousel-control-next-icon position-absolute top-50 end-0 translate-middle-y btn btn-primary" aria-hidden="true" ></span>
