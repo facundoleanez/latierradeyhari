@@ -59,9 +59,27 @@
 .alto-10{
   height: 10vw ;
 }
+.alto-22{
+  height: 22vw ;
+}
 .alto-15{
   height: 15vw ;
 }
+.alto-20{
+  height: 20vw ;
+}
+.alto-25{
+  height: 25vw ;
+}
+.alto-30{
+  height: 30vw ;
+}
+.ancho-5 {
+  width: 5vw;
+}
 .ancho-10 {
   width: 10vw;
+}
+.alto-libro {
+  height: 85vh;
 }

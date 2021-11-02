@@ -122,6 +122,18 @@ import { Pag146 } from '../09-cantidad/Pag146';
 import { Pag147 } from '../09-cantidad/Pag147';
 import { Pag148 } from '../09-cantidad/Pag148';
 import { Pag149 } from '../09-cantidad/Pag149';
+import { Pag151 } from '../10-sum-res/Pag151';
+import { Pag152 } from '../10-sum-res/Pag152';
+import { Pag153 } from '../10-sum-res/Pag153';
+import { Pag154 } from '../10-sum-res/Pag154';
+import { Pag155 } from '../10-sum-res/Pag155';
+import { Pag156 } from '../10-sum-res/Pag156';
+import { Pag157 } from '../10-sum-res/Pag157';
+import { Pag158 } from '../10-sum-res/Pag158';
+import { Pag159 } from '../10-sum-res/Pag159';
+import { Pag160 } from '../10-sum-res/Pag160';
+import { Pag161 } from '../10-sum-res/Pag161';
+import { Pag162 } from '../10-sum-res/Pag162';
 
 
 export const Libro = () => {
@@ -144,6 +156,7 @@ export const Libro = () => {
                 <HTMLFlipBook width={widthBook} height={heightBook}  useMouseEvents={false} ref={book}  autoSize={true} className="libro">
                    
                    
+
 
 
 
@@ -302,7 +315,18 @@ export const Libro = () => {
                     <div className="demoPage"><Pag148 playBad={playBad} playGood={playGood}/></div>
                     <div className="demoPage"><Pag149 playBad={playBad} playGood={playGood}/></div>
                     <img className="demoPage" src="static/Diapositivas PNG/150.png" alt="page-3"/>
-
+                    <div className="demoPage"><Pag151 playBad={playBad} playGood={playGood}/></div>
+                    <div className="demoPage"><Pag152 playBad={playBad} playGood={playGood}/></div>
+                    <div className="demoPage"><Pag153 playBad={playBad} playGood={playGood}/></div>
+                    <div className="demoPage"><Pag154 playBad={playBad} playGood={playGood}/></div>
+                    <div className="demoPage"><Pag155 playBad={playBad} playGood={playGood}/></div>
+                    <div className="demoPage"><Pag156 playBad={playBad} playGood={playGood}/></div>
+                    <div className="demoPage"><Pag157 playBad={playBad} playGood={playGood}/></div>
+                    <div className="demoPage"><Pag158 playBad={playBad} playGood={playGood}/></div>
+                    <div className="demoPage"><Pag159 playBad={playBad} playGood={playGood}/></div>
+                    <div className="demoPage"><Pag160 playBad={playBad} playGood={playGood}/></div>
+                    <div className="demoPage"><Pag161 playBad={playBad} playGood={playGood}/></div>
+                    <div className="demoPage"><Pag162 playBad={playBad} playGood={playGood}/></div>
 
 
 

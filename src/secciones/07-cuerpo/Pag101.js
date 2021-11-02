@@ -35,7 +35,7 @@ export const Pag101 = ({playBad, playGood}) => {
                 { good && <img className="position-absolute animate__animated animate__bounceIn" src="static/Elementosporseparado/bien.png" alt="bien" style={{zIndex:2, width:"10vw"}}/>}
                 { wrong && <img className="position-absolute animate__animated animate__bounceIn" src="static/Elementosporseparado/mal.png" alt="bien" style={{zIndex:2, width:"10vw"}}/>}
                 <div className="row" style={{height:"10vw"}}></div>
-                <div className="col-8 row adelante">
+                <div className="col-7 row adelante">
                     <div className="col-7 text-center py-4">
                             <img className={good ? "d-none" : "img-hover"} onClick={()=>{handleClickTrue()}} style={{height:"4vw"}} src="static/Elementosporseparado/9 El cuerpo humano/manos.png" alt="img"/>
                             <img className="img-hover" onClick={()=>{handleClickWrong()}} style={{height:"12vw"}} src="static/Elementosporseparado/9 El cuerpo humano/piernas.png" alt="img"/>

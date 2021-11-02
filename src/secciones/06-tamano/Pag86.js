@@ -33,8 +33,8 @@ export const Pag86 = ({playBad, playGood}) => {
             { completed ? (<BienHecho setCompleted={setCompleted}/>) :
             <div className="row p-3 p-lg-5">
                 <img className="position-absolute top-50 start-50 translate-middle p-0 m-0" src="static/Diapositivas PNG/86.png" alt="pag-19"/>
-                { good && <img className="position-absolute animate__animated animate__bounceIn" src="static/Elementosporseparado/bien.png" alt="bien" style={{zIndex:2, width:"10vw"}}/>}
-                { wrong && <img className="position-absolute animate__animated animate__bounceIn" src="static/Elementosporseparado/mal.png" alt="bien" style={{zIndex:2, width:"10vw"}}/>}
+                { good && <img className="position-absolute animate__animated animate__bounceIn adelante ancho-10" src="static/Elementosporseparado/bien.png" alt="bien"/>}
+                { wrong && <img className="position-absolute animate__animated animate__bounceIn adelante ancho-10" src="static/Elementosporseparado/mal.png" alt="bien"/>}
                 <div className="row" style={{height:"10vw"}}></div>
                 <div className="col-5"></div>
                 <div className="col-7 adelante">
