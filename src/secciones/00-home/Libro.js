@@ -134,6 +134,13 @@ import { Pag159 } from '../10-sum-res/Pag159';
 import { Pag160 } from '../10-sum-res/Pag160';
 import { Pag161 } from '../10-sum-res/Pag161';
 import { Pag162 } from '../10-sum-res/Pag162';
+import { Pag164 } from '../11-atencion/Pag164';
+import { Pag170 } from '../12-may-men/Pag170';
+import { Pag171 } from '../12-may-men/Pag171';
+import { Pag172 } from '../12-may-men/Pag172';
+import { Pag173 } from '../12-may-men/Pag173';
+import { Pag174 } from '../12-may-men/Pag174';
+import { Pag175 } from '../12-may-men/Pag175';
 
 
 export const Libro = () => {
@@ -155,13 +162,9 @@ export const Libro = () => {
                 </button>
                 <HTMLFlipBook width={widthBook} height={heightBook}  useMouseEvents={false} ref={book}  autoSize={true} className="libro">
                    
-                   
-
-
-
+                {/* <div className="demoPage"><Pag164 playBad={playBad} playGood={playGood}/></div> */}
 
                     <div className="demoPage"><video  src="static/Diapositivas PNG/0 - Portada.mp4" loop={true} autoPlay={true} width={widthBook} height={heightBook}/></div>
-                    
                     <img className="demoPage" src="static/Diapositivas PNG/1.png" alt="page-1"/>
                     <img className="demoPage" src="static/Diapositivas PNG/2.png" alt="page-2"/>
                     <img className="demoPage" src="static/Diapositivas PNG/3.png" alt="page-3"/>
@@ -174,7 +177,6 @@ export const Libro = () => {
                     <div className="demoPage"><Pag10 playBad={playBad} playGood={playGood}/></div>
                     <div className="demoPage"><Pag11 playBad={playBad} playGood={playGood}/></div>
                     <img className="demoPage" src="static/Diapositivas PNG/12.png" alt="page-12"/>
-                    {/* <div className="demoPage"><video  src="static/Diapositivas PNG/13 ANIMADA.mp4" width={responsiveWidth(width)} height={responsiveHeight(width)} loop={true} autoPlay={true} /></div> */}
                     <div className="demoPage"><Pag14 playBad={playBad} playGood={playGood}/></div>
                     <div className="demoPage"><Pag15 playBad={playBad} playGood={playGood}/></div>
                     <div className="demoPage"><Pag16 playBad={playBad} playGood={playGood}/></div>
@@ -225,7 +227,6 @@ export const Libro = () => {
                     <div className="demoPage"><Pag60 playBad={playBad} playGood={playGood}/></div>
                     <div className="demoPage"><Pag61 playBad={playBad} playGood={playGood}/></div>
                     <div className="demoPage"><Pag62 playBad={playBad} playGood={playGood}/></div>
-                    {/* <div className="demoPage"><video  src="static/Diapositivas PNG/63 ANIMADA.mp4" width={responsiveWidth(width)} height={responsiveHeight(width)} loop={true} autoPlay={true} /></div> */}                    
                     <div className="demoPage"><Pag64 playBad={playBad} playGood={playGood}/></div>
                     <div className="demoPage"><Pag65 playBad={playBad} playGood={playGood}/></div>
                     <div className="demoPage"><Pag66 playBad={playBad} playGood={playGood}/></div>
@@ -247,7 +248,6 @@ export const Libro = () => {
                     <img className="demoPage" src="static/Diapositivas PNG/82.png" alt="page-3"/>
                     <div className="demoPage"><Pag83 playBad={playBad} playGood={playGood}/></div>
                     <div className="demoPage"><Pag84 playBad={playBad} playGood={playGood}/></div>
-                    {/* <img className="demoPage" src="static/Diapositivas PNG/84.png" alt="page-3"/> */}
                     <img className="demoPage" src="static/Diapositivas PNG/85.png" alt="page-3"/>
                     <div className="demoPage"><Pag86 playBad={playBad} playGood={playGood}/></div>
                     <div className="demoPage"><Pag87 playBad={playBad} playGood={playGood}/></div>
@@ -256,7 +256,6 @@ export const Libro = () => {
                     <div className="demoPage"><Pag90 playBad={playBad} playGood={playGood}/></div>
                     <div className="demoPage"><Pag91 playBad={playBad} playGood={playGood}/></div>
                     <div className="demoPage"><Pag92 playBad={playBad} playGood={playGood}/></div>
-                    {/* <div className="demoPage"><video  src="static/Diapositivas PNG/93 CUERPO HUMANO ANIMADA.mp4" width={widthBook} height={heightBook} loop={true} autoPlay={true} /></div> */}
                     <div className="demoPage"><Pag93 playBad={playBad} playGood={playGood}/></div>
                     <div className="demoPage"><Pag94 playBad={playBad} playGood={playGood}/></div>
                     <div className="demoPage"><Pag95 playBad={playBad} playGood={playGood}/></div>
@@ -305,7 +304,6 @@ export const Libro = () => {
                     <div className="demoPage"><Pag138 playBad={playBad} playGood={playGood}/></div>
                     <div className="demoPage"><Pag139 playBad={playBad} playGood={playGood}/></div>
                     <div className="demoPage"><Pag140 playBad={playBad} playGood={playGood}/></div>
-                    {/* <div className="demoPage"><video  src="static/Diapositivas PNG/141 ANIMADA.mp4" width={widthBook} height={heightBook} loop={true} autoPlay={true} /></div> */}
                     <div className="demoPage"><Pag142 playBad={playBad} playGood={playGood}/></div>
                     <div className="demoPage"><Pag143 playBad={playBad} playGood={playGood}/></div>
                     <img className="demoPage" src="static/Diapositivas PNG/144.png" alt="page-3"/>
@@ -328,22 +326,28 @@ export const Libro = () => {
                     <div className="demoPage"><Pag161 playBad={playBad} playGood={playGood}/></div>
                     <div className="demoPage"><Pag162 playBad={playBad} playGood={playGood}/></div>
 
+                    <div className="demoPage"><Pag170 playBad={playBad} playGood={playGood}/></div>
+                    <div className="demoPage"><Pag171 playBad={playBad} playGood={playGood}/></div>
+                    <div className="demoPage"><Pag172 playBad={playBad} playGood={playGood}/></div>
+                    <div className="demoPage"><Pag173 playBad={playBad} playGood={playGood}/></div>
+                    <div className="demoPage"><Pag174 playBad={playBad} playGood={playGood}/></div>
+                    <div className="demoPage"><Pag175 playBad={playBad} playGood={playGood}/></div>
 
 
 {/*                    
 
 
-                    <img className="demoPage" src="static/Diapositivas PNG/154.png" alt="page-3"/>
-                    <img className="demoPage" src="static/Diapositivas PNG/155.png" alt="page-3"/>
-                    <img className="demoPage" src="static/Diapositivas PNG/156.png" alt="page-3"/>
-                    <img className="demoPage" src="static/Diapositivas PNG/157.png" alt="page-3"/>
-                    <img className="demoPage" src="static/Diapositivas PNG/158.png" alt="page-3"/>
-                    <div className="demoPage"><video  src="static/Diapositivas PNG/163 JUEGOS DE ATENCION ANIMADA.mp4" width={responsiveWidth(width)} height={responsiveHeight(width)} loop={true} autoPlay={true} /></div>
-                    <img className="demoPage" src="static/Diapositivas PNG/163.png" alt="page-3"/>
-                    <img className="demoPage" src="static/Diapositivas PNG/164.png" alt="page-3"/>
-                    <img className="demoPage" src="static/Diapositivas PNG/165.png" alt="page-3"/>
-                    <img className="demoPage" src="static/Diapositivas PNG/166.png" alt="page-3"/>
-                    <img className="demoPage" src="static/Diapositivas PNG/167.png" alt="page-3"/>
+<img className="demoPage" src="static/Diapositivas PNG/154.png" alt="page-3"/>
+<img className="demoPage" src="static/Diapositivas PNG/155.png" alt="page-3"/>
+<img className="demoPage" src="static/Diapositivas PNG/156.png" alt="page-3"/>
+<img className="demoPage" src="static/Diapositivas PNG/157.png" alt="page-3"/>
+<img className="demoPage" src="static/Diapositivas PNG/158.png" alt="page-3"/>
+<div className="demoPage"><video  src="static/Diapositivas PNG/163 JUEGOS DE ATENCION ANIMADA.mp4" width={responsiveWidth(width)} height={responsiveHeight(width)} loop={true} autoPlay={true} /></div>
+<img className="demoPage" src="static/Diapositivas PNG/163.png" alt="page-3"/>
+<img className="demoPage" src="static/Diapositivas PNG/164.png" alt="page-3"/>
+<img className="demoPage" src="static/Diapositivas PNG/165.png" alt="page-3"/>
+<img className="demoPage" src="static/Diapositivas PNG/166.png" alt="page-3"/>
+<img className="demoPage" src="static/Diapositivas PNG/167.png" alt="page-3"/>
                     <img className="demoPage" src="static/Diapositivas PNG/168.png" alt="page-3"/>
                     <img className="demoPage" src="static/Diapositivas PNG/169.png" alt="page-3"/> 
                     
