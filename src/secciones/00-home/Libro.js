@@ -134,7 +134,7 @@ import { Pag159 } from '../10-sum-res/Pag159';
 import { Pag160 } from '../10-sum-res/Pag160';
 import { Pag161 } from '../10-sum-res/Pag161';
 import { Pag162 } from '../10-sum-res/Pag162';
-// import { Pag164 } from '../11-atencion/Pag164';
+import { Pag164 } from '../11-atencion/Pag164';
 import { Pag170 } from '../12-may-men/Pag170';
 import { Pag171 } from '../12-may-men/Pag171';
 import { Pag172 } from '../12-may-men/Pag172';
@@ -162,7 +162,7 @@ export const Libro = () => {
                 </button>
                 <HTMLFlipBook width={widthBook} height={heightBook}  useMouseEvents={false} ref={book}  autoSize={true} className="libro">
                    
-                {/* <div className="demoPage"><Pag164 playBad={playBad} playGood={playGood}/></div> */}
+                <div className="demoPage"><Pag164 playBad={playBad} playGood={playGood}/></div>
 
                     <div className="demoPage"><video  src="static/Diapositivas PNG/0 - Portada.mp4" loop={true} autoPlay={true} width={widthBook} height={heightBook}/></div>
                     <img className="demoPage" src="static/Diapositivas PNG/1.png" alt="page-1"/>
