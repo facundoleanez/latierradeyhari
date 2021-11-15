@@ -52,23 +52,23 @@ export const Pag83 = ({playBad, playGood}) => {
                 <img className="img-hover" onClick={()=>{handleClickWrong()}} style={{height:"5vw"}} src="static/Elementosporseparado/7 Las vocales/agua.png" alt="img"/>
                     <img className="img-hover" onClick={()=>{handleClickWrong()}} style={{height:"10vw"}} src="static/Elementosporseparado/7 Las vocales/angel.png" alt="img"/>
                     <img className="img-hover" onClick={()=>{handleClickWrong()}} style={{height:"10vw"}} src="static/Elementosporseparado/7 Las vocales/escarabajo.png" alt="img"/>
-                    <img className={`img-hover ${isSelected[0]? "animate__animated animate__flip selected" : ""}`} onClick={()=>{handleClickTrue(0)}} style={{height:"10vw"}} src="static/Elementosporseparado/7 Las vocales/uvas.png" alt="img"/>
+                    <img className={`img-hover ${isSelected[0]? "d-none" : ""}`} onClick={()=>{handleClickTrue(0)}} style={{height:"10vw"}} src="static/Elementosporseparado/7 Las vocales/uvas.png" alt="img"/>
                     <img className="img-hover" onClick={()=>{handleClickWrong()}} style={{height:"10vw"}} src="static/Elementosporseparado/7 Las vocales/enchufe.png" alt="img"/>
                     <img className="img-hover" onClick={()=>{handleClickWrong()}} style={{height:"10vw"}} src="static/Elementosporseparado/7 Las vocales/indio.png" alt="img"/>
                     <img className="img-hover" onClick={()=>{handleClickWrong()}} style={{height:"10vw"}} src="static/Elementosporseparado/7 Las vocales/iguana.png" alt="img"/>
-                    <img className={`img-hover ${isSelected[1]? "animate__animated animate__flip selected" : ""}`} onClick={()=>{handleClickTrue(1)}} style={{height:"10vw"}} src="static/Elementosporseparado/7 Las vocales/uña.png" alt="img"/>
+                    <img className={`img-hover ${isSelected[1]? "d-none" : ""}`} onClick={()=>{handleClickTrue(1)}} style={{height:"10vw"}} src="static/Elementosporseparado/7 Las vocales/uña.png" alt="img"/>
                     <img className="img-hover" onClick={()=>{handleClickWrong()}} style={{height:"10vw"}} src="static/Elementosporseparado/7 Las vocales/arcoiris.png" alt="img"/>
                     <img className="img-hover" onClick={()=>{handleClickWrong()}} style={{height:"5vw"}} src="static/Elementosporseparado/7 Las vocales/oro.png" alt="img"/>
-                    <img className={`img-hover ${isSelected[2]? "animate__animated animate__flip selected" : ""}`} onClick={()=>{handleClickTrue(2)}} style={{height:"10vw"}} src="static/Elementosporseparado/7 Las vocales/1-celeste.png" alt="img"/>
-                    <img className={`img-hover ${isSelected[3]? "animate__animated animate__flip selected" : ""}`} onClick={()=>{handleClickTrue(3)}} style={{height:"10vw"}} src="static/Elementosporseparado/7 Las vocales/unicornio.png" alt="img"/>
+                    <img className={`img-hover ${isSelected[2]? "d-none" : ""}`} onClick={()=>{handleClickTrue(2)}} style={{height:"10vw"}} src="static/Elementosporseparado/7 Las vocales/1-celeste.png" alt="img"/>
+                    <img className={`img-hover ${isSelected[3]? "d-none" : ""}`} onClick={()=>{handleClickTrue(3)}} style={{height:"10vw"}} src="static/Elementosporseparado/7 Las vocales/unicornio.png" alt="img"/>
                     <img className="img-hover" onClick={()=>{handleClickWrong()}} style={{height:"10vw"}} src="static/Elementosporseparado/7 Las vocales/avion.png" alt="img"/>
                     <img className="img-hover" onClick={()=>{handleClickWrong()}} style={{height:"10vw"}} src="static/Elementosporseparado/7 Las vocales/manzana.png" alt="img"/>
 
-                    <div className="row bg-amarillo border border-dark justify-content-around m-2 p-2" style={{height:"10vw"}}>
-                        <div className="col-2 bg-white rounded-circle py-3 text-center">{ isSelected[0] && <img style={{height:"7vw"}} src="static/Elementosporseparado/7 Las vocales/uvas.png" alt="img" /> }</div>
-                        <div className="col-2 bg-white rounded-circle py-3 text-center">{ isSelected[1] && <img style={{height:"6vw"}} src="static/Elementosporseparado/7 Las vocales/uña.png" alt="img" /> }</div>
-                        <div className="col-2 bg-white rounded-circle py-3 text-center">{ isSelected[2] && <img style={{height:"6vw"}} src="static/Elementosporseparado/7 Las vocales/1-celeste.png" alt="img" /> }</div>
-                        <div className="col-2 bg-white rounded-circle py-3 text-center">{ isSelected[3] && <img style={{height:"6vw"}} src="static/Elementosporseparado/7 Las vocales/unicornio.png" alt="img" /> }</div>
+                    <div className="row bg-amarillo border border-dark justify-content-around m-2 p-2 alto-12">
+                        <div className="col-2 bg-white rounded-circle py-3 d-flex flex-column justify-content-center align-items-center">{ isSelected[0] && <> <img className="animate__animated animate__flip" style={{height:"6vw"}} src="static/Elementosporseparado/7 Las vocales/uvas.png" alt="img" /> <p>Uva</p> </>}</div>
+                        <div className="col-2 bg-white rounded-circle py-3 d-flex flex-column justify-content-center align-items-center">{ isSelected[1] && <> <img className="animate__animated animate__flip" style={{height:"6vw"}} src="static/Elementosporseparado/7 Las vocales/uña.png" alt="img" /> <p>Uña</p> </>}</div>
+                        <div className="col-2 bg-white rounded-circle py-3 d-flex flex-column justify-content-center align-items-center">{ isSelected[2] && <> <img className="animate__animated animate__flip" style={{height:"6vw"}} src="static/Elementosporseparado/7 Las vocales/1-celeste.png" alt="img" /> <p>Uno</p> </>}</div>
+                        <div className="col-2 bg-white rounded-circle py-3 d-flex flex-column justify-content-center align-items-center">{ isSelected[3] && <> <img className="animate__animated animate__flip" style={{height:"6vw"}} src="static/Elementosporseparado/7 Las vocales/unicornio.png" alt="img" /> <p>Unicornio</p> </>}</div>
                     </div>
                 </div>
             </div>

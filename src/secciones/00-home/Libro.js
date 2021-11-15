@@ -141,6 +141,11 @@ import { Pag172 } from '../12-may-men/Pag172';
 import { Pag173 } from '../12-may-men/Pag173';
 import { Pag174 } from '../12-may-men/Pag174';
 import { Pag175 } from '../12-may-men/Pag175';
+import { Pag165 } from '../11-atencion/Pag165';
+import { Pag166 } from '../11-atencion/Pag166';
+import { Pag167 } from '../11-atencion/Pag167';
+import { Pag168 } from '../11-atencion/Pag168';
+import { Pag169 } from '../11-atencion/Pag169';
 
 
 export const Libro = () => {
@@ -161,8 +166,6 @@ export const Libro = () => {
                     <span className="carousel-control-prev-icon position-absolute top-50 start-0 translate-middle-y ml-5 btn btn-primary" aria-hidden="true"></span>
                 </button>
                 <HTMLFlipBook width={widthBook} height={heightBook}  useMouseEvents={false} ref={book}  autoSize={true} className="libro">
-                   
-                <div className="demoPage"><Pag164 playBad={playBad} playGood={playGood}/></div>
 
                     <div className="demoPage"><video  src="static/Diapositivas PNG/0 - Portada.mp4" loop={true} autoPlay={true} width={widthBook} height={heightBook}/></div>
                     <img className="demoPage" src="static/Diapositivas PNG/1.png" alt="page-1"/>
@@ -325,41 +328,25 @@ export const Libro = () => {
                     <div className="demoPage"><Pag160 playBad={playBad} playGood={playGood}/></div>
                     <div className="demoPage"><Pag161 playBad={playBad} playGood={playGood}/></div>
                     <div className="demoPage"><Pag162 playBad={playBad} playGood={playGood}/></div>
-
+                    {/* caratula menormayor */}
                     <div className="demoPage"><Pag170 playBad={playBad} playGood={playGood}/></div>
                     <div className="demoPage"><Pag171 playBad={playBad} playGood={playGood}/></div>
                     <div className="demoPage"><Pag172 playBad={playBad} playGood={playGood}/></div>
+                    {/* caratula orden */}
                     <div className="demoPage"><Pag173 playBad={playBad} playGood={playGood}/></div>
                     <div className="demoPage"><Pag174 playBad={playBad} playGood={playGood}/></div>
                     <div className="demoPage"><Pag175 playBad={playBad} playGood={playGood}/></div>
-
-
-{/*                    
-
-
-<img className="demoPage" src="static/Diapositivas PNG/154.png" alt="page-3"/>
-<img className="demoPage" src="static/Diapositivas PNG/155.png" alt="page-3"/>
-<img className="demoPage" src="static/Diapositivas PNG/156.png" alt="page-3"/>
-<img className="demoPage" src="static/Diapositivas PNG/157.png" alt="page-3"/>
-<img className="demoPage" src="static/Diapositivas PNG/158.png" alt="page-3"/>
-<div className="demoPage"><video  src="static/Diapositivas PNG/163 JUEGOS DE ATENCION ANIMADA.mp4" width={responsiveWidth(width)} height={responsiveHeight(width)} loop={true} autoPlay={true} /></div>
-<img className="demoPage" src="static/Diapositivas PNG/163.png" alt="page-3"/>
-<img className="demoPage" src="static/Diapositivas PNG/164.png" alt="page-3"/>
-<img className="demoPage" src="static/Diapositivas PNG/165.png" alt="page-3"/>
-<img className="demoPage" src="static/Diapositivas PNG/166.png" alt="page-3"/>
-<img className="demoPage" src="static/Diapositivas PNG/167.png" alt="page-3"/>
-                    <img className="demoPage" src="static/Diapositivas PNG/168.png" alt="page-3"/>
-                    <img className="demoPage" src="static/Diapositivas PNG/169.png" alt="page-3"/> 
-                    
-                    */}
+                    <img className="demoPage" src="static/Diapositivas PNG/163.png" alt="page-3"/>
+                    <div className="demoPage"><Pag164 playBad={playBad} playGood={playGood}/></div>
+                    <div className="demoPage"><Pag165 playBad={playBad} playGood={playGood}/></div>
+                    <div className="demoPage"><Pag166 playBad={playBad} playGood={playGood}/></div>
+                    <div className="demoPage"><Pag167 playBad={playBad} playGood={playGood}/></div>
+                    <div className="demoPage"><Pag168 playBad={playBad} playGood={playGood}/></div>
+                    <div className="demoPage"><Pag169 playBad={playBad} playGood={playGood}/></div>
                 </HTMLFlipBook>
                 <button className="carousel-control-next position-absolute top-50 start-100 translate-middle" type="button" onClick={() => book.current.pageFlip().flipNext()}>
                     <span className="carousel-control-next-icon position-absolute top-50 end-0 translate-middle-y btn btn-primary" aria-hidden="true" ></span>
                 </button>
-            </div>
-            <div className="mt-3 text-center d-flex justify-content-center">
-                {/* <button className="btn btn-primary mx-3 d-sm-none d-lg-block" onClick={() => book.current.pageFlip().flipPrev()}>Atras</button>
-                <button className="btn btn-primary mx-3 d-sm-none d-lg-block" onClick={() => book.current.pageFlip().flipNext()}>Siguiente</button> */}
             </div>
         </div>
     )

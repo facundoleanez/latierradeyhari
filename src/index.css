@@ -24,6 +24,11 @@
 .letra-titulo {
   font-family: 'KidsMonday', sans-serif;
 }
+.letra-circulo {
+  font-family: 'KidsMonday', sans-serif;
+  font-size: 8vw;
+  
+}
 
 .libro {
   box-shadow: 10px 10px 20px  #111;
@@ -50,14 +55,23 @@
 .adelante {
   z-index: 1;
 }
+.adelante-2 {
+  z-index: 2;
+}
 .letra-grande {
   font-size: 3vw;
 }
 .letra-chica {
   font-size: 2vw;
 }
+.alto-5{
+  height: 5vw ;
+}
 .alto-10{
   height: 10vw ;
+}
+.alto-12{
+  height: 12vw ;
 }
 .alto-22{
   height: 22vw ;
@@ -74,6 +88,9 @@
 .alto-30{
   height: 30vw ;
 }
+.alto-35{
+  height: 35vw ;
+}
 .ancho-5 {
   width: 5vw;
 }
@@ -83,6 +100,13 @@
 .alto-libro {
   height: 85vh;
 }
-.prueba{
-  
+.circulo{
+  width: 11vw;
+  height: 11vw;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid black 2px;
+  margin: 1vw;
 }

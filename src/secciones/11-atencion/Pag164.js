@@ -1,6 +1,4 @@
-import React from 'react'
-import { useEffect } from 'react';
-import { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { BienHecho } from '../../components/BienHecho'
 
 
@@ -28,6 +26,7 @@ export const Pag164 = ({playBad, playGood}) => {
         const elementTouched = document.elementsFromPoint(touch.pageX, touch.pageY)
         if (elementTouched[0].tagName === "path"){
             setGood(true)
+
         } else if (elementTouched[0].id === "llegada" ) {
             setCompleted(true)
             
@@ -37,15 +36,19 @@ export const Pag164 = ({playBad, playGood}) => {
         }
     }
 
+    const handleClickStart = ()=>{
+        setTimeout(()=>setStart(true),1000)
+    }
 
     useEffect(() => {
         if (wrong) {
             const timeOut = setTimeout(()=>setWrong(false), 500)
+            playBad()
             return () => {
                 clearTimeout(timeOut)
             }
         }
-    }, [wrong])
+    }, [wrong, playBad])
 
     return (
         <>
@@ -54,9 +57,9 @@ export const Pag164 = ({playBad, playGood}) => {
                 <img className="position-absolute p-0" src="static/Diapositivas PNG/164.png" alt="pag-19"/> 
                 { good ? <img className="position-absolute animate__animated animate__bounceIn adelante ancho-10" src="static/Elementosporseparado/bien.png" alt="bien"/> : <></> }
                 { wrong ? <img className="position-absolute animate__animated animate__bounceIn adelante ancho-10" src="static/Elementosporseparado/mal.png" alt="bien"/> : <></>}
-                <div className="alto-10"></div>
-                <div className="col-7 row adelante">
-                    <svg  className="img-hover alto-25 position-absolute top-50 start-50 translate-middle"   version="1.0" xmlns="http://www.w3.org/2000/svg"
+                <div className="alto-15"></div>
+                <div className="row adelante position-relative">
+                    <svg  className="img-hover alto-25 position-absolute bottom-0 start-50 translate-middle-x"   version="1.0" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 1013.000000 466.000000"
                     preserveAspectRatio="xMidYMid meet">
                     <metadata>
@@ -99,13 +102,13 @@ export const Pag164 = ({playBad, playGood}) => {
                         -253 24 -258 19z"/>
                     </g>
                     </svg>
-                    <div className="d-flex flex-column align-items-end adelante">
-                        <img className=" ancho-10" src="static/Elementosporseparado/13 Juegos de atención/comida-perro.png" id="llegada" alt="img"/>
-                        <img className=" ancho-10" src="static/Elementosporseparado/13 Juegos de atención/llegada-azul.png" alt="img"/>
-                    </div>
-                    <div className="col-5 text-center img-hover adelante" onClick={()=>setStart(true)}>
+                    <div className="col-3 d-flex flex-column alto-25 justify-content-end align-items-center py-lg-4 py-3" >
                         <img className=" ancho-10" src="static/Elementosporseparado/13 Juegos de atención/perro.png" alt="img"/>
-                        <img  className="ancho-10" src="static/Elementosporseparado/13 Juegos de atención/comienzo-azul.png" alt="img"/>
+                        <img onClick={()=>handleClickStart(true)} className="ancho-10 adelante-2 img-hover" src="static/Elementosporseparado/13 Juegos de atención/comienzo-azul.png" alt="img"/>
+                    </div>
+                    <div className="col-4 d-flex flex-column align-items-end">
+                        <img className=" ancho-10 adelante-2" src="static/Elementosporseparado/13 Juegos de atención/comida-perro.png" id="llegada" alt="img"/>
+                        <img className=" ancho-10 adelante-2 img-hover" src="static/Elementosporseparado/13 Juegos de atención/llegada-azul.png" alt="img"/>
                     </div>
                 </div>
             </div> 
