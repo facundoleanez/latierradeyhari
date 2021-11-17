@@ -1,12 +1,10 @@
 import React from 'react'
 import { useEffect } from 'react';
 import { useState } from 'react'
-import { BienHecho } from '../../components/BienHecho'
 
 export const Pag175 = ({playBad, playGood}) => {
     
     const [isSelected, setIsSelected] = useState([false, false])
-    const [completed, setCompleted] = useState(false);
     const [good, setGood] = useState(false);
     const [wrong, setWrong] = useState(false);
 
@@ -28,11 +26,6 @@ export const Pag175 = ({playBad, playGood}) => {
         playBad()
     }
 
-    useEffect(() => {
-        if (isSelected.every(elem => elem )){
-            setCompleted(true)
-        }
-    }, [isSelected])
     
     useEffect(() => {
         if (wrong) {
@@ -45,7 +38,6 @@ export const Pag175 = ({playBad, playGood}) => {
 
     return (
         <>
-            { completed ? (<BienHecho setCompleted={setCompleted}/>) : 
             <div className="row">
                 <img className="position-absolute p-0" src="static/Diapositivas PNG/173.png" alt="pag-19"/> 
                 { good ? <img className="position-absolute animate__animated animate__bounceIn adelante ancho-10" src="static/Elementosporseparado/bien.png" alt="bien"/> : <></> }
@@ -67,7 +59,7 @@ export const Pag175 = ({playBad, playGood}) => {
                     <img className="ancho-10 img-hover  m-lg-2" onClick={()=>{handleClickTrue(1)}} src="static/Elementosporseparado/10 Números del 6 al 10/9-rojo.png" alt="img"/>
                 </div>
             </div> 
-             }
+             
         </>
     )
 }

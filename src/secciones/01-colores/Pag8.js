@@ -64,7 +64,7 @@ export const Pag8 = ({playBad, playGood}) => {
                   { good ? <img className="animate__animated animate__bounceIn ancho-10" src="static/Elementosporseparado/bien.png" alt="bien"/> : <></> }
                   { wrong ? <img className="animate__animated animate__bounceIn ancho-10" src="static/Elementosporseparado/mal.png" alt="bien"/> : <></>}
                 </div>
-                <div className="row alto-10"></div>
+                <div className="row alto-12"></div>
                     
                     <div className="col-7 adelante">
                       <div className="bg-amarillo mx-auto position-relative border border-dark" style={{ borderRadius:"50%", height:"35vw", width:"35vw" }}>

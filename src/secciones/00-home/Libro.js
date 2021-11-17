@@ -1,10 +1,13 @@
 import React, {useRef} from 'react';
 import HTMLFlipBook from 'react-pageflip';
-import useSound from 'use-sound';
-
-
-
 import useWindowDimensions from '../../hooks/useWindowDimensions';
+import useSound from 'use-sound';
+import badSound from '../../sounds/bad.mp3';
+import goodSound from '../../sounds/good.mp3';
+import paperSound from '../../sounds/papel.mp3';
+
+
+
 import { Pag4 } from '../01-colores/Pag4';
 import { Pag5 } from '../01-colores/Pag5';
 import { Pag7 } from '../01-colores/Pag7';
@@ -21,9 +24,6 @@ import { Pag22 } from '../03-formas/Pag22';
 import { Pag23 } from '../03-formas/Pag23';
 import { Pag24 } from '../03-formas/Pag24b';
 import { Pag27 } from '../03-formas/Pag27';
-
-import badSound from '../../sounds/bad.mp3';
-import goodSound from '../../sounds/good.mp3';
 import { Pag25 } from '../03-formas/Pag25';
 import { Pag28 } from '../03-formas/Pag28';
 import { Pag29 } from '../03-formas/Pag29';
@@ -157,12 +157,21 @@ export const Libro = () => {
     const book = useRef();
     const [playBad] = useSound(badSound);
     const [playGood] = useSound(goodSound);
-    
+    const [playpaper] = useSound(paperSound);
+
+    const handlerPageNext = () =>{
+        book.current.pageFlip().flipNext();
+        playpaper();
+    }
+    const handlerPagePrev = () =>{
+        book.current.pageFlip().flipPrev();
+        playpaper();
+    }
 
     return (
         <div className="position-absolute top-50 start-50 translate-middle">
             <div>
-                <button className="carousel-control-prev position-absolute top-50 start-0 translate-middle" type="button" onClick={() => book.current.pageFlip().flipPrev()}>
+                <button className="carousel-control-prev position-absolute top-50 start-0 translate-middle" type="button" onClick={() => handlerPagePrev()}>
                     <span className="carousel-control-prev-icon position-absolute top-50 start-0 translate-middle-y ml-5 btn btn-primary" aria-hidden="true"></span>
                 </button>
                 <HTMLFlipBook width={widthBook} height={heightBook}  useMouseEvents={false} ref={book}  autoSize={true} className="libro">
@@ -329,10 +338,14 @@ export const Libro = () => {
                     <div className="demoPage"><Pag161 playBad={playBad} playGood={playGood}/></div>
                     <div className="demoPage"><Pag162 playBad={playBad} playGood={playGood}/></div>
                     {/* caratula menormayor */}
+                    <img className="demoPage" src="static/Diapositivas PNG/176.png" alt="page-3"/>
+
                     <div className="demoPage"><Pag170 playBad={playBad} playGood={playGood}/></div>
                     <div className="demoPage"><Pag171 playBad={playBad} playGood={playGood}/></div>
                     <div className="demoPage"><Pag172 playBad={playBad} playGood={playGood}/></div>
                     {/* caratula orden */}
+                    <img className="demoPage" src="static/Diapositivas PNG/177.png" alt="page-3"/>
+
                     <div className="demoPage"><Pag173 playBad={playBad} playGood={playGood}/></div>
                     <div className="demoPage"><Pag174 playBad={playBad} playGood={playGood}/></div>
                     <div className="demoPage"><Pag175 playBad={playBad} playGood={playGood}/></div>
@@ -344,7 +357,7 @@ export const Libro = () => {
                     <div className="demoPage"><Pag168 playBad={playBad} playGood={playGood}/></div>
                     <div className="demoPage"><Pag169 playBad={playBad} playGood={playGood}/></div>
                 </HTMLFlipBook>
-                <button className="carousel-control-next position-absolute top-50 start-100 translate-middle" type="button" onClick={() => book.current.pageFlip().flipNext()}>
+                <button className="carousel-control-next position-absolute top-50 start-100 translate-middle" type="button" onClick={() => handlerPageNext()}>
                     <span className="carousel-control-next-icon position-absolute top-50 end-0 translate-middle-y btn btn-primary" aria-hidden="true" ></span>
                 </button>
             </div>

@@ -1,17 +1,14 @@
 import React from 'react'
 import { useEffect } from 'react';
 import { useState } from 'react'
-import { BienHecho } from '../../components/BienHecho'
 
 export const Pag172 = ({playBad, playGood}) => {
 
-    const [completed, setCompleted] = useState(false);
     const [good, setGood] = useState(false);
     const [wrong, setWrong] = useState(false);
 
 
     const handleClickTrue = () => {
-        setCompleted(true);
         setGood(true);
         setWrong(false);
         playGood()
@@ -33,7 +30,6 @@ export const Pag172 = ({playBad, playGood}) => {
 
     return (
         <>
-            { completed ? (<BienHecho setCompleted={setCompleted}/>) : 
             <div className="row">
                 <img className="position-absolute p-0" src="static/Diapositivas PNG/172.png" alt="pag-19"/> 
                 { good ? <img className="position-absolute animate__animated animate__bounceIn adelante ancho-10" src="static/Elementosporseparado/bien.png" alt="bien"/> : <></> }
@@ -50,7 +46,7 @@ export const Pag172 = ({playBad, playGood}) => {
                     <img className="ancho-10 img-hover border border-dark m-2" onClick={()=>{handleClickWrong()}} src="static/Elementosporseparado/mayor.png" alt="img"/>
                 </div>
             </div> 
-             }
+             
         </>
     )
 }
