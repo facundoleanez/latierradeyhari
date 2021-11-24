@@ -20,14 +20,15 @@
   color: #FF7A02;
   text-shadow: 0px 5px 10px  #111
 }
-
+.fuente-1{
+  font-family: 'down-hill', sans-serif;
+}
 .letra-titulo {
   font-family: 'KidsMonday', sans-serif;
 }
 .letra-circulo {
   font-family: 'KidsMonday', sans-serif;
   font-size: 8vw;
-  
 }
 
 .libro {
@@ -94,8 +95,14 @@
 .alto-35{
   height: 35vw ;
 }
+.ancho-3 {
+  width: 3vw;
+}
 .ancho-5 {
   width: 5vw;
+}
+.ancho-7 {
+  width: 7vw;
 }
 .ancho-10 {
   width: 10vw;
@@ -121,4 +128,7 @@ background-color: #fd7e14;
 }
 .bg-fucsia{
   background-color: #d63384;
+}
+.redondeado{
+  border-radius: 20%;
 }

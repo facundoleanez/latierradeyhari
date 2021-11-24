@@ -49,11 +49,11 @@ export const Pag49 = ({playBad, playGood}) => {
             <div className="row">
                     { good ? <img className="position-absolute animate__animated animate__bounceIn" src="static/Elementosporseparado/bien.png" alt="bien" style={{zIndex:2, width:"11vw"}}/> : <></> }
                     { wrong ? <img className="position-absolute animate__animated animate__bounceIn" src="static/Elementosporseparado/mal.png" alt="bien" style={{zIndex:2, width:"11vw"}}/> : <></>}
-                <div className="row" style={{height:"10vw"}} ></div>
                 <img className="position-absolute p-0" src="static/Diapositivas PNG/49.png"  alt="pag-19"/> 
+                <div className="row alto-10" ></div>
                 <div className="col-5"></div>
-                <div className="col-7" style={{zIndex:2}}>
-                    <div className="p-3" >
+                <div className="col-6 adelante-2">
+                    <div className="d-flex flex-wrap justify-content-around" >
                        <img className={`img-hover ${isSelected[0]? "animate__animated animate__jackInTheBox selected" : ""}`} onClick={()=>{handleSelect(0)}} style={{height:"11vw"}} src="static/Elementosporseparado/5 Números del 0 al 5/taza-y-el-3.png" alt="img"/>
                        <img className="img-hover" onClick={()=>{handleClickWrong()}} style={{height:"11vw"}} src="static/Elementosporseparado/5 Números del 0 al 5/5-flores.png" alt="img"/>
                        <img className={`img-hover ${isSelected[1]? "animate__animated animate__jackInTheBox selected" : ""}`} onClick={()=>{handleSelect(1)}} style={{height:"11vw"}} src="static/Elementosporseparado/5 Números del 0 al 5/mástil-y-el-3.png" alt="img"/>

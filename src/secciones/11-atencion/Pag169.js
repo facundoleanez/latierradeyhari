@@ -35,7 +35,7 @@ export const Pag169 = ({playBad, playGood}) => {
         }
     }
     const handleClickStart = ()=>{
-        setTimeout(()=>setStart(true),1000)
+        setTimeout(()=>setStart(true),1500)
     }
 
     useEffect(() => {
@@ -161,10 +161,11 @@ export const Pag169 = ({playBad, playGood}) => {
                         <img className="ancho-10 adelante-2 img-hover" src="static/Elementosporseparado/13 Juegos de atención/llegada-verde.png" id="llegada" alt="img"/>
                     </div>
                     <div className="col-2"></div>
-                    <div className="col-3 d-flex align-items-end " >
-                        <img onClick={()=>handleClickStart(true)} className="ancho-10 img-hover adelante-2" src="static/Elementosporseparado/13 Juegos de atención/comienzo-verde.png" alt="img"/>
+                    <div className="col-3 d-flex align-items-end" >
+                        <img onClick={()=>handleClickStart(true)} className="ancho-10 img-hover adelante-2 my-md-4 my-3" src="static/Elementosporseparado/13 Juegos de atención/comienzo-verde.png" alt="img"/>
                         <img className="ancho-10" src="static/Elementosporseparado/13 Juegos de atención/pez.png" alt="img"/>
                     </div>
+                    
                 </div>
             </div> 
              }

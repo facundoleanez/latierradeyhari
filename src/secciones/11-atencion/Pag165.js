@@ -35,7 +35,7 @@ export const Pag165 = ({playBad, playGood}) => {
         }
     }
     const handleClickStart = ()=>{
-        setTimeout(()=>setStart(true),1000)
+        setTimeout(()=>setStart(true),1500)
     }
 
     useEffect(() => {
@@ -119,11 +119,12 @@ export const Pag165 = ({playBad, playGood}) => {
                         </g>
                     </svg>
                     <div className="col-1"></div>
-                    <div className="col-2 d-flex flex-column alto-30 justify-content-end py-lg-5 py-3" >
+                    <div className="col-2  d-flex flex-column alto-30 justify-content-end align-items-center py-lg-5 py-3" >
                         <img className="ancho-10" src="static/Elementosporseparado/13 Juegos de atención/abeja.png" alt="img"/>
                         <img onClick={()=>handleClickStart(true)} className="ancho-10 img-hover adelante-2" src="static/Elementosporseparado/13 Juegos de atención/comienzo-amarillo.png" alt="img"/>
                     </div>
-                    <div className="col-3 d-flex flex-column align-items-center ">
+                    <div className="col-1"></div>
+                    <div className="col-2  d-flex flex-column align-items-center ">
                         <img className=" ancho-10 img-hover adelante-2" src="static/Elementosporseparado/13 Juegos de atención/panal.png" id="llegada" alt="img"/>
                         <img className=" ancho-10" src="static/Elementosporseparado/13 Juegos de atención/llegada-amarillo.png" alt="img"/>
                     </div>

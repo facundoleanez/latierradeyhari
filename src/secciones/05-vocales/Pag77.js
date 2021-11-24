@@ -48,6 +48,7 @@ export const Pag77 = ({playBad, playGood}) => {
                 <img className="position-absolute top-50 start-50 translate-middle p-0 m-0" src="static/Diapositivas PNG/77.png" alt="pag-19"/>
                 { good && <img className="position-absolute animate__animated animate__bounceIn" src="static/Elementosporseparado/bien.png" alt="bien" style={{zIndex:2, width:"10vw"}}/>}
                 { wrong && <img className="position-absolute animate__animated animate__bounceIn" src="static/Elementosporseparado/mal.png" alt="bien" style={{zIndex:2, width:"10vw"}}/>}
+                <div className="ancho-3"></div>
                 <div className="col-8" style={{zIndex:1}}>
                 <img className="img-hover" onClick={()=>{handleClickWrong()}} style={{height:"10vw"}} src="static/Elementosporseparado/7 Las vocales/sandía.png" alt="img"/>
                     <img className="img-hover" onClick={()=>{handleClickWrong()}} style={{height:"10vw"}} src="static/Elementosporseparado/7 Las vocales/media.png" alt="img"/>
@@ -65,11 +66,11 @@ export const Pag77 = ({playBad, playGood}) => {
                     <img className="img-hover" onClick={()=>{handleClickWrong()}} style={{height:"10vw"}} src="static/Elementosporseparado/7 Las vocales/ovni.png" alt="img"/>
                     <img className={`img-hover ${isSelected[3]? "d-none" : ""}`} onClick={()=>{handleClickTrue(3)}} style={{height:"10vw"}} src="static/Elementosporseparado/7 Las vocales/indio.png" alt="img"/>
                     <img className="img-hover" onClick={()=>{handleClickWrong()}} style={{height:"10vw"}} src="static/Elementosporseparado/7 Las vocales/uña.png" alt="img"/>
-                    <div className="row bg-amarillo border border-dark justify-content-around m-2 p-2 alto-12">
-                        <div className="col-2 bg-white rounded-circle py-3 d-flex flex-column justify-content-center align-items-center">{ isSelected[0] && <> <img className="animate__animated animate__flip" style={{height:"6vw"}} src="static/Elementosporseparado/7 Las vocales/isla.png" alt="img" /> <p>Isla</p> </>}</div>
-                        <div className="col-2 bg-white rounded-circle py-3 d-flex flex-column justify-content-center align-items-center">{ isSelected[1] && <> <img className="animate__animated animate__flip" style={{height:"6vw"}} src="static/Elementosporseparado/7 Las vocales/imán.png" alt="img" /> <p>Imán</p> </>}</div>
-                        <div className="col-2 bg-white rounded-circle py-3 d-flex flex-column justify-content-center align-items-center">{ isSelected[2] && <> <img className="animate__animated animate__flip" style={{height:"4vw"}} src="static/Elementosporseparado/7 Las vocales/iglú.png" alt="img" /> <p>Iglú</p> </>}</div>
-                        <div className="col-2 bg-white rounded-circle py-3 d-flex flex-column justify-content-center align-items-center">{ isSelected[3] && <> <img className="animate__animated animate__flip" style={{height:"5vw"}} src="static/Elementosporseparado/7 Las vocales/indio.png" alt="img" /> <p>Indio</p> </>}</div>
+                    <div className="row bg-amarillo border border-dark justify-content-around m-2 p-2 alto-12 overflow-hidden">
+                        <div className="col-2 bg-white redondeado py-3 d-flex flex-column justify-content-center align-items-center">{ isSelected[0] && <> <img className="animate__animated animate__flip" style={{height:"5vw"}} src="static/Elementosporseparado/7 Las vocales/isla.png" alt="img" /> <div className="fuente-1 letra-chica">Isla</div> </>}</div>
+                        <div className="col-2 bg-white redondeado py-3 d-flex flex-column justify-content-center align-items-center">{ isSelected[1] && <> <img className="animate__animated animate__flip" style={{height:"5vw"}} src="static/Elementosporseparado/7 Las vocales/imán.png" alt="img" /> <div className="fuente-1 letra-chica">Imán</div> </>}</div>
+                        <div className="col-2 bg-white redondeado py-3 d-flex flex-column justify-content-center align-items-center">{ isSelected[2] && <> <img className="animate__animated animate__flip" style={{height:"4vw"}} src="static/Elementosporseparado/7 Las vocales/iglú.png" alt="img" /> <div className="fuente-1 letra-chica">Iglú</div> </>}</div>
+                        <div className="col-2 bg-white redondeado py-3 d-flex flex-column justify-content-center align-items-center">{ isSelected[3] && <> <img className="animate__animated animate__flip" style={{height:"5vw"}} src="static/Elementosporseparado/7 Las vocales/indio.png" alt="img" /> <div className="fuente-1 letra-chica">Indio</div> </>}</div>
                     </div>
                 </div>
             </div>

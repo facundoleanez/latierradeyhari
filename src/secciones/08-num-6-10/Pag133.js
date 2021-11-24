@@ -41,10 +41,10 @@ export const Pag133 = ({playBad, playGood}) => {
                     <div className="img-hover p-3" onClick={()=>{handleClickWrong()}}>
                         <img style={{height:"10vw"}} src="static/Elementosporseparado/10 Números del 6 al 10/6-fucsia.png" alt="img"/>
                     </div>
-                    <div className="img-hover p-3" onClick={()=>{handleClickWrong()}}>
+                    <div className="img-hover p-3" onClick={()=>{handleClickTrue()}}>
                         <img style={{height:"10vw"}} src="static/Elementosporseparado/10 Números del 6 al 10/9-fucsia.png" alt="img"/>
                     </div>
-                    <div className="img-hover p-3" onClick={()=>{handleClickTrue()}}>
+                    <div className="img-hover p-3" onClick={()=>{handleClickWrong()}}>
                         <img style={{height:"10vw"}} src="static/Elementosporseparado/10 Números del 6 al 10/8-fucsia.png" alt="img"/>
                     </div>
                 </div>

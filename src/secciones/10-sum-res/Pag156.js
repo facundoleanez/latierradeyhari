@@ -8,7 +8,7 @@ export const Pag156 = ({playBad, playGood}) => {
     const [completed, setCompleted] = useState(false);
     const [good, setGood] = useState(false);
     const [wrong, setWrong] = useState(false);
-    const [turnOff, setTurnOff] = useState(false);
+    const [turnOff, setTurnOff] = useState([false, false]);
 
 
     const handleClickTrue = () => {
@@ -22,9 +22,15 @@ export const Pag156 = ({playBad, playGood}) => {
         setWrong(true);
         playBad()
     }
-    const handleClickTurnOff = () => {
-        setTurnOff(true)
-    }
+    const handleClickTurnOff = (i) => {
+        setTurnOff((prevState) => prevState.map((item,index) => {
+            playGood();
+            if (index === i) {
+                return true
+            }
+            return item
+        }))
+      };
     useEffect(() => {
         if (wrong) {
             const timeOut = setTimeout(()=>setWrong(false), 1000)
@@ -46,13 +52,13 @@ export const Pag156 = ({playBad, playGood}) => {
                     <div className="alto-22"></div>
                     <img className="img-hover ancho-5 m-lg-3 m-1" src="static/Elementosporseparado/12 Suma y resta/sol-violeta.png" alt="img"/>
                     <img className="img-hover ancho-5 m-lg-3 m-1" src="static/Elementosporseparado/12 Suma y resta/sol-violeta.png" alt="img"/>
-                    <img className={turnOff ? "d-none" : "img-hover ancho-5 m-lg-3 m-1"} onClick={()=>{handleClickTurnOff()}} src="static/Elementosporseparado/12 Suma y resta/sol-rojo.png" alt="img"/>
+                    <img className={turnOff[0] ? "d-none" : "img-hover ancho-5 m-lg-3 m-1"} onClick={()=>{handleClickTurnOff(0)}} src="static/Elementosporseparado/12 Suma y resta/sol-rojo.png" alt="img"/>
                     <img className="img-hover ancho-5 m-lg-3 m-1" src="static/Elementosporseparado/12 Suma y resta/sol-violeta.png" alt="img"/>
                     <img className="img-hover ancho-5 m-lg-3 m-1" src="static/Elementosporseparado/12 Suma y resta/sol-violeta.png" alt="img"/>
                     <img className="img-hover ancho-5 m-lg-3 m-1" src="static/Elementosporseparado/12 Suma y resta/sol-violeta.png" alt="img"/>
                     <img className="img-hover ancho-5 m-lg-3 m-1" src="static/Elementosporseparado/12 Suma y resta/sol-violeta.png" alt="img"/>
                     <img className="img-hover ancho-5 m-lg-3 m-1" src="static/Elementosporseparado/12 Suma y resta/sol-violeta.png" alt="img"/>
-                    <img className={turnOff ? "d-none" : "img-hover ancho-5 m-lg-3 m-1"} onClick={()=>{handleClickTurnOff()}} src="static/Elementosporseparado/12 Suma y resta/sol-rojo.png" alt="img"/>
+                    <img className={turnOff[1] ? "d-none" : "img-hover ancho-5 m-lg-3 m-1"} onClick={()=>{handleClickTurnOff(1)}} src="static/Elementosporseparado/12 Suma y resta/sol-rojo.png" alt="img"/>
                     <img className="img-hover ancho-5 m-lg-3 m-1" src="static/Elementosporseparado/12 Suma y resta/sol-violeta.png" alt="img"/>
 
                 </div>

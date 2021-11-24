@@ -171,11 +171,12 @@ export const Libro = () => {
     return (
         <div className="position-absolute top-50 start-50 translate-middle">
             <div>
-                <button className="carousel-control-prev position-absolute top-50 start-0 translate-middle" type="button" onClick={() => handlerPagePrev()}>
-                    <span className="carousel-control-prev-icon position-absolute top-50 start-0 translate-middle-y ml-5 btn btn-primary" aria-hidden="true"></span>
+                <button className="carousel-control-prev position-absolute top-50 start-0 translate-middle ancho-5 alto-10" type="button" onClick={() => handlerPagePrev()}>
+                    <span className="carousel-control-prev-icon position-absolute top-50 start-0 translate-middle-y ml-5 btn btn-primary alto-5" aria-hidden="true"></span>
                 </button>
                 <HTMLFlipBook width={widthBook} height={heightBook}  useMouseEvents={false} ref={book}  autoSize={true} className="libro">
 
+ 
                     <div className="demoPage"><video  src="static/Diapositivas PNG/0 - Portada.mp4" loop={true} autoPlay={true} width={widthBook} height={heightBook}/></div>
                     <img className="demoPage" src="static/Diapositivas PNG/1.png" alt="page-1"/>
                     <img className="demoPage" src="static/Diapositivas PNG/2.png" alt="page-2"/>
@@ -337,15 +338,11 @@ export const Libro = () => {
                     <div className="demoPage"><Pag160 playBad={playBad} playGood={playGood}/></div>
                     <div className="demoPage"><Pag161 playBad={playBad} playGood={playGood}/></div>
                     <div className="demoPage"><Pag162 playBad={playBad} playGood={playGood}/></div>
-                    {/* caratula menormayor */}
                     <img className="demoPage" src="static/Diapositivas PNG/176.png" alt="page-3"/>
-
                     <div className="demoPage"><Pag170 playBad={playBad} playGood={playGood}/></div>
                     <div className="demoPage"><Pag171 playBad={playBad} playGood={playGood}/></div>
                     <div className="demoPage"><Pag172 playBad={playBad} playGood={playGood}/></div>
-                    {/* caratula orden */}
                     <img className="demoPage" src="static/Diapositivas PNG/177.png" alt="page-3"/>
-
                     <div className="demoPage"><Pag173 playBad={playBad} playGood={playGood}/></div>
                     <div className="demoPage"><Pag174 playBad={playBad} playGood={playGood}/></div>
                     <div className="demoPage"><Pag175 playBad={playBad} playGood={playGood}/></div>
@@ -357,8 +354,8 @@ export const Libro = () => {
                     <div className="demoPage"><Pag168 playBad={playBad} playGood={playGood}/></div>
                     <div className="demoPage"><Pag169 playBad={playBad} playGood={playGood}/></div>
                 </HTMLFlipBook>
-                <button className="carousel-control-next position-absolute top-50 start-100 translate-middle" type="button" onClick={() => handlerPageNext()}>
-                    <span className="carousel-control-next-icon position-absolute top-50 end-0 translate-middle-y btn btn-primary" aria-hidden="true" ></span>
+                <button className="carousel-control-next ancho-5 position-absolute top-50 start-100 translate-middle alto-10" type="button" onClick={() => handlerPageNext()}>
+                    <span className="carousel-control-next-icon position-absolute top-50 end-0 translate-middle-y btn btn-primary alto-5" aria-hidden="true" ></span>
                 </button>
             </div>
         </div>

@@ -48,6 +48,7 @@ export const Pag71 = ({playBad, playGood}) => {
                 <img className="position-absolute top-50 start-50 translate-middle p-0 m-0" src="static/Diapositivas PNG/71.png" alt="pag-19"/>
                 { good && <img className="position-absolute animate__animated animate__bounceIn" src="static/Elementosporseparado/bien.png" alt="bien" style={{zIndex:2, width:"10vw"}}/>}
                 { wrong && <img className="position-absolute animate__animated animate__bounceIn" src="static/Elementosporseparado/mal.png" alt="bien" style={{zIndex:2, width:"10vw"}}/>}
+                <div className="ancho-3"></div>
                 <div className="col-8" style={{zIndex:1}}>
                     <img className="img-hover" onClick={()=>{handleClickWrong()}} style={{height:"10vw"}} src="static/Elementosporseparado/7 Las vocales/flor.png" alt="img"/>
                     <img className="img-hover" onClick={()=>{handleClickWrong()}} style={{height:"10vw"}} src="static/Elementosporseparado/7 Las vocales/escalera.png" alt="img"/>
@@ -62,11 +63,11 @@ export const Pag71 = ({playBad, playGood}) => {
                     <img className={`img-hover ${isSelected[2]? "d-none" : ""}`} onClick={()=>{handleClickTrue(2)}} style={{height:"10vw"}} src="static/Elementosporseparado/7 Las vocales/arcoiris.png" alt="img"/>
                     <img className="img-hover" onClick={()=>{handleClickWrong()}} style={{height:"10vw"}} src="static/Elementosporseparado/7 Las vocales/bicicleta.png" alt="img"/>
                     <img className={`img-hover ${isSelected[3]? "d-none" : ""}`} onClick={()=>{handleClickTrue(3)}} style={{height:"5vw"}} src="static/Elementosporseparado/7 Las vocales/agua.png" alt="img"/>
-                    <div className="row bg-amarillo border border-dark justify-content-around m-2 p-2 alto-12">
-                        <div className="col-2 bg-white rounded-circle py-3 d-flex flex-column justify-content-center align-items-center">{ isSelected[0] && <><img className="animate__animated animate__flip" style={{height:"6vw"}} src="static/Elementosporseparado/7 Las vocales/arbol.png" alt="img" /> <p>Árbol</p></> }</div>
-                        <div className="col-2 bg-white rounded-circle py-3 d-flex flex-column justify-content-center align-items-center">{ isSelected[1] && <><img className="animate__animated animate__flip" style={{height:"6vw"}} src="static/Elementosporseparado/7 Las vocales/abeja.png" alt="img" /> <p>Abeja</p></> }</div>
-                        <div className="col-2 bg-white rounded-circle py-3 d-flex flex-column justify-content-center align-items-center">{ isSelected[2] && <><img className="animate__animated animate__flip" style={{height:"4vw"}} src="static/Elementosporseparado/7 Las vocales/arcoiris.png" alt="img" /> <p>Arcoiris</p></> }</div>
-                        <div className="col-2 bg-white rounded-circle py-3 d-flex flex-column justify-content-center align-items-center">{ isSelected[3] && <><img className="animate__animated animate__flip" style={{height:"3vw"}} src="static/Elementosporseparado/7 Las vocales/agua.png" alt="img" /> <p>Agua</p></> }</div>
+                    <div className="row bg-amarillo border border-dark justify-content-around m-2 p-2 alto-12 overflow-hidden">
+                        <div className="col-2 bg-white redondeado py-1 d-flex flex-column justify-content-center align-items-center">{ isSelected[0] && <><img className="animate__animated animate__flip" style={{height:"5vw"}} src="static/Elementosporseparado/7 Las vocales/arbol.png" alt="img" /> <div className="fuente-1 letra-chica">Árbol</div></> }</div>
+                        <div className="col-2 bg-white redondeado py-1 d-flex flex-column justify-content-center align-items-center">{ isSelected[1] && <><img className="animate__animated animate__flip" style={{height:"5vw"}} src="static/Elementosporseparado/7 Las vocales/abeja.png" alt="img" /> <div className="fuente-1 letra-chica">Abeja</div></> }</div>
+                        <div className="col-2 bg-white redondeado py-1 d-flex flex-column justify-content-center align-items-center">{ isSelected[2] && <><img className="animate__animated animate__flip" style={{height:"4vw"}} src="static/Elementosporseparado/7 Las vocales/arcoiris.png" alt="img" /> <div className="fuente-1 letra-chica">Arcoiris</div></> }</div>
+                        <div className="col-2 bg-white redondeado py-1 d-flex flex-column justify-content-center align-items-center">{ isSelected[3] && <><img className="animate__animated animate__flip" style={{height:"3vw"}} src="static/Elementosporseparado/7 Las vocales/agua.png" alt="img" /> <div className="fuente-1 letra-chica">Agua</div></> }</div>
                     </div>
                 </div>
             </div>

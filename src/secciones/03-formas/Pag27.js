@@ -52,9 +52,10 @@ export const Pag27 = ({playBad, playGood}) => {
                         { good ? <img className="animate__animated animate__bounceIn ancho-10" src="static/Elementosporseparado/bien.png" alt="bien"/> : <></> }
                         { wrong ? <img className="animate__animated animate__bounceIn ancho-10" src="static/Elementosporseparado/mal.png" alt="bien"/> : <></>}
                     </div>
-                    <div className="row alto-10"></div>
-                    <div className="col-8 adelante">
-                        <div className="bg-amarillo m-3 m-md-5 p-2 border border-dark d-flex flex-wrap" >
+                    <div className="row alto-12"></div>
+                    <div className="col-1"></div>
+                    <div className="col-6 adelante">
+                        <div className="bg-amarillo p-2 border border-dark d-flex flex-wrap justify-content-around" >
                             <img className={`img-hover m-1 ${isSelected[0] ? "selected" : ""}`} alt="img-1" onClick={()=>{handleSelect(0)}} style={{height:"6.5vw"}} src="static/Elementosporseparado/4 Formas geométricas/circulo-amarillo.png" />
                             <img className="img-hover m-1" alt="img-1" onClick={()=>{handleClickWrong()}} style={{height:"6.5vw"}} src="static/Elementosporseparado/4 Formas geométricas/cuadrado-azul.png" />
                             <img className="img-hover m-1" alt="img-1" onClick={()=>{handleClickWrong()}} style={{height:"6.5vw"}} src="static/Elementosporseparado/4 Formas geométricas/exagono-fucsia.png" />

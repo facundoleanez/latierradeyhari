@@ -35,12 +35,11 @@ export const Pag65 = ({playBad, playGood}) => {
                                     { good ? <img className="position-absolute animate__animated animate__bounceIn" src="static/Elementosporseparado/bien.png" alt="bien" style={{zIndex:2, width:"10vw"}}/> : <></> }
                     { wrong ? <img className="position-absolute animate__animated animate__bounceIn" src="static/Elementosporseparado/mal.png" alt="bien" style={{zIndex:2, width:"10vw"}}/> : <></>}
                 <img className="position-absolute p-0" src="static/Diapositivas PNG/65.png" alt="pag-14"/> 
-                <div>
-                    <div className="d-flex flex-column position-absolute top-50 start-0 translate-middle-y mx-5 " style={{zIndex:1}}>
-                        <div className="img-hover btn-success p-2 p-lg-4 m-2 rounded-circle" onClick={()=>{handleClickWrong()}}><h3 style={{fontSize:"5vw"}}>1</h3></div>
-                        <div className="img-hover btn-success p-2 p-lg-4 m-2 rounded-circle" onClick={()=>{handleClickWrong()}}><h3 style={{fontSize:"5vw"}}>0</h3></div>
-                        <div className="img-hover btn-success p-2 p-lg-4 m-2 rounded-circle" onClick={()=>{handleClickTrue()}}><h3 style={{fontSize:"5vw"}}>3</h3></div>
-                    </div>
+                <div className="ancho-3"></div>
+                <div className="col-2 d-flex flex-column adelante text-center justify-content-around" style={{height:"85vh"}}>
+                    <div className="img-hover btn-success p-2 p-lg-4 m-2 rounded-circle fuente-1 ancho-10 alto-10" onClick={()=>{handleClickWrong()}}><h3 style={{fontSize:"5vw"}}>1</h3></div>
+                    <div className="img-hover btn-success p-2 p-lg-4 m-2 rounded-circle fuente-1 ancho-10 alto-10" onClick={()=>{handleClickWrong()}}><h3 style={{fontSize:"5vw"}}>0</h3></div>
+                    <div className="img-hover btn-success p-2 p-lg-4 m-2 rounded-circle fuente-1 ancho-10 alto-10" onClick={()=>{handleClickTrue()}}><h3 style={{fontSize:"5vw"}}>3</h3></div>
                 </div>
             </div> 
              }

@@ -35,7 +35,7 @@ export const Pag168 = ({playBad, playGood}) => {
         }
     }
     const handleClickStart = ()=>{
-        setTimeout(()=>setStart(true),1000)
+        setTimeout(()=>setStart(true),1500)
     }
 
     useEffect(() => {

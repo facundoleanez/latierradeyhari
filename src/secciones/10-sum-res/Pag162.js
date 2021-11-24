@@ -42,25 +42,25 @@ export const Pag162 = ({playBad, playGood}) => {
                 { good ? <img className="position-absolute animate__animated animate__bounceIn adelante ancho-10" src="static/Elementosporseparado/bien.png" alt="bien"/> : <></> }
                 { wrong ? <img className="position-absolute animate__animated animate__bounceIn adelante ancho-10" src="static/Elementosporseparado/mal.png" alt="bien"/> : <></>}
                 <div className="col-3 adelante d-flex flex-column justify-content-around alto-libro align-items-center">
-                    <img className={`img-hover ancho-10 ${good ? "animate__animated animate__rotateIn" : ""}`} onClick={()=>{handleClickTrue()}} src="static/Elementosporseparado/12 Suma y resta/3-naranja.png" alt="img"/>
+                    <img className={`img-hover ancho-10 ${good ? "animate__animated animate__rotateIn" : ""}`} onClick={()=>{handleClickTrue()}} src="static/Elementosporseparado/12 Suma y resta/8-naranja.png" alt="img"/>
                     <img className="img-hover ancho-10" onClick={()=>{handleClickWrong()}} src="static/Elementosporseparado/12 Suma y resta/4-naranja.png" alt="img"/>
                     <img className="img-hover ancho-10" onClick={()=>{handleClickWrong()}} src="static/Elementosporseparado/12 Suma y resta/2-naranja.png" alt="img"/>
                 </div>
                 <div className="col-5 adelante text-center">
                     <div className="alto-25 my-3"></div>
                     <img className={turnOff ? "d-none" : "img-hover ancho-5 m-lg-3 m-1"} onClick={()=>{handleClickTurnOff()}} src="static/Elementosporseparado/12 Suma y resta/gato.png" alt="img"/>
-                    <img className={turnOff ? "d-none" : "img-hover ancho-5 m-lg-3 m-1"} onClick={()=>{handleClickTurnOff()}} src="static/Elementosporseparado/12 Suma y resta/gato.png" alt="img"/>
-                    <img className={turnOff ? "d-none" : "img-hover ancho-5 m-lg-3 m-1"} onClick={()=>{handleClickTurnOff()}} src="static/Elementosporseparado/12 Suma y resta/gato.png" alt="img"/>
-                    <img className={turnOff ? "d-none" : "img-hover ancho-5 m-lg-3 m-1"} onClick={()=>{handleClickTurnOff()}} src="static/Elementosporseparado/12 Suma y resta/gato.png" alt="img"/>
-                    <img className={turnOff ? "d-none" : "img-hover ancho-5 m-lg-3 m-1"}  src="static/Elementosporseparado/12 Suma y resta/gato.png" alt="img"/>
-                    <img className={turnOff ? "d-none" : "img-hover ancho-5 m-lg-3 m-1"}  src="static/Elementosporseparado/12 Suma y resta/gato.png" alt="img"/>
+                    <img className="img-hover ancho-5 m-lg-3 m-1" src="static/Elementosporseparado/12 Suma y resta/gato.png" alt="img"/>
+                    <img className="img-hover ancho-5 m-lg-3 m-1" src="static/Elementosporseparado/12 Suma y resta/gato.png" alt="img"/>
+                    <img className="img-hover ancho-5 m-lg-3 m-1" src="static/Elementosporseparado/12 Suma y resta/gato.png" alt="img"/>
+                    <img className="img-hover ancho-5 m-lg-3 m-1" src="static/Elementosporseparado/12 Suma y resta/gato.png" alt="img"/>
+                    <img className="img-hover ancho-5 m-lg-3 m-1" src="static/Elementosporseparado/12 Suma y resta/gato.png" alt="img"/>
                     <img className="img-hover ancho-5 m-lg-3 m-1" src="static/Elementosporseparado/12 Suma y resta/gato.png" alt="img"/>
                     <img className="img-hover ancho-5 m-lg-3 m-1" src="static/Elementosporseparado/12 Suma y resta/gato.png" alt="img"/>
                     <img className="img-hover ancho-5 m-lg-3 m-1" src="static/Elementosporseparado/12 Suma y resta/gato.png" alt="img"/>
                 </div>                {
                     good &&
                     <div className="col-1 adelante d-flex flex-column justify-content-center">
-                        <img className="img-hover ancho-10" src="static/Elementosporseparado/12 Suma y resta/3-naranja.png" alt="img"/>
+                        <img className="img-hover ancho-10" src="static/Elementosporseparado/12 Suma y resta/8-naranja.png" alt="img"/>
                     </div>
                     
                 }

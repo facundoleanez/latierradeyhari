@@ -35,7 +35,7 @@ export const Pag167 = ({playBad, playGood}) => {
         }
     }
     const handleClickStart = ()=>{
-        setTimeout(()=>setStart(true),1000)
+        setTimeout(()=>setStart(true),1500)
     }
 
     useEffect(() => {
@@ -216,7 +216,7 @@ export const Pag167 = ({playBad, playGood}) => {
                         </g>
                         </svg>
                     <div className="col-2"></div>
-                    <div className="col-2 d-flex flex-column alto-35" >
+                    <div className="col-2 d-flex flex-column align-items-end alto-35" >
                         <img className="ancho-10" src="static/Elementosporseparado/13 Juegos de atención/monito.png" alt="img"/>
                         <img onClick={()=>handleClickStart(true)} className="ancho-10 img-hover adelante-2" src="static/Elementosporseparado/13 Juegos de atención/comienzo-violeta.png" alt="img"/>
                     </div>
